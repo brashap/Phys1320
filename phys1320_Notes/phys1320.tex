@@ -14,6 +14,7 @@
 \usepackage{xcolor}
 \usepackage[most]{tcolorbox}
 \usepackage{mathtools}
+\usepackage{float}
 \usepackage[colorlinks=false, linktocpage=true]{hyperref}
 
 \usepackage{booktabs}% http://ctan.org/pkg/booktabs
@@ -209,7 +210,7 @@ Charging by induction.
 
 Similarly using a ground connection
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.60]{fig/fig_05_13.jpg}
 \caption{Charge by Induction with Ground Connection}
@@ -380,6 +381,8 @@ Definitions of charge density
 \item $\rho \equiv $ charge per unit volume (volume charge density) in $\frac{C}{m^3}$
 \end{itemize}
 
+Given these densities, the differential charge ($dq$) becomes $\lambda dl$, $\sigma dA$, and $\rho dV$, respectively. 
+
 For these distributions, the summation becomes an integral
 \begin{itemize}
 \item Point Charge
@@ -404,11 +407,135 @@ For these distributions, the summation becomes an integral
 As $P = P(x,y,z)$:
 
 \begin{equation}
-\vec{E}_x(P) = \frac{1}{4 \pi \epsilon_0} \int_{line}(\frac{\lambda dl}{r^2})\hat{r},
-\vec{E}_y(P) = \frac{1}{4 \pi \epsilon_0} \int_{line}(\frac{\lambda dl}{r^2})\hat{r},
-\vec{E}_z(P) = \frac{1}{4 \pi \epsilon_0} \int_{line}(\frac{\lambda dl}{r^2})\hat{r}
+\vec{E}_x(P) = \frac{1}{4 \pi \epsilon_0} \int_{line}(\frac{\lambda dl}{r^2})_x,
+\vec{E}_y(P) = \frac{1}{4 \pi \epsilon_0} \int_{line}(\frac{\lambda dl}{r^2})_y,
+\vec{E}_z(P) = \frac{1}{4 \pi \epsilon_0} \int_{line}(\frac{\lambda dl}{r^2})_z
 \end{equation}
 
+
+\subsection{Electric Field of a Line Segment}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.60]{fig/fig_05_23.jpg}
+\caption{A uniformly charged segment of wire. The electric field at point P can be found by applying the superposition principle to symmetrically placed charge elements and integrating.
+}
+\label{fig:05_23}
+\end{center}
+\end{figure}
+
+
+Start with 
+
+\begin{equation}
+\vec{E}(P) = \frac{1}{4 \pi \epsilon_0} \int_{line}(\frac{\lambda dl}{r^2})\hat{r}
+\label{Eline}
+\end{equation}
+	
+The symmetry of the arrangement implies the horizontal components cancel.
+
+\begin{equation}
+\vec{E}(P) = \vec{E^1} + \vec{E^2} = E_{1,x} \hat{i} + E_{1,z} \hat{k} + E_{2,x} (-\hat{i}) + E_{2,z} \hat{k}
+\end{equation}
+
+Due to symmetry, $E_{1,x} = E_{2,x}$, and as their directions are opposite, they cancel. So,
+
+\begin{equation}
+\vec{E}(P) = E_{1,z} \hat{k}  + E_{2,z} \hat{k} = E_1 \cos{\theta} \hat{k} + E_2 \cos{\theta} \hat{k}
+\end{equation}
+
+As these components are also equal, substituting into Equation \ref{Eline} yields:
+
+\begin{equation}
+\vec{E}(P) = \frac{1}{4 \pi \epsilon_0} \int_{0}^{\frac{L}{2}}(\frac{2 \lambda dx}{r^2} \cos{\theta})\hat{k}
+\end{equation}
+
+To calculate the integral, we note that 
+
+\begin{equation}
+r = \sqrt{(x^2 + z ^2)}
+\end{equation}
+
+and
+
+\begin{equation}
+\cos{\theta} = \frac{z}{r} = \frac{z}{\sqrt{(x^2 + z ^2)}} =  \frac{z}{(x^2 + z ^2)^{\frac{1}{2}}}
+\end{equation}
+
+Substituting
+
+\begin{equation}
+\vec{E}(P) = \frac{1}{4 \pi \epsilon_0} \int_{0}^{\frac{L}{2}}(\frac{2 \lambda dx}{(x^2 + z ^2)} \frac{z}{(x^2 + z ^2)^{\frac{1}{2}}})\hat{k}
+\end{equation}
+
+\begin{equation}
+\vec{E}(P) = \frac{1}{4 \pi \epsilon_0} \int_{0}^{\frac{L}{2}}(\frac{2 \lambda z}{(x^2 + z ^2)^{\frac{3}{2}}}) dx \hat{k}
+\end{equation}
+
+Integrating
+\begin{equation}
+\vec{E}(P) = \frac{2 \lambda z}{4 \pi \epsilon_0} [\frac{x}{z^2 \sqrt{(x^2 + z ^2)}}]\bigg\rvert_{0}^{\frac{L}{2}} \hat{k}
+\end{equation}
+
+or
+
+\begin{equation}
+\vec{E}(z) = \frac{1}{4 \pi \epsilon_0} \frac{\lambda L}{z \sqrt{(\frac{L}{4} + z^2)}} \hat{k}
+\end{equation}
+
+For an infinite line: $L = \infty$
+
+\begin{equation}
+\vec{E}(z) = \frac{1}{4 \pi \epsilon_0} \frac{2 \lambda}{z} \hat{k}
+\end{equation}
+
+noting that we lost the $\frac{1}{r^2}$ dependence
+
+For a finite line of charge with $z >> L$
+
+\begin{equation}
+\vec{E}(z) = \frac{1}{4 \pi \epsilon_0} \frac{\lambda L}{z^2} \hat{k}
+\end{equation}
+
+Recalling that $q = \lambda L$, then we get the expression of the field of a point charge.
+
+
+
+\section{Electric Field Lines}
+
+Electric Field Lines allow us to visualize the electric field in space
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.60]{fig/fig_05_28.jpg}
+\caption{Vector field of dipole}
+\label{fig:05_28}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.60]{fig/fig_05_29.jpg}
+\caption{Electric Field of a dipole}
+\label{fig:05_29}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.60]{fig/fig_05_30.jpg}
+\caption{Field Line Density}
+\label{fig:05_30}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.60]{fig/fig_05_31.jpg}
+\caption{Typical Diagrams}
+\label{fig:05_31}
+\end{center}
+\end{figure}
 
 
 \end{document}

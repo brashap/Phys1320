@@ -547,5 +547,222 @@ Electric Field Line "Rules"
 \end{center}
 \end{figure}
 
+\chapter{Module 2: Chapter 6 - Gauss's Law}
+
+Four main topics:
+
+\begin{itemize}
+\item Electric Flux
+\item Guass's Law
+\item Calculating Electric Field with Guass's Law
+\item Electric Field inside Conductors
+\end{itemize}
+
+
+\section{Electric Flux}
+
+Flux describes how much of something goes through a given area. More formally, flux is the dot-product of a vector field (in our case, the electric field) with an area.  
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.60]{fig/fig_06_04.jpg}
+\caption{Flux through a plane}
+\label{fig:06_04}
+\end{center}
+\end{figure}
+
+\subsection{Electric Flux}
+
+For uniform field $\vec{E}$ and a flat surface:
+\begin{equation}
+\Phi = \vec{E} \cdot \vec{A}
+\end{equation}
+\begin{equation}
+\Phi = E A \cos{\theta}
+\end{equation}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.60]{fig/fig_06_07.jpg}
+\caption{Flux through a cube}
+\label{fig:06_07}
+\end{center}
+\end{figure}
+
+\begin{itemize}
+\item Source and termination of electric field lines are outside the cube
+\item There is no charge inside the cube
+\item All electric field lines that enter the cube exit it, so the net flux through the cube is zero.
+\item By convention: if field lines are leaving a closed surface then $\Phi$ is positive. 
+\item For field lines entering a closed surface, $\Phi$ is negative.
+\end{itemize}
+
+For a non-flat surface, we can take small patches that approximate a flat surface
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.60]{fig/fig_06_08.jpg}
+\caption{Surface divided into patches to find flux}
+\label{fig:06_08}
+\end{center}
+\end{figure}
+
+Consider $\vec{E}_i$ to be the electric field over the $i^{th}$ patch ($\delta A_i$, then
+
+\begin{equation}
+\Phi_i = \vec{E}_i \cdot \delta \vec{A}_i
+\end{equation}
+
+then
+
+\begin{equation}
+\Phi = \sum_{i=1}^{N} \Phi_i = \sum_{i=1}^{N} \vec{E}_i \cdot \delta \vec{A}_i
+\end{equation}
+
+As the patch gets infinitesimally small, 
+
+\begin{equation}
+\delta \vec{A} \rightarrow \hat{n} dA
+\end{equation}
+
+and the $\sum$ become an $\int_s$ over the entire surface
+
+For an Open Surface:
+
+\begin{equation}
+\Phi = \int_s \vec{E} \cdot \hat{n} dA = \int_s \vec{E}  \cdot d\vec{A}
+\end{equation}
+
+For an Closed Surface:
+
+\begin{equation}
+\Phi = \oint_s \vec{E} \cdot \hat{n} dA = \oint_s \vec{E}  \cdot d\vec{A}
+\label{eq:flux}
+\end{equation}
+
+\section{Gauss's Law}
+
+Let's calculate the electric flux through a sphere that surrounds a point charge $q$.
+
+Recall at Point $P$
+\begin{equation}
+\vec{E}_P = \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} \hat{r}
+\end{equation}
+
+where $\hat{r}$ is the radial unit vector charge at the center to Point $P$.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_06_13.jpg}
+\caption{Closed sphere around point charge P}
+\label{fig:06_13}
+\end{center}
+\end{figure}
+
+Applying the flux equation \ref{eq:flux}, where $\hat{n} = \hat{r}$ and $r = R$, for infinitesimal area $dA$:
+
+\begin{equation}
+d\Phi = \vec{E} \cdot \hat{n} dA = \frac{1}{4 \pi \epsilon_0} \frac{q}{R^2} \hat{r} \cdot \hat{r} dA =  \frac{1}{4 \pi \epsilon_0} \frac{q}{R^2} dA
+\end{equation}
+
+Integrating
+
+\begin{equation}
+\Phi = \frac{1}{4 \pi \epsilon_0} \frac{q}{R^2} \oint_s dA =  \frac{1}{4 \pi \epsilon_0} \frac{q}{R^2} (4 \pi R^2) = \frac{q}{\epsilon_0}
+\end{equation}
+
+As r increases, there is a  $\frac{1}{r^2}$ decrease in electric field counteracts the $r^2$ increase in the surface of the sphere and we find that $\Phi = \frac{q}{\epsilon_0}$ is independent of the size of the sphere. 
+
+
+Gauss's Law
+\begin{equation}
+\boxed{\Phi_{closedsurface} = \frac{q_{enc}}{\epsilon_0}}
+\end{equation}
+
+where $q_{enc}$ is the net charge enclosed by the surface
+
+\section{Applying Gauss's Law}
+
+\subsubsection{Charge Distribution with Spherical Symmetry}
+
+Charge distribution is considered spherically symmetric if the density of charge depends only on the distance from a point in space and not direction. A spherically symmetric charge distribution does not change of you rotate the sphere.
+
+\begin{equation}
+\rho(r,\theta,\phi) = \rho(r)
+\end{equation}
+
+For spherically symmetric:
+
+\begin{equation}
+\vec{E}_P = E_P(r)\hat{r}
+\end{equation}
+
+The magnitude of the electric field $\vec{E}$ is the same everywhere on a spherical Gaussian surface concentric with the distribution. For a sphere of radius $r$:
+
+\begin{equation}
+\Phi = E_P 4 \pi r^2
+\end{equation}
+
+From Gauss's Law
+\begin{equation}
+4 \pi r^2 E = \frac{q_{enc}}{\epsilon_0}
+\end{equation}
+
+Combining, the magnitude $E(r)$ is given by
+\begin{equation}
+E(r) = \frac{1}{4 \pi \epsilon_0}\frac{q_{enc}}{r^2}
+\end{equation}
+
+For a sphere of radius $R$
+
+\begin{equation}
+  q_{enc}=\begin{cases}
+    q_{tot}, & \text{if } r \geq R.\\
+    q_{(r<R)}, & \text{if } r < R.
+  \end{cases}
+\end{equation}
+
+Which leads to an Electric Field at point P ($E_{out}$ for P outside the sphere, and $E_{in}$ for P inside the sphere
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.60]{fig/fig_06_23.jpg}
+\caption{Outside and inside the sphere}
+\label{fig:06_23}
+\end{center}
+\end{figure}
+
+\begin{equation}
+E_{out} = \frac{1}{4 \pi \epsilon_0}\frac{q_{tot}}{r^2}
+\end{equation}
+
+\begin{equation}
+E_{in} = \frac{1}{4 \pi \epsilon_0}\frac{q_{(r<R)}}{r^2}
+\end{equation}
+
+So, what is $q_{enc}$ inside the sphere
+
+\begin{equation}
+q_{enc} = \int \rho_0 dV = \int_{0}^{r} \rho_0 4 \pi r^{\prime} dr^{\prime} = \rho_0 (\frac{4}{3} \pi r^3)
+\end{equation}
+
+Therefore
+
+\begin{equation}
+E_{out} = \frac{1}{4 \pi \epsilon_0}\frac{q_{tot}}{r^2}, \text{with} q_{tot} = \frac{4}{3} \pi R^3 \rho_0
+\end{equation}
+
+\begin{equation}
+E_{in} = \frac{1}{4 \pi \epsilon_0}\frac{q_{(r<R)}}{r^2} = \frac{\rho_0 r}{3 \epsilon_0} \text{  since  } q_{(r<R)} = \frac{4}{3} \pi r^3 \rho_0
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_06_24.jpg}
+\caption{Electric Field of uniformly charged non-conducting sphere}
+\label{fig:06_24}
+\end{center}
+\end{figure}
 
 \end{document}

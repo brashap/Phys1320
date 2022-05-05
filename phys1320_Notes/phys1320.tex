@@ -765,4 +765,210 @@ E_{in} = \frac{1}{4 \pi \epsilon_0}\frac{q_{(r<R)}}{r^2} = \frac{\rho_0 r}{3 \ep
 \end{center}
 \end{figure}
 
+\subsubsection{Charge Distribution with Symmetric Cylinder}
+
+Charge distribution is considered cylindrical symmetric if the density of charge depends only on the distance $r$ from the axis, and does not vary along or with direction of axis.
+
+Consider an "infinitely\footnote{In the real world, cylinders are not finite, but if the length $L >> r$ then it can be approximated as infinitely long} cylinder with cylindrical symmetric charge distribution.
+
+\begin{equation}
+\rho(r,\theta,z) = \rho(r)
+\end{equation}
+
+\begin{equation}
+\vec{E}_P = E_P(r)\hat{r}
+\end{equation}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_06_29.jpg}
+\caption{Cylindrically symmetric of length L}
+\label{fig:06_29}
+\end{center}
+\end{figure}
+
+The electric field is perpendicular to the sides and parallel to the end caps.
+
+The flux through the cylinder part is
+
+\begin{equation}
+\int_s \vec{E} \cdot \hat{n} dA = E \int_s dA = E(2 \pi r L)
+\end{equation}
+
+and the flux through the caps is zero, because
+
+\begin{equation}
+\vec{E} \cdot \hat{n} = 0
+\end{equation}
+
+The total flux is then 
+
+\begin{equation}
+\int_s \vec{E} \cdot \hat{n} dA = 2 \pi r L E + 0 + 0 = 2 \pi r L E
+\end{equation}
+
+Using Gauss's law and taking $\lambda_{enc}$ to be the charge per unit length
+
+\begin{equation}
+q_{enc} = \lambda_{enc} L
+\end{equation}
+
+\begin{equation}
+\Phi = 2 \pi r L E = \frac{q_{enc}}{\epsilon_0}
+\end{equation}
+
+The magnitude of $\vec{E}$
+\begin{equation}
+E(r)  = \frac{\lambda_{enc}}{2 \pi \epsilon_0} \frac{1}{r}
+\end{equation}
+
+\begin{equation}
+  \lambda_{enc} L =\begin{cases}
+    q_{tot}, & \text{if } r \geq R.\\
+    q_{(r<R)}, & \text{if } r < R.
+  \end{cases}
+\end{equation}
+
+What happens of it is a cylindrical shell vs a solid cylinder?
+
+Consider surface charge density of $\sigma_0$.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_06_30.jpg}
+\caption{Guassian surface around a cylinderical shell}
+\label{fig:06_30}
+\end{center}
+\end{figure}
+
+\begin{equation}
+\lambda_{enc} = \frac{\sigma_0 2 \pi R L}{L} = 2 \pi R \sigma_0
+\end{equation} 
+
+For point $P$ outside of the shell $r \geq R$:
+
+\begin{equation}
+\vec{E} = \frac{2 \pi R \sigma_0}{2 \pi \epsilon_0} \frac{1}{r} \hat{r}
+\end{equation}
+
+For point $P$ inside of the shell $r < R$:
+
+\begin{equation}
+\lambda_{enc} = 0
+\end{equation}
+
+so
+
+\begin{equation}
+\vec{E} = 0
+\end{equation}
+
+\section{Conductors in Electrostatic Equilibrium}
+Moving from insulators to conductors. The electric field in conductors exerts a force on the free electrons (conduction electrons). As these electrons are not bound to an atom, they accelerate. However, moving charges are not static, so when electrostatic equilibrium is reached the charges are distributed in such a way that the electric field inside the conductor vanishes. 
+
+\subsection{Electric Field inside a Conductor vanishes}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_06_35.jpg}
+\caption{Metallic Sphere in presence of point charge}
+\label{fig:06_35}
+\end{center}
+\end{figure}
+
+
+The redistribution of charges is such that 
+\begin{equation}
+\vec{E}_P = \vec{E}_q + \vec{E}_A + \vec{E}_B = \vec{0}
+\end{equation}
+
+for induced charge $-\sigma_A$ and $+\sigma_B$
+
+There is no net charge enclosed by a Gaussian surface that is solely within the volume of a conductor at equilibrium. This gives us $q_{enc} = 0$ and 
+
+The redistribution of charges is such that 
+\begin{equation}
+\vec{E}_{net} = \vec{0} \text{   at points inside a conductor}
+\end{equation}
+
+\subsection{Charge on a conductor}
+
+A consequence of a conductor in static equilibrium is that excess charge will end up on the outer surface of the conductor regardless of its origin.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_06_37.jpg}
+\caption{Gaussian surface just below conductor surface}
+\label{fig:06_37}
+\end{center}
+\end{figure}
+
+Since $E=0$ everywhere inside the conductor, 
+\begin{equation}
+\oint_s = \vec{E} \cdot \hat{n}dA = 0
+\end{equation}
+
+As the Gaussian surface lies infinitesimally below the actual surface, and there is no charge within the Gaussian surface, then all the excess charge must be on the surface. 
+
+\subsection{Electric Field at the Surface of a Conductor}
+
+If the electric field had a component parallel to the surface of the conductor, then the charges would move, which violates the electrostatic equilibrium assuming. Therefor the field must be normal to the surface. 
+
+Just above the surface the magnitude of the electric field ($E$) and the surface charge density ($\sigma$) are related by
+
+\begin{equation}
+E = \frac{\sigma}{\epsilon_0}
+\end{equation}
+
+\begin{equation}
+E = \frac{\sigma}{\epsilon_0}
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_06_39.jpg}
+\caption{Field over the surface of a conductor}
+\label{fig:06_39}
+\end{center}
+\end{figure}
+
+Consider an infinitesimally small cylinder on the surface of a conductor with one face inside the conductor and one face outside. The height is $\delta$ and the cross section $\Delta A$. 
+
+Given that $\Delta A$ is infinitesimally small, the total charge in the cylinder is $\sigma \Delta A$. 
+
+The field is perpendicular to the surface, and thus the flux 
+\begin{equation}
+\Phi = E \Delta A = \frac{\sigma \Delta A}{\epsilon_0}
+\end{equation}
+
+yielding that charge right above the surface being given by:
+
+\begin{equation}
+E = \frac{\sigma}{\epsilon_0}
+\end{equation}
+
+\subsubsection{Electric Field of a Conducting Plate}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_06_40.jpg}
+\caption{Conducting Plate}
+\label{fig:06_40}
+\end{center}
+\end{figure}
+
+
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_06_41.jpg}
+\caption{Between Conducting Plates}
+\label{fig:06_41}
+\end{center}
+\end{figure}
+
+
+
 \end{document}

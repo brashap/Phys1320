@@ -864,6 +864,44 @@ so
 \vec{E} = 0
 \end{equation}
 
+\subsubsection{Planar Symmetry}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_06_33.jpg}
+\caption{Thin Charged Sheet}
+\label{fig:06_33}
+\end{center}
+\end{figure}
+
+Consider a large flat surface with uniform charge density. The charge density is the same at all points (x,y), so the electric field $\vec{E}$ at point P only depends on the z-coordinate. 
+
+\begin{equation}
+\vec{E} = E(z) \hat{z}
+\end{equation}
+
+Note that $E(z) = E(-z)$ thought the direction is opposite. 
+
+Let the electric field at point $P$ be $E_P = E(z)$. If the charge is positive, the field lines point away from the sheet, so
+
+\begin{equation}
+\Phi = \oint_S \vec{E}_P \cdot \hat{n} dA = E_P A + E_P A + 0 + 0 +0 + 0 = 2 E_P A
+\end{equation}
+
+The charge inside the gaussian box on the plane is 
+
+\begin{equation}
+q_{enc} = \sigma_0 A
+\end{equation}
+
+Given Gauss's law ($\Phi = \frac{q_{enc}}{\epsilon_0}$) :
+
+\begin{equation}
+\vec{E}_P = \frac{\sigma_0}{2 \epsilon_0} \hat{n}
+\end{equation}
+
+with $\hat{n} = +\hat{z}$ above the plane and $\hat{n} = -\hat{z}$ below the plane, and $E_P$ doesn't depend on the distance above the plane for an infinite plane. Practically, this is  a useful approximation for a finite plate near the center. 
+
 \section{Conductors in Electrostatic Equilibrium}
 Moving from insulators to conductors. The electric field in conductors exerts a force on the free electrons (conduction electrons). As these electrons are not bound to an atom, they accelerate. However, moving charges are not static, so when electrostatic equilibrium is reached the charges are distributed in such a way that the electric field inside the conductor vanishes. 
 
@@ -952,22 +990,148 @@ E = \frac{\sigma}{\epsilon_0}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.40]{fig/fig_06_40.jpg}
+\includegraphics[scale=0.30]{fig/fig_06_40.jpg}
 \caption{Conducting Plate}
 \label{fig:06_40}
 \end{center}
 \end{figure}
 
+A conducting plate is similar to the thin conducting plate, however, with $E = 0$ inside the conductor, 
 
+\begin{equation}
+\Phi = \oint_S \vec{E}_P \cdot \hat{n} dA = E_P A + 0 + 0 + 0 +0 + 0 =  E_P A
+\end{equation}
+
+and thus
+
+\begin{equation}
+E = \frac{\sigma}{\epsilon_0}
+\end{equation}
+
+\subsubsection{Example: Parallel Plates}
+
+Now consider the electric field between two oppositely charged parallel plates.
+
+If the surface charge density is $\sigma = 6.81 * 10^{-7} \frac{C}{m^2}$ and the distance between the plates is $l = 6.50mm$, what is the electric field? 
 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.40]{fig/fig_06_41.jpg}
+\includegraphics[scale=0.30]{fig/fig_06_41.jpg}
 \caption{Between Conducting Plates}
 \label{fig:06_41}
 \end{center}
 \end{figure}
+
+\begin{equation}
+E = \frac{\sigma}{\epsilon_0} = \frac{\sigma = 6.81 * 10^{-7} \frac{C}{m^2}}{8.85 * 10^{-12}} \frac{C^2}{N \cdot m^2} = 7.69 * 10^{4} \frac{N}{C}
+\end{equation}
+
+\chapter{Module 3: Chapter 7 - Electric Potential}
+
+\section{Electric Potential Energy}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_07_02.jpg}
+\caption{Charge and Mass in Gravity analogy}
+\label{fig:07_02}
+\end{center}
+\end{figure}
+
+A charge accelerated by an electric field is analogous to a mass going down a hill. Thus, when a free charge is accelerated by an electric field it is also given kinetic energy. This kinetic energy exactly equals the decrease in potential energy
+
+The electrostatic (or Coulomb) force is conservative. This means the work done on charge q is independent of the path taken. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_07_03.jpg}
+\caption{Displacement of "test" charge Q}
+\label{fig:07_03}
+\end{center}
+\end{figure}
+
+Consider fixed charge $+q$ located at the origin. Push test charge $+Q$ towards $+q$ in such as way that the applied force $\vec{F}$ exactly balances out the electric force $\vec{F}_e$.
+
+In mechanics, $W = mass * displacement$; similarly, for the electric field, the work done moving charge $+Q$ from P1 to P2 is found by
+
+\begin{equation}
+W_{12} = \int_{P1}^{P2} \vec{F} \cdot d\vec{l}
+\end{equation}
+
+Because $\vec{F}$ balances out $\vec{F}_e$:
+
+\begin{equation}
+\vec{F} = -\vec{F}_e = -\frac{kqQ}{r^2}\hat{r} 
+\end{equation}
+
+Finally, let U denote Potential Energy in Joules ($J = N \cdot m$). Negative work mean gain in potential energy
+
+\begin{equation}
+\Delta U = - W
+\end{equation}
+
+Because the electrostatic force is conservative, the work $W$ is independent of the path taken. Consider
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_07_05.jpg}
+\caption{Work independent of path taken}
+\label{fig:07_05}
+\end{center}
+\end{figure}
+
+The work on path $P_1 P_2$ is equal to the work along path $P_1 P_3 P_4 P_2$. And, in fact, the work on paths $P_1 P_3$ and $P_4 P_2$ are both zero as the $d\vec{r}$ is perpendicular to the electric field along these segments.
+
+\subsubsection{Example}
+
+How much work is required to assemble this charge configuration:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_07_08.jpg}
+\caption{Work independent of path taken}
+\label{fig:07_08}
+\end{center}
+\end{figure}
+
+\begin{itemize}
+\item Lower left: first bring this $2 \mu C$ charge to the origin. This requires no work as there are no yet any other charges, and thus no electric field. 
+
+\item Lower right: bring $3 \mu C$ charge to x,y,z coordinates (1 cm, 0, 0)
+
+\begin{equation}
+W_2 = k \frac{q_1 q_2}{r_12} = (9.0 * 10^{9} \frac{N \cdot m^2}{C^2}) \frac{(2* 10^{-6} C) (3* 10^{-6} C) }{1.0 * 10^{2} m} = 5.4 J
+\end{equation}
+
+\item Upper right: $r_{23} = 1.0 cm$ and $r_{13} = \sqrt{2} cm$
+
+\begin{equation}
+W_3 = 15.9 J
+\end{equation}
+
+\item Upper left: Similarly, $r_{14} = 1.0 cm$, $r_{34} = 1.0 cm$ and $r_{23} = \sqrt{2} cm$
+
+\begin{equation}
+W_4 = 36.5 J
+\end{equation}
+\end{itemize}
+
+\begin{equation}
+W_{total} = W_1 + W_ + W_3 + W_4 = 0 + 5.4J + 15.9J + 36.5J = 57.8J
+\end{equation}
+
+In general
+
+\begin{equation}
+W_{123...N} = \frac{1}{2} k \sum_{i}^{N} \sum_{j}{N} \frac{q_i q_j}{r_{ij}} \text{ for } i \neq j
+\end{equation}
+
+The $\frac{1}{2}$ accounts for each pairing being counted twice. 
+
+
+
+\section{Electric Potential and Potential Difference}
 
 
 

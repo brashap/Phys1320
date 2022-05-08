@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.18)  5 MAY 2022 16:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.18)  7 MAY 2022 19:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -928,7 +928,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 Chapter 1.
-<fig/fig_05_05.jpg, id=147, 636.87938pt x 276.28218pt>
+<fig/fig_05_05.jpg, id=159, 636.87938pt x 276.28218pt>
 File: fig/fig_05_05.jpg Graphic file (type jpg)
 <use fig/fig_05_05.jpg>
 Package pdftex.def Info: fig/fig_05_05.jpg  used on input line 85.
@@ -936,29 +936,29 @@ Package pdftex.def Info: fig/fig_05_05.jpg  used on input line 85.
 [1
 
  <./fig/fig_05_05.jpg>]
-<fig/fig_05_06.jpg, id=158, 318.43968pt x 415.5525pt>
+<fig/fig_05_06.jpg, id=170, 318.43968pt x 415.5525pt>
 File: fig/fig_05_06.jpg Graphic file (type jpg)
 <use fig/fig_05_06.jpg>
 Package pdftex.def Info: fig/fig_05_06.jpg  used on input line 103.
 (pdftex.def)             Requested size: 127.37361pt x 166.21805pt.
  [2 <./fig/fig_05_06.jpg>]
-<fig/fig_05_07.jpg, id=171, 636.87938pt x 276.28218pt>
+<fig/fig_05_07.jpg, id=183, 636.87938pt x 276.28218pt>
 File: fig/fig_05_07.jpg Graphic file (type jpg)
 <use fig/fig_05_07.jpg>
 Package pdftex.def Info: fig/fig_05_07.jpg  used on input line 140.
 (pdftex.def)             Requested size: 254.74724pt x 110.51091pt.
-<fig/fig_05_08.jpg, id=172, 636.87938pt x 276.28218pt>
+<fig/fig_05_08.jpg, id=184, 636.87938pt x 276.28218pt>
 File: fig/fig_05_08.jpg Graphic file (type jpg)
 <use fig/fig_05_08.jpg>
 Package pdftex.def Info: fig/fig_05_08.jpg  used on input line 151.
 (pdftex.def)             Requested size: 254.74724pt x 110.51091pt.
  [3 <./fig/fig_05_07.jpg> <./fig/fig_05_08.jpg>]
-<fig/fig_05_10.jpg, id=179, 637.4214pt x 276.5532pt>
+<fig/fig_05_10.jpg, id=191, 637.4214pt x 276.5532pt>
 File: fig/fig_05_10.jpg Graphic file (type jpg)
 <use fig/fig_05_10.jpg>
 Package pdftex.def Info: fig/fig_05_10.jpg  used on input line 174.
 (pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
-<fig/fig_05_11.jpg, id=180, 636.87938pt x 276.28218pt>
+<fig/fig_05_11.jpg, id=192, 636.87938pt x 276.28218pt>
 File: fig/fig_05_11.jpg Graphic file (type jpg)
 <use fig/fig_05_11.jpg>
 Package pdftex.def Info: fig/fig_05_11.jpg  used on input line 189.
@@ -968,12 +968,12 @@ Package pdftex.def Info: fig/fig_05_11.jpg  used on input line 189.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4 <./fig/fig_05_10.jpg>]
-<fig/fig_05_12.jpg, id=186, 319.1925pt x 415.5525pt>
+<fig/fig_05_12.jpg, id=198, 319.1925pt x 415.5525pt>
 File: fig/fig_05_12.jpg Graphic file (type jpg)
 <use fig/fig_05_12.jpg>
 Package pdftex.def Info: fig/fig_05_12.jpg  used on input line 205.
 (pdftex.def)             Requested size: 191.51697pt x 249.33342pt.
-<fig/fig_05_13.jpg, id=187, 636.87938pt x 276.28218pt>
+<fig/fig_05_13.jpg, id=199, 636.87938pt x 276.28218pt>
 File: fig/fig_05_13.jpg Graphic file (type jpg)
 <use fig/fig_05_13.jpg>
 Package pdftex.def Info: fig/fig_05_13.jpg  used on input line 215.
@@ -982,13 +982,13 @@ Package pdftex.def Info: fig/fig_05_13.jpg  used on input line 215.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5 <./fig/fig_05_11.jpg> <./fig/fig_05_12.jpg>]
-<fig/NewtonsLawGravitation.png, id=195, 323.39525pt x 144.02007pt>
+<fig/NewtonsLawGravitation.png, id=208, 323.39525pt x 144.02007pt>
 File: fig/NewtonsLawGravitation.png Graphic file (type png)
 <use fig/NewtonsLawGravitation.png>
 Package pdftex.def Info: fig/NewtonsLawGravitation.png  used on input line 227.
 
 (pdftex.def)             Requested size: 194.03864pt x 86.4127pt.
-<fig/fig_05_14.jpg, id=197, 603.6954pt x 110.3322pt>
+<fig/fig_05_14.jpg, id=210, 603.6954pt x 110.3322pt>
 File: fig/fig_05_14.jpg Graphic file (type jpg)
 <use fig/fig_05_14.jpg>
 Package pdftex.def Info: fig/fig_05_14.jpg  used on input line 251.
@@ -999,12 +999,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [6 <./fig/fig_05_13.jpg> <./fig/NewtonsLawGravitation.png>] [7 <./fig/fig_05_14
 .jpg>]
-<fig/fig_05_15.jpg, id=224, 636.87938pt x 276.28218pt>
+<fig/fig_05_15.jpg, id=236, 636.87938pt x 276.28218pt>
 File: fig/fig_05_15.jpg Graphic file (type jpg)
 <use fig/fig_05_15.jpg>
 Package pdftex.def Info: fig/fig_05_15.jpg  used on input line 317.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
-<fig/fig_05_18.jpg, id=225, 324.46219pt x 274.02374pt>
+<fig/fig_05_18.jpg, id=237, 324.46219pt x 274.02374pt>
 File: fig/fig_05_18.jpg Graphic file (type jpg)
 <use fig/fig_05_18.jpg>
 Package pdftex.def Info: fig/fig_05_18.jpg  used on input line 344.
@@ -1013,31 +1013,31 @@ Package pdftex.def Info: fig/fig_05_18.jpg  used on input line 344.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/fig_05_22.jpg, id=226, 636.87938pt x 276.28218pt>
+<fig/fig_05_22.jpg, id=238, 636.87938pt x 276.28218pt>
 File: fig/fig_05_22.jpg Graphic file (type jpg)
 <use fig/fig_05_22.jpg>
 Package pdftex.def Info: fig/fig_05_22.jpg  used on input line 371.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
 [8 <./fig/fig_05_15.jpg>] [9 <./fig/fig_05_18.jpg> <./fig/fig_05_22.jpg>]
-<fig/fig_05_23.jpg, id=244, 637.4214pt x 276.5532pt>
+<fig/fig_05_23.jpg, id=256, 637.4214pt x 276.5532pt>
 File: fig/fig_05_23.jpg Graphic file (type jpg)
 <use fig/fig_05_23.jpg>
 Package pdftex.def Info: fig/fig_05_23.jpg  used on input line 420.
 (pdftex.def)             Requested size: 382.4558pt x 165.9332pt.
 
 [10 <./fig/fig_05_23.jpg>]
-<fig/fig_05_28.jpg, id=259, 319.1925pt x 415.5525pt>
+<fig/fig_05_28.jpg, id=271, 319.1925pt x 415.5525pt>
 File: fig/fig_05_28.jpg Graphic file (type jpg)
 <use fig/fig_05_28.jpg>
 Package pdftex.def Info: fig/fig_05_28.jpg  used on input line 510.
 (pdftex.def)             Requested size: 191.51697pt x 249.33342pt.
  [11]
-<fig/fig_05_29.jpg, id=273, 636.87938pt x 276.28218pt>
+<fig/fig_05_29.jpg, id=285, 636.87938pt x 276.28218pt>
 File: fig/fig_05_29.jpg Graphic file (type jpg)
 <use fig/fig_05_29.jpg>
 Package pdftex.def Info: fig/fig_05_29.jpg  used on input line 528.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
-<fig/fig_05_30.jpg, id=274, 636.87938pt x 276.28218pt>
+<fig/fig_05_30.jpg, id=286, 636.87938pt x 276.28218pt>
 File: fig/fig_05_30.jpg Graphic file (type jpg)
 <use fig/fig_05_30.jpg>
 Package pdftex.def Info: fig/fig_05_30.jpg  used on input line 536.
@@ -1046,7 +1046,7 @@ Package pdftex.def Info: fig/fig_05_30.jpg  used on input line 536.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/fig_05_31.jpg, id=275, 636.87938pt x 276.28218pt>
+<fig/fig_05_31.jpg, id=287, 636.87938pt x 276.28218pt>
 File: fig/fig_05_31.jpg Graphic file (type jpg)
 <use fig/fig_05_31.jpg>
 Package pdftex.def Info: fig/fig_05_31.jpg  used on input line 544.
@@ -1059,93 +1059,127 @@ ig/fig_05_31.jpg>] [14
 
 ]
 Chapter 2.
-<fig/fig_06_04.jpg, id=292, 636.87938pt x 276.28218pt>
+<fig/fig_06_04.jpg, id=304, 636.87938pt x 276.28218pt>
 File: fig/fig_06_04.jpg Graphic file (type jpg)
 <use fig/fig_06_04.jpg>
 Package pdftex.def Info: fig/fig_06_04.jpg  used on input line 568.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
-<fig/fig_06_07.jpg, id=293, 636.87938pt x 276.28218pt>
+<fig/fig_06_07.jpg, id=305, 636.87938pt x 276.28218pt>
 File: fig/fig_06_07.jpg Graphic file (type jpg)
 <use fig/fig_06_07.jpg>
 Package pdftex.def Info: fig/fig_06_07.jpg  used on input line 587.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
 [15 <./fig/fig_06_04.jpg>]
-<fig/fig_06_08.jpg, id=300, 636.87938pt x 276.28218pt>
+<fig/fig_06_08.jpg, id=312, 636.87938pt x 276.28218pt>
 File: fig/fig_06_08.jpg Graphic file (type jpg)
 <use fig/fig_06_08.jpg>
 Package pdftex.def Info: fig/fig_06_08.jpg  used on input line 605.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
  [16 <./fig/fig_06_07.jpg> <./fig/fig_06_08.jpg>]
-<fig/fig_06_13.jpg, id=309, 637.4214pt x 276.5532pt>
+<fig/fig_06_13.jpg, id=321, 637.4214pt x 276.5532pt>
 File: fig/fig_06_13.jpg Graphic file (type jpg)
 <use fig/fig_06_13.jpg>
 Package pdftex.def Info: fig/fig_06_13.jpg  used on input line 657.
 (pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
 
 [17 <./fig/fig_06_13.jpg>]
-<fig/fig_06_23.jpg, id=324, 636.87938pt x 276.28218pt>
+<fig/fig_06_23.jpg, id=336, 636.87938pt x 276.28218pt>
 File: fig/fig_06_23.jpg Graphic file (type jpg)
 <use fig/fig_06_23.jpg>
 Package pdftex.def Info: fig/fig_06_23.jpg  used on input line 730.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
  [18]
-<fig/fig_06_24.jpg, id=339, 636.87938pt x 276.28218pt>
+<fig/fig_06_24.jpg, id=351, 636.87938pt x 276.28218pt>
 File: fig/fig_06_24.jpg Graphic file (type jpg)
 <use fig/fig_06_24.jpg>
 Package pdftex.def Info: fig/fig_06_24.jpg  used on input line 762.
 (pdftex.def)             Requested size: 254.74724pt x 110.51091pt.
  [19 <./fig/fig_06_23.jpg> <./fig/fig_06_24.jpg>]
-<fig/fig_06_29.jpg, id=352, 318.9516pt x 415.3116pt>
+<fig/fig_06_29.jpg, id=364, 318.9516pt x 415.3116pt>
 File: fig/fig_06_29.jpg Graphic file (type jpg)
 <use fig/fig_06_29.jpg>
 Package pdftex.def Info: fig/fig_06_29.jpg  used on input line 785.
 (pdftex.def)             Requested size: 127.57837pt x 166.12169pt.
  [20 <./fig/fig_06_29.jpg>]
-<fig/fig_06_30.jpg, id=367, 318.4698pt x 415.3116pt>
+<fig/fig_06_30.jpg, id=379, 318.4698pt x 415.3116pt>
 File: fig/fig_06_30.jpg Graphic file (type jpg)
 <use fig/fig_06_30.jpg>
 Package pdftex.def Info: fig/fig_06_30.jpg  used on input line 839.
 (pdftex.def)             Requested size: 127.38565pt x 166.12169pt.
+<fig/fig_06_33.jpg, id=380, 637.4214pt x 276.5532pt>
+File: fig/fig_06_33.jpg Graphic file (type jpg)
+<use fig/fig_06_33.jpg>
+Package pdftex.def Info: fig/fig_06_33.jpg  used on input line 871.
+(pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
  [21 <./fig/fig_06_30.jpg>]
-<fig/fig_06_35.jpg, id=380, 637.4214pt x 276.5532pt>
+<fig/fig_06_35.jpg, id=393, 637.4214pt x 276.5532pt>
 File: fig/fig_06_35.jpg Graphic file (type jpg)
 <use fig/fig_06_35.jpg>
-Package pdftex.def Info: fig/fig_06_35.jpg  used on input line 874.
+Package pdftex.def Info: fig/fig_06_35.jpg  used on input line 912.
 (pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
-<fig/fig_06_37.jpg, id=381, 637.4214pt x 276.5532pt>
+ [22 <./fig/fig_06_33.jpg>]
+<fig/fig_06_37.jpg, id=404, 637.4214pt x 276.5532pt>
 File: fig/fig_06_37.jpg Graphic file (type jpg)
 <use fig/fig_06_37.jpg>
-Package pdftex.def Info: fig/fig_06_37.jpg  used on input line 901.
+Package pdftex.def Info: fig/fig_06_37.jpg  used on input line 939.
 (pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
- [22 <./fig/fig_06_35.jpg> <./fig/fig_06_37.jpg>]
-<fig/fig_06_39.jpg, id=390, 636.87938pt x 276.28218pt>
+ [23 <./fig/fig_06_35.jpg> <./fig/fig_06_37.jpg>]
+<fig/fig_06_39.jpg, id=415, 636.87938pt x 276.28218pt>
 File: fig/fig_06_39.jpg Graphic file (type jpg)
 <use fig/fig_06_39.jpg>
-Package pdftex.def Info: fig/fig_06_39.jpg  used on input line 930.
+Package pdftex.def Info: fig/fig_06_39.jpg  used on input line 968.
 (pdftex.def)             Requested size: 254.74724pt x 110.51091pt.
-<fig/fig_06_40.jpg, id=391, 319.1925pt x 415.5525pt>
+<fig/fig_06_40.jpg, id=416, 319.1925pt x 415.5525pt>
 File: fig/fig_06_40.jpg Graphic file (type jpg)
 <use fig/fig_06_40.jpg>
-Package pdftex.def Info: fig/fig_06_40.jpg  used on input line 955.
-(pdftex.def)             Requested size: 127.67473pt x 166.21805pt.
- [23 <./fig/fig_06_39.jpg>]
-<fig/fig_06_41.jpg, id=403, 318.43968pt x 415.5525pt>
+Package pdftex.def Info: fig/fig_06_40.jpg  used on input line 993.
+(pdftex.def)             Requested size: 95.75848pt x 124.6667pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24 <./fig/fig_06_39.jpg>]
+<fig/fig_06_41.jpg, id=426, 318.43968pt x 415.5525pt>
 File: fig/fig_06_41.jpg Graphic file (type jpg)
 <use fig/fig_06_41.jpg>
-Package pdftex.def Info: fig/fig_06_41.jpg  used on input line 966.
-(pdftex.def)             Requested size: 127.37361pt x 166.21805pt.
- [24 <./fig/fig_06_40.jpg> <./fig/fig_06_41.jpg>] (./phys1320.aux)
+Package pdftex.def Info: fig/fig_06_41.jpg  used on input line 1020.
+(pdftex.def)             Requested size: 95.53264pt x 124.6667pt.
+ [25 <./fig/fig_06_40.jpg> <./fig/fig_06_41.jpg>] [26
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+]
+Chapter 3.
+<fig/fig_07_02.jpg, id=442, 636.87938pt x 276.28218pt>
+File: fig/fig_07_02.jpg Graphic file (type jpg)
+<use fig/fig_07_02.jpg>
+Package pdftex.def Info: fig/fig_07_02.jpg  used on input line 1036.
+(pdftex.def)             Requested size: 318.4389pt x 138.14075pt.
+<fig/fig_07_03.jpg, id=443, 637.4214pt x 276.5532pt>
+File: fig/fig_07_03.jpg Graphic file (type jpg)
+<use fig/fig_07_03.jpg>
+Package pdftex.def Info: fig/fig_07_03.jpg  used on input line 1048.
+(pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
 
+Underfull \vbox (badness 1852) has occurred while \output is active []
+
+ [27 <./fig/fig_07_02.jpg> <./fig/fig_07_03.jpg>]
+<fig/fig_07_05.jpg, id=451, 637.4214pt x 276.5532pt>
+File: fig/fig_07_05.jpg Graphic file (type jpg)
+<use fig/fig_07_05.jpg>
+Package pdftex.def Info: fig/fig_07_05.jpg  used on input line 1078.
+(pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
+<fig/fig_07_08.jpg, id=452, 637.4214pt x 276.5532pt>
+File: fig/fig_07_08.jpg Graphic file (type jpg)
+<use fig/fig_07_08.jpg>
+Package pdftex.def Info: fig/fig_07_08.jpg  used on input line 1092.
+(pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
+ [28 <./fig/fig_07_05.jpg> <./fig/fig_07_08.jpg>] [29] (./phys1320.aux)
 Package rerunfilecheck Info: File `phys1320.out' has not changed.
-(rerunfilecheck)             Checksum: 5E5B07C74F8235669FC1504962D8B136;4798.
+(rerunfilecheck)             Checksum: 5E20F34F0D05A714079D5978013714C4;5528.
  ) 
 Here is how much of TeX's memory you used:
- 28937 strings out of 478542
- 563062 string characters out of 5854396
- 898544 words of memory out of 5000000
- 46210 multiletter control sequences out of 15000+600000
+ 29011 strings out of 478542
+ 564285 string characters out of 5854396
+ 898974 words of memory out of 5000000
+ 46248 multiletter control sequences out of 15000+600000
  412894 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,9n,102p,919b,404s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1166,10 +1200,10 @@ m/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pf
 b><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tex
 live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/
 texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on phys1320.pdf (26 pages, 1189346 bytes).
+Output written on phys1320.pdf (31 pages, 1375114 bytes).
 PDF statistics:
- 523 PDF objects out of 1000 (max. 8388607)
- 399 compressed objects within 4 object streams
- 160 named destinations out of 1000 (max. 500000)
- 496 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 591 PDF objects out of 1000 (max. 8388607)
+ 456 compressed objects within 5 object streams
+ 191 named destinations out of 1000 (max. 500000)
+ 545 words of extra memory for PDF output out of 10000 (max. 10000000)
 

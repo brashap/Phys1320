@@ -10,6 +10,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage[shortlabels]{enumitem}
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage[most]{tcolorbox}
@@ -1056,7 +1057,7 @@ Consider fixed charge $+q$ located at the origin. Push test charge $+Q$ towards 
 In mechanics, $W = mass * displacement$; similarly, for the electric field, the work done moving charge $+Q$ from P1 to P2 is found by
 
 \begin{equation}
-W_{12} = \int_{P1}^{P2} \vec{F} \cdot d\vec{l}
+W_{12} = \int_{P1}^{P2} \vec{F} \cdot d\vec{I}
 \end{equation}
 
 Because $\vec{F}$ balances out $\vec{F}_e$:
@@ -1133,6 +1134,575 @@ The $\frac{1}{2}$ accounts for each pairing being counted twice.
 
 \section{Electric Potential and Potential Difference}
 
+The electric field is independent of the test charge. Calculating $W$ directly can be difficult as direction and magnitude of $\vec{F}$ since $W= \vec{F} \cdot \vec{d}$ can be complex for multiple charges, odd shapes, and arbitrary paths. However, because we know $\vec{F} = q \vec{E}$ that the work and hence $\Delta U$ is proportional to the test charge $q$. 
 
+To have a physical quantity independent of the test charge, we define electric potential ($V$):
+
+\begin{equation}
+V = \frac{U}{q}
+\end{equation}
+
+Since $U \propto q$, then $V$ is independent of $q$. And, we have
+
+\begin{equation}
+\Delta V = V_A - V_B = \frac{\Delta U}{q}
+\end{equation}
+
+or 
+
+\begin{equation}
+\Delta U = q \Delta V
+\end{equation}
+
+The units for potential difference $\Delta V$ are Joules per Coulomb, which is referred to as a Volt\footnote{The volt was named after Alessandro Volta}. Whenever voltage is noted, it is understood to be the potential difference between two points. 
+
+Another fundamental constant is that over the electron volt (eV) which is the energy given to the fundamental charge accelerated through a potential difference of 1 volt.
+
+\begin{equation}
+1 eV = (1.60 * 10^{-19} C)(1V) = (1.60 * 10^{-19} C)(1 \frac{J}{C}) = 1.60 * 10^{-19} J
+\end{equation} 
+
+Due to conservation of energy
+
+\begin{equation}
+K + U = \text{constant}
+\end{equation}
+
+where $K$ is the Kinetic Energy and $U$ is the Potential Energy
+
+or
+
+\begin{equation}
+K_i + U_i = K_f + U_f
+\end{equation}
+
+\subsubsection{Example}
+Calculate the speed of an electron accelerated through 100V
+
+\begin{equation}
+K_i = 0, U_i = qV
+\end{equation}
+
+\begin{equation}
+K_f = \frac{1}{2}mv^2, U_f = 0
+\end{equation}
+
+Thus
+
+\begin{equation}
+qV = \frac{1}{2}mv^2
+\end{equation}
+
+\begin{equation}
+v = \sqrt{\frac{2qV}{m}}
+\end{equation}
+
+\begin{equation}
+v = \sqrt{\frac{2 (-1.6 * 10^{-19}C)(-100 \frac{J/C})}{9.11*10^{-31} kg}}
+\end{equation}
+
+\begin{equation}
+v = 5.93 * 10^6 \frac{m}{s}
+\end{equation}
+
+\subsection{Voltage and the Electric Field}
+
+Returning to the general formula for the potential energy of a point charge $q$ at Point P relative to a reference Point R.
+
+\begin{equation}
+U_P = - \int_{R}^{P} \vec{F} \cdot d\vec{I}
+\end{equation}
+
+given that $\vec{F} = q \vec{E}$:
+
+\begin{equation}
+U_P = -q \int_{R}^{P} \vec{E} \cdot d\vec{I}
+\end{equation}
+
+as we defined $V = \frac{U}{q}$:
+
+\begin{equation}
+V_P = - \int_{R}^{P} \vec{E} \cdot d\vec{I}
+\end{equation}
+
+From conservation of energy, the result is independent of the path chosen, so we can pick the path that is most convenient. 
+
+\subsubsection{Special Case}
+
+Consider the special case with a positive charge at the origin. To calculate the potential at a point r relative to a potential of 0 at infinity. Let $P = r$, $R = \infty$, $d\vec{I} = d\vec{r} = \hat{r}dr$.
+
+Using $\vec{E} = \frac{kq\hat{r}}{r^2}$:
+
+\begin{equation}
+V_r = -\int_{\infty}^r \frac{kq}{r^2} \hat{r} \cdot \hat{r} dr
+\end{equation}
+
+\begin{equation}
+V_r = -\int_{\infty}^r \frac{kq}{r^2} dr
+\end{equation}  
+
+\begin{equation}
+V_r = \frac{kq}{r} \bigg\rvert_{\infty}^{r} = \frac{kq}{r} - \frac{kq}{\infty}
+\end{equation} 
+
+\begin{equation}
+V_r = \frac{kq}{r}
+\end{equation} 
+
+Let's calculate the potential difference between two points equidistant for the reference point. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_07_15.jpg}
+\caption{Potential difference between two equidistant points}
+\label{fig:07_15}
+\end{center}
+\end{figure}
+
+\begin{equation}
+\Delta V_{AB} = V_B - V_A = -\int_A^B \vec{E} \cdot d\vec{I}
+\end{equation}
+
+\begin{equation}
+\Delta V_{AB} =  -\int_A^B \frac{kq}{r^2} \hat{r} \cdot r \hat{\phi} d\phi
+\end{equation}
+
+as $\hat{r} \cdot \hat{\phi} = 0$:
+
+\begin{equation}
+\Delta V_{AB} =  0
+\end{equation}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_07_17.jpg}
+\caption{Potential difference between two points}
+\label{fig:07_17}
+\end{center}
+\end{figure}
+
+
+\section{Calculations of Electric Potential}
+
+\begin{itemize}
+\item From a Point Charge
+
+\begin{equation}
+V = \frac{kq}{r}
+\end{equation}
+
+\item From multiple Point Charges
+
+\begin{equation}
+V = k \sum_{i=1}^{N}\frac{q_i}{i}
+\end{equation}
+
+\item From a continuous charge
+
+\begin{equation}
+V = k \int \frac{dq}{r}
+\end{equation}
+
+\end{itemize}
+
+where
+
+\begin{equation}
+  dq = \begin{cases}
+    \lambda dl \text{(in one dimension)} \\
+    \sigma dA \text{(in two dimensions)} \\
+    \rho dV \text{(in three dimensions)} 
+  \end{cases}
+\end{equation}
+
+\subsubsection{Potential due to a ring}
+
+\section{Determining Field From Potential}
+
+Recall that
+
+\begin{equation}
+U = V_B - V_A = \int_A^B \vec{E} \cdot ds
+\end{equation}
+
+The electric field can be calculated by taking the derivative of U
+
+For a uniform electric field
+
+\begin{equation}
+E = -\frac{\Delta V}{\Delta s}
+\end{equation}
+
+where $\Delta s$ is the distance over which the change in potential $\Delta V$ takes place.
+
+For a continuously changing field, $\Delta V$ and $\Delta s$ become infinitesimally small giving 
+
+\begin{equation}
+E_s = -\frac{dV}{ds}
+\end{equation}
+
+Using Partial Derivatives, the electric field components in the Cartesian directions are given by
+
+\begin{equation}
+E_x = -\frac{\delta V}{\delta x}, E_y = -\frac{\delta V}{\delta y}, E_z = -\frac{\delta V}{\delta z}
+\end{equation}
+
+Introducing the Gradient (grad) or Delta (del) vector operator:
+
+\begin{equation}
+\vec{\nabla} = \hat{i} \frac{\delta}{\delta x} + \hat{j} \frac{\delta}{\delta y} + \hat{k} \frac{\delta}{\delta k}
+\end{equation}
+
+and thus
+
+\begin{equation}
+\vec{E} = -\vec{\nabla}V
+\end{equation}
+
+For symmetric systems
+\begin{itemize}
+\item Cylindrical:
+\begin{equation}
+\vec{\nabla} = \hat{r} \frac{\delta}{\delta r} + \hat{\phi} \frac{1}{r}\frac{\delta}{\delta \phi} + \hat{z} \frac{\delta}{\delta z}
+\end{equation}
+\item Spherical:
+\begin{equation}
+\vec{\nabla} = \hat{r} \frac{\delta}{\delta r} + \hat{\theta} \frac{1}{r}\frac{\delta}{\delta \theta} + \hat{\phi} \frac{1}{r\sin{\theta}}\frac{\delta}{\delta \phi}
+\end{equation}
+\end{itemize}
+
+\subsubsection{Example}
+
+Electric Field of a point charge
+
+\begin{equation}
+V = k\frac{q}{r} \text{(spherically symetric)}
+\end{equation}
+
+\begin{equation}
+\vec{E} = -\vec{\nabla}V
+\end{equation}
+
+\begin{equation}
+\vec{E} = - (\hat{r} \frac{\delta}{\delta r} + \hat{\theta} \frac{1}{r}\frac{\delta}{\delta \theta} + \hat{\phi} \frac{1}{r\sin{\theta}}\frac{\delta}{\delta \phi}) k\frac{q}{r}
+\end{equation}
+
+\begin{equation}
+\vec{E} = - kq (\hat{r} \frac{\delta}{\delta r} (\frac{1}{r}) + \hat{\theta} \frac{1}{r}\frac{\delta}{\delta \theta} (\frac{1}{r}) + \hat{\phi} \frac{1}{r\sin{\theta}}\frac{\delta}{\delta \phi}(\frac{1}{r}))
+\end{equation}
+
+\begin{equation}
+\vec{E} = - kq (\hat{r}  (\frac{-1}{r^2}) + \hat{\theta} (0) + \hat{\phi} (0))
+\end{equation}
+
+\begin{equation}
+\vec{E} = + \frac{kq}{r^2} \hat{r}  
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_07_28.jpg}
+\caption{Electric Field from Point Charge}
+\label{fig:07_28}
+\end{center}
+\end{figure}
+
+\subsubsection{Electric Field from Ring of Charge}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_07_29.jpg}
+\caption{Electric Field from Ring Of Charge}
+\label{fig:07_29}
+\end{center}
+\end{figure}
+
+\begin{equation}
+E_z = -\frac{\delta V}{\delta z} \text{ with } V = k\frac{k q_{tot}}{\sqrt{z^2+R^2}}
+\end{equation}
+
+\begin{equation}
+E_z = -\frac{\delta}{\delta z} (k\frac{k q_{tot}}{\sqrt{z^2+R^2}})
+\end{equation}
+
+Given that
+\begin{equation}
+\frac{\delta}{\delta z} (\frac{1}{\sqrt{z^2+R^2}}) = \frac{\delta}{\delta z} (z^2+R^2)^{-\frac{1}{2}} = -\frac{1}{2} (z^2+R^2)^{-\frac{3}{2}} (2z)
+\end{equation}
+
+We get
+\begin{equation}
+E_z = +k \frac{k q_{tot} z}{(z^2+R^2)^{\frac{3}{2}}}
+\end{equation}
+
+\section{Electropotential Surfaces and Conductors}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_07_30.jpg}
+\caption{Red: Field Lines, Blue: Equipotential Lines}
+\label{fig:07_30}
+\end{center}
+\end{figure}
+
+Equipotential Lines are always perpendicular to the electric field lines since along them $\Delta V = 0$.
+
+\begin{equation}
+W = -\Delta U = -q \Delta V = 0
+\end{equation}
+
+Work is zero when the direction of the force is perpendicular to displacement.
+
+\begin{equation}
+W = \vec{F} \cdot \vec{d} = q\vec{E} \cdot \vec{d} = qEd\cos{\theta} \text{ for } \theta = 90^{\circ} \text{ or } 270^{\circ}
+\end{equation}
+
+
+\subsection{Conductors}
+
+\begin{itemize}
+\item One of the rules for static electric fields and conductors is that the $\vec{E}$ is perpendicular ($\bot$) to the surface.
+\item This implies that a conductor is an equipotential surface in static situations. There
+can be no voltage difference across the surface of a conductor, or charges will flow. 
+\item One of the uses of this fact is that a conductor can be fixed at what we consider zero volts by connecting it to the earth with a good conductor — a process called grounding.
+\end{itemize}
+
+Because a conductor is an equipotential, it can replace any equipotential surface. For example, a charged spherical conductor can replace the point charge, and the electric field and potential surfaces outside of it will be unchanged, confirming the contention that a spherical charge distribution is equivalent to a point charge at its center.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_07_31.jpg}
+\caption{Potential lines, two opposite charges}
+\label{fig:07_31}
+\end{center}
+\end{figure}
+
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_07_32.jpg}
+\caption{Equipotential lines (as might be measured by a voltmeter) and corresponding electric field}
+\label{fig:07_32}
+\end{center}
+\end{figure}
+
+One of the most important cases is that of the familiar parallel conducting plates. Between the plates, the equipotentials are evenly spaced and parallel. The same field could be maintained by
+placing conducting plates at the equipotential lines at the potentials shown.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_07_35.jpg}
+\caption{Two parallel plates - $\vec{E}$ and equipotential lines}
+\label{fig:07_35}
+\end{center}
+\end{figure}
+
+\subsubsection{Examples}
+
+Consider Figure \ref{fig:07_30} with $Q = +10nC$ at the Origin. What are the equipotential surfaces at which the potential is:
+
+\begin{enumerate}[(a)]
+\item 100V
+\item 50V
+\item 20V
+\item 10V
+\end{enumerate}
+
+For $V = k\frac{q}{r}$, V is a constant. Thus, $r = k\frac{q}{V}$.
+
+\begin{enumerate}[(a)]
+\item 100V: $r = k\frac{q}{V} = (8.99 * 10^9 \frac{Nm^2}{C^2}) \frac{10 * 10^{-9} C}{100V} = 0.90m$
+\item 50V $r = 1.8m$
+\item 20V $r = 4.5m$
+\item 10V $r = 9.0m$
+\end{enumerate}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_07_37.jpg}
+\caption{Oppositely charged parallel plates}
+\label{fig:07_37}
+\end{center}
+\end{figure}
+
+Two large conducting plates carry equal and opposite charges, with a surface charge density $\sigma = 6.81 * 10^{-7} \frac{C}{m^2}$ of magnitude as shown in Figure \ref{fig:07_37}. The separation between the plates is $l = 6.5mm$ 
+\begin{enumerate}[(a)]
+\item What is the electric field between the plates? 
+\item What is the potential difference between the plates? 
+\item What is the distance between equipotential planes which differ by 100 V?
+\end{enumerate}
+
+Assume the size of the plates ($L$) is much larger than the distance $l$.
+
+\begin{equation}
+\Delta V_{AB} = - \int_A^B \vec{E} \cdot d\vec{I}
+\end{equation}
+
+\begin{enumerate}[(a)]
+\item Electric Field is directed from +plate to the -plate with magnitude
+	\begin{equation}
+	E = \frac{\sigma}{\epsilon_0} = \frac{6.81 * 10^{-7} \frac{C}{m^2}}{8.85 * 10^{-12} \frac{C^2}		{N m^2}} = 7.69 * 10^{4} \frac{V}{m}
+	\end{equation}
+\item The path from -plate to +plate is directed against $\vec{E}$
+	\begin{equation}
+	\vec{E} = d\vec{I} = -E \cdot dl
+	\end{equation}
+	
+	\begin{equation}
+	\Delta V = \int E \cdot dl = E \int dl = El = (7.69 * 10^{4} \frac{V}{m})(6.5 * 10^{-3}m) = 		500V
+	\end{equation}
+	
+\item Uniform electric field 
+	\begin{equation}
+	\frac{500V}{6.5 * 10^{-3}m} = \frac{100V}{x}
+	\end{equation}
+	
+	\begin{equation}
+	x = 1.3 * 10^{-3}m
+	\end{equation}
+\end{enumerate}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_07_38.jpg}
+\caption{An isolated conducting sphere}
+\label{fig:07_38}
+\end{center}
+\end{figure}
+
+\begin{equation}
+\vec{E} = E(r) \hat{r} 
+\end{equation}
+
+Applying Gauss's Law over a closed surface s of radius r. As $r$ = a constant, $\hat{r} = \hat{n}$ on the surface of the sphere. 
+
+\begin{equation}
+\oint_s \vec{E} \cdot \hat{n} = E(r) \oint_s da = E(r) 4 \pi r^2
+\end{equation} 
+
+For $r < R$: s in inside the conductor.
+
+Magnitude
+\begin{equation}
+E(r) = \frac{1}{4 \pi \epsilon_0} \frac{q_{enc}}{r^2}
+\end{equation}
+
+\begin{equation}
+q_{enc} = 0 \Rightarrow E(r) = 0
+\end{equation}
+
+For $r \geq R$: s encloses the conductor so $q_{enc} = q$
+
+\begin{equation}
+E(r) = \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2}
+\end{equation}
+
+Electric Field
+\begin{equation}
+  \vec{E} =\begin{cases}
+    0 & (r < R)\\
+    \frac{1}{4 \pi \epsilon_0} \frac{q}{r^2} \hat{r} & (r \geq R)
+  \end{cases}
+\end{equation}
+
+Potential 
+\begin{itemize}
+\item For $r < R$ , $E = 0 \Rightarrow V(r)$ is constant, since $V(R) = \frac{1}{4 \pi \epsilon_0} \frac{q}{R}$
+
+
+\item For $r \geq R$, potential is the same as a point charge: $V(R) = \frac{1}{4 \pi \epsilon_0} \frac{q}{r}$
+\end{itemize}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_07_39.jpg}
+\caption{Two different radii}
+\label{fig:07_39}
+\end{center}
+\end{figure}
+
+Now consider two conducting spheres of radii $R_1$ and $R_2$ connected by a thin conducting wire as shown in Figure \ref{fig:07_39}
+
+\begin{equation}
+V = \frac{1}{4 \pi \epsilon_0} \frac{q}{R}
+\end{equation}
+
+Given that because of the conducting wire $V_1 = V_2$
+
+\begin{equation}
+\frac{1}{4 \pi \epsilon_0} \frac{q_1}{R_1} = \frac{1}{4 \pi \epsilon_0} \frac{q_2}{R_2}
+\end{equation}
+
+\begin{equation}
+\frac{q_1}{R_1} = \frac{q_2}{R_2}
+\end{equation}
+
+Charge surface density $\sigma$: 
+\begin{equation}
+q = \sigma(4 \pi R^2)
+\end{equation}
+
+Substituting in for $q_1$ and $q_2$ and simplifying
+
+\begin{equation}
+\sigma_1 R_1 = \sigma_2 R_2
+\end{equation}
+
+\subsubsection{Different Radii of Curvature on the same object}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_07_40.jpg}
+\caption{Radius of Curvature}
+\label{fig:07_40}
+\end{center}
+\end{figure}
+
+Different Radii of Curvature on the same object
+\begin{itemize}
+\item Large Radius of Curvature $\Rightarrow \sigma \text{ and } E$ are small
+\item Point $\Rightarrow \sigma \text{ and } E$ are extremely large
+\end{itemize}
+
+\subsubsection{Lightning Rod}
+
+On a very sharply curved surface, such as shown in \ref{fig:07_4x}, the charges are so concentrated at the point that the resulting electric field can be great enough to remove them from the surface. This can be useful.
+
+Lightning rods work best when they are most pointed. The large charges created in storm clouds induce an opposite charge on a building that can result in a lightning bolt hitting the building. The induced charge is bled away continually by a lightning rod, preventing the more dramatic lightning strike.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_07_4x.jpg}
+\caption{Lightning Rod}
+\label{fig:07_4x}
+\end{center}
+\end{figure}
+
+\chapter{Module 4 - Chapter 8 Capacitance}
+
+\section{Capacitors and Capacitance}
+
+A capacitor is a device used to store electrical charge and electrical energy. Capacitors are generally with two electrical conductors separated by a distance. The space is usually
+filled with an insulating material known as a dielectric. The amount of storage in a capacitor is referred to as its capacitance. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_08_03.jpg}
+\caption{Parallel Plate Capacitor}
+\label{fig:08_03}
+\end{center}
+\end{figure}
+
+
+
+\begin{equation}
+C = \frac{Q}{V}
+\end{equation}
+
+Capacitance is measured in the Farad\footnote{Named after Michael Farday} (F). One farad is one coulomb per volt: $F = \frac{C}{V}$. 
 
 \end{document}

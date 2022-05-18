@@ -1705,4 +1705,111 @@ C = \frac{Q}{V}
 
 Capacitance is measured in the Farad\footnote{Named after Michael Farday} (F). One farad is one coulomb per volt: $F = \frac{C}{V}$. 
 
+\appendix
+
+\chapter{Integration by Trig Substitution}
+
+Find the integral of 
+
+\begin{equation}
+\int \frac{1}{(a^2 + x^2)^{\frac{3}{2}}}
+\end{equation}
+
+Integrate by trig substitution by setting $x = a\tan{u}$ which leads to 
+
+\begin{equation}
+\frac{dx}{du} = \frac{a \tan{u}}{du} = \frac{a}{\cos^2{u}}
+\end{equation}
+
+Which leads to 
+\begin{equation}
+dx = ( \frac{a}{\cos^2{u}}) du 
+\end{equation}
+
+Thus
+
+\begin{equation}
+\int \frac{1}{(a^2 + x^2)^{\frac{3}{2}}} =  \int \frac{1}{(a^2 + (a\tan^2{u}))^{\frac{3}{2}}} ( \frac{a}{\cos^2{u}}) du
+\end{equation}
+
+\begin{equation}
+=  \int \frac{1}{(a^2)^{\frac{3}{2}} (1 + \tan^2{u})^{\frac{3}{2}}} ( \frac{a}{\cos^2{u}}) du
+\end{equation}
+
+\begin{equation}
+=  \int \frac{1}{(a^3)(\frac{1}{\cos^2(u)})^{\frac{3}{2}}} ( \frac{a}{\cos^2{u}}) du
+\end{equation}
+
+\begin{equation}
+=  \frac{1}{a^2} \int \frac{1}{(\frac{1}{\cos^2(u)})^{\frac{3}{2}}} ( \frac{1}{\cos^2{u}}) du
+\end{equation}
+
+\begin{equation}
+=  \frac{1}{a^2} \int \frac{1}{(\frac{1}{\cos^3(u)})} ( \frac{1}{\cos^2{u}}) du
+\end{equation}
+
+\begin{equation}
+=  \frac{1}{a^2} \int \cos{(u)} du
+\end{equation}
+
+\begin{equation}
+=  \frac{1}{a^2} \sin{(u)} + C
+\end{equation}
+
+
+From the above $\arctan{(\frac{x}{a})} = u$ so
+
+\begin{equation}
+=  \frac{1}{a^2} \sin{(\arctan{(\frac{x}{a})})} + C
+\end{equation}
+
+\begin{equation}
+=  \frac{1}{a^2} [\frac{\frac{x}{a}}{\sqrt{1+(\frac{x}{a})^2}}] + C
+\end{equation}
+
+\begin{equation}
+=  \frac{x}{a^3} [\frac{1}{\frac{1}{a} \sqrt{a^2+x^2}}] + C
+\end{equation}
+
+Which finally leads to
+
+\begin{equation}
+\int \frac{1}{(a^2 + x^2)^{\frac{3}{2}}} =  \frac{x}{a^2} [\frac{1}{\sqrt{a^2+x^2}}] + C
+\end{equation}
+
+\chapter{Chain Rule}
+
+\begin{equation}
+\frac{d}{dx} (\frac{1}{\sqrt{x^2+R^2}}) = \frac{d}{dx} (x^2+R^2)^{-\frac{1}{2}} 
+\end{equation}
+
+The chain rule $ f(g(x))' = f'(g(x) \cdot g'(x)$. In this case $g(x) = x^2 + R^2$. From this
+
+\begin{equation}
+f(g(x)) = g(x)^{-\frac{1}{2}} 
+\end{equation}
+
+thus  
+
+\begin{equation}
+f'(g(x)) = -\frac{1}{2} g(x)^{-\frac{3}{2}} 
+\end{equation}
+
+and
+
+\begin{equation}
+g'(x) = 2x
+\end{equation}
+
+Thus
+
+\begin{equation}
+f(g(x))' =  -\frac{1}{2} g(x)^{-\frac{3}{2}}  \cdot 2x
+\end{equation}
+
+\begin{equation}
+\frac{d}{dx} (\frac{1}{\sqrt{x^2+R^2}}) = \frac{-x}{(x^2 + R^2)^\frac{3}{2}}
+\end{equation}
+
+
 \end{document}

@@ -396,16 +396,16 @@ For these distributions, the summation becomes an integral
 	\end{equation}
 \item Surface Charge
 	\begin{equation}
-	\vec{E}(P) = \frac{1}{4 \pi \epsilon_0} \int_{line}(\frac{\sigma dA}{r^2})\hat{r}
+	\vec{E}(P) = \frac{1}{4 \pi \epsilon_0} \int_{surface}(\frac{\sigma dA}{r^2})\hat{r}
 	\end{equation}
-\item Surface Charge
+\item Volume Charge
 	\begin{equation}
-	\vec{E}(P) = \frac{1}{4 \pi \epsilon_0} \int_{line}(\frac{\rho dV}{r^2})\hat{r}
+	\vec{E}(P) = \frac{1}{4 \pi \epsilon_0} \int_{volume}(\frac{\rho dV}{r^2})\hat{r}
 	\end{equation}
 	
 \end{itemize}
 
-As $P = P(x,y,z)$:
+As $P = P(x,y,z)$, the integral is shorthand for three integrals (one in each direction)
 
 \begin{equation}
 \vec{E}_x(P) = \frac{1}{4 \pi \epsilon_0} \int_{line}(\frac{\lambda dl}{r^2})_x,
@@ -436,7 +436,7 @@ Start with
 The symmetry of the arrangement implies the horizontal components cancel.
 
 \begin{equation}
-\vec{E}(P) = \vec{E^1} + \vec{E^2} = E_{1,x} \hat{i} + E_{1,z} \hat{k} + E_{2,x} (-\hat{i}) + E_{2,z} \hat{k}
+\vec{E}(P) = \vec{E_1} + \vec{E_2} = E_{1,x} \hat{i} + E_{1,z} \hat{k} + E_{2,x} (-\hat{i}) + E_{2,z} \hat{k}
 \end{equation}
 
 Due to symmetry, $E_{1,x} = E_{2,x}$, and as their directions are opposite, they cancel. So,
@@ -463,7 +463,7 @@ and
 \cos{\theta} = \frac{z}{r} = \frac{z}{\sqrt{(x^2 + z ^2)}} =  \frac{z}{(x^2 + z ^2)^{\frac{1}{2}}}
 \end{equation}
 
-Substituting
+Substituting for $\cos{\theta}$:
 
 \begin{equation}
 \vec{E}(P) = \frac{1}{4 \pi \epsilon_0} \int_{0}^{\frac{L}{2}}(\frac{2 \lambda dx}{(x^2 + z ^2)} \frac{z}{(x^2 + z ^2)^{\frac{1}{2}}})\hat{k}
@@ -473,7 +473,7 @@ Substituting
 \vec{E}(P) = \frac{1}{4 \pi \epsilon_0} \int_{0}^{\frac{L}{2}}(\frac{2 \lambda z}{(x^2 + z ^2)^{\frac{3}{2}}}) dx \hat{k}
 \end{equation}
 
-Integrating
+Integrating utilizing Trig Substitution (See Appendix \ref{sec:trigsub}):
 \begin{equation}
 \vec{E}(P) = \frac{2 \lambda z}{4 \pi \epsilon_0} [\frac{x}{z^2 \sqrt{(x^2 + z ^2)}}]\bigg\rvert_{0}^{\frac{L}{2}} \hat{k}
 \end{equation}
@@ -609,7 +609,7 @@ For a non-flat surface, we can take small patches that approximate a flat surfac
 \end{center}
 \end{figure}
 
-Consider $\vec{E}_i$ to be the electric field over the $i^{th}$ patch ($\delta A_i$, then
+Consider $\vec{E}_i$ to be the electric field over the $i^{th}$ patch ($\delta A_i$), then
 
 \begin{equation}
 \Phi_i = \vec{E}_i \cdot \delta \vec{A}_i
@@ -742,7 +742,7 @@ E_{out} = \frac{1}{4 \pi \epsilon_0}\frac{q_{tot}}{r^2}
 E_{in} = \frac{1}{4 \pi \epsilon_0}\frac{q_{(r<R)}}{r^2}
 \end{equation}
 
-So, what is $q_{enc}$ inside the sphere
+So, what is $q_{enc}$ inside the sphere. Let's assume uniform distribution of charge $\rho_o$
 
 \begin{equation}
 q_{enc} = \int \rho_0 dV = \int_{0}^{r} \rho_0 4 \pi r^{\prime} dr^{\prime} = \rho_0 (\frac{4}{3} \pi r^3)
@@ -751,11 +751,11 @@ q_{enc} = \int \rho_0 dV = \int_{0}^{r} \rho_0 4 \pi r^{\prime} dr^{\prime} = \r
 Therefore
 
 \begin{equation}
-E_{out} = \frac{1}{4 \pi \epsilon_0}\frac{q_{tot}}{r^2}, \text{with} q_{tot} = \frac{4}{3} \pi R^3 \rho_0
+E_{out} = \frac{1}{4 \pi \epsilon_0}\frac{q_{tot}}{r^2}, \text{ with: } q_{tot} = \frac{4}{3} \pi R^3 \rho_0
 \end{equation}
 
 \begin{equation}
-E_{in} = \frac{1}{4 \pi \epsilon_0}\frac{q_{(r<R)}}{r^2} = \frac{\rho_0 r}{3 \epsilon_0} \text{  since  } q_{(r<R)} = \frac{4}{3} \pi r^3 \rho_0
+E_{in} = \frac{1}{4 \pi \epsilon_0}\frac{q_{(r<R)}}{r^2} = \frac{\rho_0 r}{3 \epsilon_0}, \text{  since: } q_{(r<R)} = \frac{4}{3} \pi r^3 \rho_0
 \end{equation}
 
 \begin{figure}[H]
@@ -1701,13 +1701,221 @@ filled with an insulating material known as a dielectric. The amount of storage 
 
 \begin{equation}
 C = \frac{Q}{V}
+\label{eq:cap}
 \end{equation}
 
-Capacitance is measured in the Farad\footnote{Named after Michael Farday} (F). One farad is one coulomb per volt: $F = \frac{C}{V}$. 
+Capacitance is measured in the Farad\footnote{Named after Michael Farday} (F). One farad is one coulomb per volt: $1 F = \frac{1 C}{1 V}$. 
+
+\subsection{Calculation of Capacitance}
+\begin{enumerate}
+\item Assume that the capacitor has charge Q
+\item Determine the electric field $\vec{E}$
+\item Find the potential between the conductors from
+	\begin{equation}
+	V_B - V_A = - \int_A^B \vec{E} \cdot d\vec{I}
+	\label{eq:potcon}
+	\end{equation}
+	which leads to magnitude of the potential difference being $V = \left| V_B - V_A \right|$.
+\item Find $C$ from Equation \ref{eq:cap}
+\end{enumerate}
+
+\subsection{Parallel Plate Capacitor}
+Consider a parallel plate capacitor with each plate of area $A$ separated by distance $d$. Assume when voltage $V$ is applied, it stores charge $Q$. 
+
+Define the surface charge density $\sigma$ as
+\begin{equation}
+\sigma = \frac{Q}{A}
+\end{equation}
+
+When $d$ is small compared to the size of the plates, the electric field between the plates is fairly uniform, with a magnitude give by:
+\begin{equation}
+E = \frac{\sigma}{\epsilon_0}
+\end{equation}
+
+Since the electric field $\vec{E}$ between the plates is uniform
+\begin{equation}
+V = Ed = \frac{\sigma d}{\epsilon_0} = \frac{Q d}{\epsilon_0 A}
+\end{equation}
+
+From Equation \ref{eq:cap}:
+\begin{equation}
+C = \frac{Q}{V} = \frac{Q}{\frac{Q d}{\epsilon_0 A}} = \epsilon_0 \frac{A}{d}
+\label{eq:qv}
+\end{equation}
+
+\subsection{Cylindrical Capacitor}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_08_07.jpg}
+\caption{Cylindrical Capacitor}
+\label{fig:08_07}
+\end{center}
+\end{figure}
+
+Consider the cylindrical capacitor with the inner cylinder (either solid or shell) of outer radius $r_1$ and out cylinder of inner radius $r_2$. Assume the length is $l$ and the excess charges $+Q$ and $-Q$ are on the inner and outer cylinders, respectively.
+
+Ignoring the edge effect, the electric field $\vec{E}$ radiates out radially from the common axis of the two cylinders. Using the Gaussian Surface shown in Figure \ref{fig:08_07}, yields
+\begin{equation}
+\oint_S \vec{E} \cdot \vec{n} dA = E(2 \pi r l) = \frac{Q}{\epsilon_0}
+\end{equation} 
+
+Therefore, the field between the two cylinders is
+\begin{equation}
+\vec{E} = \frac{1}{2 \pi \epsilon_0} \frac{Q}{r l} \hat{r}
+\end{equation}
+
+Substituting into Equation \ref{eq:potcon}:
+\begin{equation}
+V = \int_{R_1}^{R_2} \vec{E} \cdot d\vec{I} = \frac{Q}{2 \pi \epsilon_0 l} \int_{R_1}^{R_2} \frac{1}{r} \hat{r} \cdot (\hat{r} dr) = \frac{Q}{2 \pi \epsilon_0 l} \int_{R_1}^{R_2} \frac{dr}{r} = \frac{Q}{2 \pi \epsilon_0 l} \ln{(r)}\bigg\rvert_{R_1}^{R_2} =  \frac{Q}{2 \pi \epsilon_0 l}  \ln{(\frac{R_2}{R_1})}
+\end{equation}
+
+Thus
+\begin{equation}
+C = \frac{Q}{V} = \frac{2 \pi \epsilon_0 l}{\ln{(\frac{R_2}{R_1})}}
+\end{equation}
+
+This is sometimes expressed at capacitance per unit length 
+\begin{equation}
+\frac{C}{l} = \frac{2 \pi \epsilon_0 }{\ln{(\frac{R_2}{R_1})}}
+\end{equation}
+
+\section{Capacitors in Series and Parallel}  
+
+\subsection{Capacitors in Series}
+
+When a series of capacitors are hooked up to a direct current voltage source (e.g., a battery) each acquires an identical charge $Q$. 
+
+\begin{itemize}
+\item The plate connected to the positive terminal acquires a charge $Q$. And, the plate connected to the negative terminal acquires a charge $-Q$. 
+\item A charge is then induced on each of the other plates so that the sum of the charge on all plates or on any pair of plates is zero.
+\item However, the potential drop on one pair of plates ($V_1=\frac{Q}{C_1}$) may be different from a the drop across another pair of plates ($V_2=\frac{Q}{C_2}$)
+\end{itemize}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.45]{fig/fig_08_11.jpg}
+\caption{Capacitors in Series}
+\label{fig:08_11}
+\end{center}
+\end{figure}
+
+The potentials must sum to the potential of the battery:
+\begin{equation}
+V = V_1 + V_2 + V_3
+\end{equation}
+
+The potential $V$ is measured across a equivalent capacity holding charge $Q$, which is said to have an equivalent capacitance $C_{EQ}$. Leading to:
+\begin{equation}
+\frac{Q}{C_{EQ}} = \frac{Q}{C_{1}} + \frac{Q}{C_{2}} + \frac{Q}{C_{3}}
+\end{equation}
+
+Thus:
+\begin{equation}
+\frac{1}{C_{EQ}} = \frac{1}{C_{1}} + \frac{1}{C_{2}} + \frac{1}{C_{3}}
+\end{equation}
+
+
+
+\subsection{Capacitors in Parallel}
+
+If, instead, the three capacitors are connected in parallel, they will have the same voltage across each pair of plates
+\begin{equation}
+V = V_1 + V_2 + V_3
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.60]{fig/fig_08_12.jpg}
+\caption{Capacitors in Parallel}
+\label{fig:08_12}
+\end{center}
+\end{figure}
+
+The total charge stored across the plates $Q$ is the equivalent of the sum of the charges on each plate
+\begin{equation}
+Q = Q_1 + Q_2 + Q_3
+\end{equation}
+
+Given that $Q = C * V$:
+\begin{equation}
+C_{EQ}V = C_{1}V + C_{2}V + C_{3}V
+\end{equation}
+
+And, thus:
+\begin{equation}
+C_{EQ} = C_{1} + C_{2} + C_{3}
+\end{equation}
+
+
+\subsection{Capacitors in Series and Parallel}
+
+Consider the below with $C_1 = 1.0 pF$, $C_2 = 2.0 pF$, $C_3 = 4.0 pF$, and $C_4 = 5.0 pF$. Assume the voltage potential across each circuit is $12.0V$:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_08_15.jpg}
+\caption{Capacitors in Series and Parallel}
+\label{fig:08_15}
+\end{center}
+\end{figure}
+
+\subsection{Energy Stored in a Capacitor}
+
+The energy $U_{C}$ stored in a capacitor is electrostatic potential energy and is therefore related to the charge $Q$ and the voltage $V$. The charged capacity stores energy in the electric field between the two plates. 
+
+The space between the plates has a volume $Ad$, where $A$ is the area of the plates, and $d$ is the distance between them. The energy density $u_E$ is simply the total energy divided by the volume
+\begin{equation}
+U_C = u_E (Ad)
+\end{equation}
+
+We will learn later (when we complete Maxwell's equations) that the energy density of free-space occupied by an electric field $E$ only depends on the magnitude of the field
+\begin{equation}
+u_E = \frac{1}{2} \epsilon_0 E^2
+\end{equation}
+
+Thus
+\begin{equation}
+U_C = \frac{1}{2} \epsilon_0 E^2 Ad = \frac{1}{2} \epsilon_0 \frac{V^2}{d^2} Ad = \frac{1}{2} V^2 \epsilon_0 \frac{A}{d} = \frac{1}{2} V^2 C
+\end{equation}
+
+Because $C = \frac{Q}{V}$:
+\begin{equation}
+U_C =  \frac{1}{2} V^2 C = \frac{1}{2} \frac{Q^2}{C} = \frac{1}{2}QV
+\label{eq:uc}
+\end{equation}
+
+This expression for a parallel plate capacitor is generally valid for all types of capacitors. Consider an uncharged capacitor. At the instance that it is connected to the battery, the potential difference is between the the plates is $V = q/C$.
+
+Initially
+\begin{equation}
+q = 0
+\end{equation}
+
+Gradually charge builds up on the plates. And, after some time it reaches the value $Q = CV$. 
+
+To move an infinitesimal charge $dQ$ from the negative plate to the positive plate (from lower to higher potential) the amount of work $dW$ that must be done on $dq$ is
+\begin{equation}
+dW = VdQ = \frac{q}{C}dq
+\end{equation}
+
+The work becomes the energy stored in the capacitor
+\begin{equation}
+W = \int_0^{W(Q)} dW = \int_0^Q \frac{q}{C}dq = \frac{1}{2} \frac{Q^2}{C}
+\end{equation}
+
+As the geometry has not be specified, this is applicable to any type of capacitor. The total work $W$ needed to charge a capacitor is the electrical potential energy, thus
+\begin{equation}
+U_E = W = \frac{1}{2} \frac{Q^2}{C}
+\end{equation}
+which matches Equation \ref{eq:uc}.
+
+\subsection{Capacitor with a Dielectric}
 
 \appendix
 
 \chapter{Integration by Trig Substitution}
+\label{sec:trigsub}
 
 Find the integral of 
 
@@ -1729,23 +1937,23 @@ dx = ( \frac{a}{\cos^2{u}}) du
 Thus
 
 \begin{equation}
-\int \frac{1}{(a^2 + x^2)^{\frac{3}{2}}} =  \int \frac{1}{(a^2 + (a\tan^2{u}))^{\frac{3}{2}}} ( \frac{a}{\cos^2{u}}) du
+\int \frac{1}{(a^2 + x^2)^{\frac{3}{2}}} =  \int \frac{1}{(a^2 + (a\tan{(u)})^2)^{\frac{3}{2}}} ( \frac{a}{\cos^2{(u)}}) du
 \end{equation}
 
 \begin{equation}
-=  \int \frac{1}{(a^2)^{\frac{3}{2}} (1 + \tan^2{u})^{\frac{3}{2}}} ( \frac{a}{\cos^2{u}}) du
+=  \int \frac{1}{(a^2)^{\frac{3}{2}} (1 + \tan^2{(u)})^{\frac{3}{2}}} ( \frac{a}{\cos^2{(u)}}) du
 \end{equation}
 
 \begin{equation}
-=  \int \frac{1}{(a^3)(\frac{1}{\cos^2(u)})^{\frac{3}{2}}} ( \frac{a}{\cos^2{u}}) du
+=  \int \frac{1}{(a^3)(\frac{1}{\cos^2(u)})^{\frac{3}{2}}} ( \frac{a}{\cos^2{(u)}}) du
 \end{equation}
 
 \begin{equation}
-=  \frac{1}{a^2} \int \frac{1}{(\frac{1}{\cos^2(u)})^{\frac{3}{2}}} ( \frac{1}{\cos^2{u}}) du
+=  \frac{1}{a^2} \int \frac{1}{(\frac{1}{\cos^2(u)})^{\frac{3}{2}}} ( \frac{1}{\cos^2{(u)}}) du
 \end{equation}
 
 \begin{equation}
-=  \frac{1}{a^2} \int \frac{1}{(\frac{1}{\cos^3(u)})} ( \frac{1}{\cos^2{u}}) du
+=  \frac{1}{a^2} \int \frac{1}{(\frac{1}{\cos^3(u)})} ( \frac{1}{\cos^2{(u)}}) du
 \end{equation}
 
 \begin{equation}

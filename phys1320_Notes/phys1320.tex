@@ -271,7 +271,7 @@ where $\epsilon_0$ is the permittivity of free space
 Which leads to Coulomb's constant ($k$):
 
 \begin{equation}
-k_e = \frac{1}{4 \pi \epsilon_0} = 8.99 * 10^9 \frac{N \cdot m^2}{C^2} 
+k = \frac{1}{4 \pi \epsilon_0} = 8.99 * 10^9 \frac{N \cdot m^2}{C^2} 
 \end{equation}
 
 
@@ -1066,8 +1066,10 @@ W_{12} = \int_{P1}^{P2} \vec{F} \cdot d\vec{I}
 Because $\vec{F}$ balances out $\vec{F}_e$:
 
 \begin{equation}
-\vec{F} = -\vec{F}_e = -\frac{kqQ}{r^2}\hat{r} 
+\vec{F} = -\vec{F}_e = -k\frac{qQ}{r^2}\hat{r} 
 \end{equation}
+
+Recalling Coulomb's constant: $k = \frac{1}{4 \pi \epsilon_0} = 8.99 * 10^9 \frac{N \cdot m^2}{C^2}$
 
 Finally, let U denote Potential Energy in Joules ($J = N \cdot m$). Negative work mean gain in potential energy
 
@@ -1099,16 +1101,18 @@ How much work is required to assemble this charge configuration:
 \end{center}
 \end{figure}
 
-\begin{itemize}
+\begin{enumerate}
+
+
 \item Lower left: first bring this $2 \mu C$ charge to the origin. This requires no work as there are no yet any other charges, and thus no electric field. 
 
-\item Lower right: bring $3 \mu C$ charge to x,y,z coordinates (1 cm, 0, 0)
+\item Lower right: bring $3 \mu C$ charge to (x,y,z) coordinates (1 cm, 0, 0)
 
 \begin{equation}
 W_2 = k \frac{q_1 q_2}{r_12} = (9.0 * 10^{9} \frac{N \cdot m^2}{C^2}) \frac{(2* 10^{-6} C) (3* 10^{-6} C) }{1.0 * 10^{2} m} = 5.4 J
 \end{equation}
 
-\item Upper right: $r_{23} = 1.0 cm$ and $r_{13} = \sqrt{2} cm$
+\item Upper right: $r_{23} = 1.0 cm$ and $r_{13} = \sqrt{2.0} cm$
 
 \begin{equation}
 W_3 = 15.9 J
@@ -1119,16 +1123,16 @@ W_3 = 15.9 J
 \begin{equation}
 W_4 = 36.5 J
 \end{equation}
-\end{itemize}
+\end{enumerate}
 
 \begin{equation}
-W_{total} = W_1 + W_ + W_3 + W_4 = 0 + 5.4J + 15.9J + 36.5J = 57.8J
+W_{total} = W_1 + W_2 + W_3 + W_4 = 0 + 5.4J + 15.9J + 36.5J = 57.8J
 \end{equation}
 
 In general
 
 \begin{equation}
-W_{123...N} = \frac{1}{2} k \sum_{i}^{N} \sum_{j}{N} \frac{q_i q_j}{r_{ij}} \text{ for } i \neq j
+W_{123...N} = \frac{1}{2} k \sum_{i}^{N} \sum_{j}^{N} \frac{q_i q_j}{r_{ij}} \text{ for } i \neq j
 \end{equation}
 
 The $\frac{1}{2}$ accounts for each pairing being counted twice. 
@@ -1234,29 +1238,29 @@ From conservation of energy, the result is independent of the path chosen, so we
 
 Consider the special case with a positive charge at the origin. To calculate the potential at a point r relative to a potential of 0 at infinity. Let $P = r$, $R = \infty$, $d\vec{I} = d\vec{r} = \hat{r}dr$.
 
-Using $\vec{E} = \frac{kq\hat{r}}{r^2}$:
+Using $\vec{E} = k\frac{q}{r^2}\hat{r}$:
 
 \begin{equation}
-V_r = -\int_{\infty}^r \frac{kq}{r^2} \hat{r} \cdot \hat{r} dr
+V_r = -\int_{\infty}^r k\frac{q}{r^2} \hat{r} \cdot \hat{r} dr
 \end{equation}
 
 \begin{equation}
-V_r = -\int_{\infty}^r \frac{kq}{r^2} dr
+V_r = -\int_{\infty}^r k\frac{q}{r^2} dr
 \end{equation}  
 
 \begin{equation}
-V_r = \frac{kq}{r} \bigg\rvert_{\infty}^{r} = \frac{kq}{r} - \frac{kq}{\infty}
+V_r = k\frac{q}{r} \bigg\rvert_{\infty}^{r} = k(\frac{q}{r} - \frac{q}{\infty})
 \end{equation} 
 
 \begin{equation}
-V_r = \frac{kq}{r}
+V_r = k\frac{q}{r}
 \end{equation} 
 
 Let's calculate the potential difference between two points equidistant for the reference point. 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.40]{fig/fig_07_15.jpg}
+\includegraphics[scale=0.30]{fig/fig_07_15.jpg}
 \caption{Potential difference between two equidistant points}
 \label{fig:07_15}
 \end{center}
@@ -1271,7 +1275,6 @@ Let's calculate the potential difference between two points equidistant for the 
 \end{equation}
 
 as $\hat{r} \cdot \hat{\phi} = 0$:
-
 \begin{equation}
 \Delta V_{AB} =  0
 \end{equation}
@@ -1313,13 +1316,69 @@ where
 
 \begin{equation}
   dq = \begin{cases}
-    \lambda dl \text{(in one dimension)} \\
-    \sigma dA \text{(in two dimensions)} \\
-    \rho dV \text{(in three dimensions)} 
+    \lambda dl \text{      (in one dimension)} \\
+    \sigma dA \text{    (in two dimensions)} \\
+    \rho dV \text{    (in three dimensions)} 
   \end{cases}
 \end{equation}
 
 \subsubsection{Potential due to a ring}
+
+Consider a disk with uniform charge density $\lambda$ (Coulombs per meter arc length). Let's find the electric potential at a point on the axis passing through the center of the ring. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/fig_07_24.jpg}
+\caption{Ring of charge}
+\label{fig:07_24}
+\end{center}
+\end{figure}
+
+The strategy is to divide the ring into infinitesimal elements shaped as arcs on the circle and to utility cylindrical coordinate system.
+
+The element between angles  $\theta$ and $\theta + d\theta$ is of length $R d\theta$. It therefore contains charge $\lambda R d\theta$. The element is at distance $\sqrt{z^2 + R^2}$ from point P. Therefore:
+
+\begin{equation}
+V_P = k \int \frac{dq}{r} = k \int_0^{2\pi} \frac{\lambda R d\theta}{\sqrt{z^2 + R^2}} = \frac{k \lambda R}{\sqrt{z^2 + R^2}} \int_0^{2\pi} d\theta
+\end{equation}
+
+\begin{equation}
+ = \frac{k \lambda R}{\sqrt{z^2 + R^2}} \theta \bigg\rvert_{0}^{2\pi} = \frac{2 \pi k \lambda R}{\sqrt{z^2 + R^2}} = k \frac{q_{tot}}{\sqrt{z^2 + R^2}}
+\end{equation}
+
+\subsubsection{Potential due to a disk}
+
+Consider a disk with uniform charge density $\sigma$ (Coulombs per meter squared). Let's find the electric potential at a point on the axis passing through the center of the disk. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_07_25.jpg}
+\caption{Disk of charge}
+\label{fig:07_25}
+\end{center}
+\end{figure}
+
+The strategy is to divide the disk into ring-shaped elements, then taking the previous result integrate over $r$ as well as $\theta$.
+
+The infinitesimal width ring elements between cylinder $r$ and $r + dr$ will be a ring of charges whole electric potential $dV_P$ at the field point that is
+
+\begin{equation}
+dV_P = k \frac{dq}{\sqrt{z^2 + R^2}}
+\end{equation}
+
+where
+\begin{equation}
+dq = \sigma 2\pi r dr
+\end{equation}
+
+Integrating from r = 0 to r = R
+\begin{equation}
+V_P = \int dV_P = k2\pi\sigma \int_0^R \frac{rdr}{\sqrt{z^2 + r^2}} 
+\end{equation}
+
+\begin{equation}
+= k2\pi\sigma {\sqrt{z^2 + r^2}} \bigg\rvert_{0}^{R} = k2\pi\sigma (\sqrt{z^2 + R^2}-\sqrt{z^2})
+\end{equation}
 
 \section{Determining Field From Potential}
 
@@ -1344,6 +1403,15 @@ For a continuously changing field, $\Delta V$ and $\Delta s$ become infinitesima
 \begin{equation}
 E_s = -\frac{dV}{ds}
 \end{equation}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.30]{fig/partialderivative.png}
+\caption{Partial Derivatives}
+\label{fig:pder}
+\end{center}
+\end{figure}
 
 Using Partial Derivatives, the electric field components in the Cartesian directions are given by
 

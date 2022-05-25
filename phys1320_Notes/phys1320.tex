@@ -1,4 +1,4 @@
-\documentclass{book}
+\documentclass[14pt]{memoir}
 
 \usepackage{geometry}
 \usepackage[utf8]{inputenc}
@@ -770,7 +770,7 @@ E_{in} = \frac{1}{4 \pi \epsilon_0}\frac{q_{(r<R)}}{r^2} = \frac{\rho_0 r}{3 \ep
 
 Charge distribution is considered cylindrical symmetric if the density of charge depends only on the distance $r$ from the axis, and does not vary along or with direction of axis.
 
-Consider an "infinitely\footnote{In the real world, cylinders are not finite, but if the length $L >> r$ then it can be approximated as infinitely long} cylinder with cylindrical symmetric charge distribution.
+Consider an "infinitely\footnote{In the real world, cylinders are not finite, but if the length $L >> r$ then it can be approximated as infinitely long} long" cylinder with cylindrical symmetric charge distribution.
 
 \begin{equation}
 \rho(r,\theta,z) = \rho(r)
@@ -833,7 +833,7 @@ E(r)  = \frac{\lambda_{enc}}{2 \pi \epsilon_0} \frac{1}{r}
 
 What happens of it is a cylindrical shell vs a solid cylinder?
 
-Consider surface charge density of $\sigma_0$.
+Consider surface charge density of $\sigma$.
 
 \begin{figure}[H]
 \begin{center}
@@ -844,13 +844,13 @@ Consider surface charge density of $\sigma_0$.
 \end{figure}
 
 \begin{equation}
-\lambda_{enc} = \frac{\sigma_0 2 \pi R L}{L} = 2 \pi R \sigma_0
+\lambda_{enc} = \frac{\sigma 2 \pi R L}{L} = 2 \pi R \sigma
 \end{equation} 
 
 For point $P$ outside of the shell $r \geq R$:
 
 \begin{equation}
-\vec{E} = \frac{2 \pi R \sigma_0}{2 \pi \epsilon_0} \frac{1}{r} \hat{r}
+\vec{E} = \frac{2 \pi R \sigma}{2 \pi \epsilon_0} \frac{1}{r} \hat{r} = \frac{ R \sigma}{ \epsilon_0} \frac{1}{r} \hat{r}
 \end{equation}
 
 For point $P$ inside of the shell $r < R$:
@@ -892,13 +892,20 @@ Let the electric field at point $P$ be $E_P = E(z)$. If the charge is positive, 
 The charge inside the gaussian box on the plane is 
 
 \begin{equation}
-q_{enc} = \sigma_0 A
+q_{enc} = \sigma A
 \end{equation}
 
 Given Gauss's law ($\Phi = \frac{q_{enc}}{\epsilon_0}$) :
+\begin{equation}
+\frac{q_{enc}}{\epsilon_0} = \frac{\sigma A}{\epsilon_0}
+\end{equation}
 
 \begin{equation}
-\vec{E}_P = \frac{\sigma_0}{2 \epsilon_0} \hat{n}
+E_P = \frac{\Phi}{2A} = \frac{\sigma}{2 \epsilon_0}
+\end{equation}
+
+\begin{equation}
+\vec{E}_P = \frac{\sigma}{2 \epsilon_0} \hat{n}
 \end{equation}
 
 with $\hat{n} = +\hat{z}$ above the plane and $\hat{n} = -\hat{z}$ below the plane, and $E_P$ doesn't depend on the distance above the plane for an infinite plane. Practically, this is  a useful approximation for a finite plate near the center. 
@@ -955,10 +962,6 @@ As the Gaussian surface lies infinitesimally below the actual surface, and there
 If the electric field had a component parallel to the surface of the conductor, then the charges would move, which violates the electrostatic equilibrium assuming. Therefor the field must be normal to the surface. 
 
 Just above the surface the magnitude of the electric field ($E$) and the surface charge density ($\sigma$) are related by
-
-\begin{equation}
-E = \frac{\sigma}{\epsilon_0}
-\end{equation}
 
 \begin{equation}
 E = \frac{\sigma}{\epsilon_0}
@@ -1025,7 +1028,7 @@ If the surface charge density is $\sigma = 6.81 * 10^{-7} \frac{C}{m^2}$ and the
 \end{figure}
 
 \begin{equation}
-E = \frac{\sigma}{\epsilon_0} = \frac{\sigma = 6.81 * 10^{-7} \frac{C}{m^2}}{8.85 * 10^{-12}} \frac{C^2}{N \cdot m^2} = 7.69 * 10^{4} \frac{N}{C}
+E = \frac{\sigma}{\epsilon_0} = \frac{ 6.81 * 10^{-7} \frac{C}{m^2}}{8.85 * 10^{-12}} \frac{C^2}{N \cdot m^2} = 7.69 * 10^{4} \frac{N}{C}
 \end{equation}
 
 \chapter{Module 3: Chapter 7 - Electric Potential}
@@ -1767,7 +1770,11 @@ Therefore, the field between the two cylinders is
 
 Substituting into Equation \ref{eq:potcon}:
 \begin{equation}
-V = \int_{R_1}^{R_2} \vec{E} \cdot d\vec{I} = \frac{Q}{2 \pi \epsilon_0 l} \int_{R_1}^{R_2} \frac{1}{r} \hat{r} \cdot (\hat{r} dr) = \frac{Q}{2 \pi \epsilon_0 l} \int_{R_1}^{R_2} \frac{dr}{r} = \frac{Q}{2 \pi \epsilon_0 l} \ln{(r)}\bigg\rvert_{R_1}^{R_2} =  \frac{Q}{2 \pi \epsilon_0 l}  \ln{(\frac{R_2}{R_1})}
+V = \int_{R_1}^{R_2} \vec{E} \cdot d\vec{I} = \frac{Q}{2 \pi \epsilon_0 l} \int_{R_1}^{R_2} \frac{1}{r} \hat{r} \cdot (\hat{r} dr) = \frac{Q}{2 \pi \epsilon_0 l} \int_{R_1}^{R_2} \frac{dr}{r} 
+\end{equation}
+
+\begin{equation}
+= \frac{Q}{2 \pi \epsilon_0 l} \ln{(r)}\bigg\rvert_{R_1}^{R_2} =  \frac{Q}{2 \pi \epsilon_0 l}  \ln{(\frac{R_2}{R_1})}
 \end{equation}
 
 Thus
@@ -1833,16 +1840,19 @@ V = V_1 + V_2 + V_3
 \end{figure}
 
 The total charge stored across the plates $Q$ is the equivalent of the sum of the charges on each plate
+
 \begin{equation}
 Q = Q_1 + Q_2 + Q_3
 \end{equation}
 
 Given that $Q = C * V$:
+
 \begin{equation}
 C_{EQ}V = C_{1}V + C_{2}V + C_{3}V
 \end{equation}
 
 And, thus:
+
 \begin{equation}
 C_{EQ} = C_{1} + C_{2} + C_{3}
 \end{equation}

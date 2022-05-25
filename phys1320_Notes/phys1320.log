@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.18)  24 MAY 2022 11:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.18)  25 MAY 2022 07:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,58 +6,364 @@ entering extended mode
 (./phys1320.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-07-12>
-(c:/texlive/2021/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2021/02/12 v1.4n Standard LaTeX document class
-(c:/texlive/2021/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+(c:/texlive/2021/texmf-dist/tex/latex/memoir/memoir.cls
+Document Class: memoir 2021/06/16 v3.7p configurable book, report, article docu
+ment class
+\onelineskip=\skip47
+\lxvchars=\skip48
+\xlvchars=\skip49
+\@memcnta=\count182
+\c@@memmarkcntra=\count183
+(c:/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 )
-\c@part=\count182
-\c@chapter=\count183
-\c@section=\count184
-\c@subsection=\count185
-\c@subsubsection=\count186
-\c@paragraph=\count187
-\c@subparagraph=\count188
-\c@figure=\count189
-\c@table=\count190
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
+\stockheight=\skip50
+\stockwidth=\skip51
+\trimtop=\skip52
+\trimedge=\skip53
+
+(c:/texlive/2021/texmf-dist/tex/latex/memoir/mem14.clo
+File: mem14.clo 2008/01/30 v0.4 memoir class 14pt size option
+)
+\binding=\skip54
+\spinemargin=\skip55
+\foremargin=\skip56
+\uppermargin=\skip57
+\lowermargin=\skip58
+\headdrop=\skip59
+\normalrulethickness=\skip60
+\mem@maxheadheight=\skip61
+\mem@maxfootheight=\skip62
+\headwidth=\skip63
+\c@storedpagenumber=\count184
+\memPD=\dimen138
+\m@mabparskip=\skip64
+\thanksmarkwidth=\skip65
+\thanksmarksep=\skip66
+\droptitle=\skip67
+\c@book=\count185
+\c@part=\count186
+\c@chapter=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\beforechapskip=\skip68
+\midchapskip=\skip69
+\afterchapskip=\skip70
+\chapindent=\skip71
+\bottomsectionskip=\skip72
+\secindent=\skip73
+\beforesecskip=\skip74
+\aftersecskip=\skip75
+\subsecindent=\skip76
+\beforesubsecskip=\skip77
+\aftersubsecskip=\skip78
+\subsubsecindent=\skip79
+\beforesubsubsecskip=\skip80
+\aftersubsubsecskip=\skip81
+\paraindent=\skip82
+\beforeparaskip=\skip83
+\afterparaskip=\skip84
+\subparaindent=\skip85
+\beforesubparaskip=\skip86
+\aftersubparaskip=\skip87
+\pfbreakskip=\skip88
+\c@@ppsavesec=\count193
+\c@@ppsaveapp=\count194
+\ragrparindent=\dimen139
+\everylistparindent=\dimen140
+\parsepi=\skip89
+\topsepi=\skip90
+\itemsepi=\skip91
+\parsepii=\skip92
+\topsepii=\skip93
+\topsepiii=\skip94
+\itemsepii=\skip95
+\itemsepiii=\skip96
+\partopsepii=\skip97
+\partopsepiii=\skip98
+\m@msavetopsep=\skip99
+\m@msavepartopsep=\skip100
+\@enLab=\toks16
+\abstitleskip=\skip101
+\absleftindent=\skip102
+\abs@leftindent=\dimen141
+\absrightindent=\skip103
+\absparindent=\skip104
+\absparsep=\skip105
+\c@vslineno=\count195
+\c@poemline=\count196
+\c@modulo@vs=\count197
+\c@memfvsline=\count198
+\vleftskip=\skip106
+\vrightskip=\skip107
+\stanzaskip=\skip108
+\versewidth=\skip109
+\vgap=\skip110
+\vindent=\skip111
+\vleftmargin=\dimen142
+\c@verse=\count199
+\c@chrsinstr=\count266
+\beforepoemtitleskip=\skip112
+\afterpoemtitleskip=\skip113
+\c@poem=\count267
+\beforePoemTitleskip=\skip114
+\midPoemTitleskip=\skip115
+\afterPoemTitleskip=\skip116
+
+(c:/texlive/2021/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
+\col@sep=\dimen143
+\ar@mcellbox=\box50
+\extrarowheight=\dimen144
+\NC@list=\toks17
+\extratabsurround=\skip117
+\backup@length=\skip118
+\ar@cellbox=\box51
+)
+(c:/texlive/2021/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
+)
+(c:/texlive/2021/texmf-dist/tex/latex/tools/delarray.sty
+Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
+)
+(c:/texlive/2021/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen145
+\TX@old@table=\dimen146
+\TX@old@col=\dimen147
+\TX@target=\dimen148
+\TX@delta=\dimen149
+\TX@cols=\count268
+\TX@ftn=\toks18
+)
+\heavyrulewidth=\dimen150
+\lightrulewidth=\dimen151
+\cmidrulewidth=\dimen152
+\belowrulesep=\dimen153
+\belowbottomsep=\dimen154
+\aboverulesep=\dimen155
+\abovetopsep=\dimen156
+\cmidrulesep=\dimen157
+\cmidrulekern=\dimen158
+\defaultaddspace=\dimen159
+\@cmidla=\count269
+\@cmidlb=\count270
+\@aboverulesep=\dimen160
+\@belowrulesep=\dimen161
+\@thisruleclass=\count271
+\@lastruleclass=\count272
+\@thisrulewidth=\dimen162
+\ctableftskip=\skip119
+\ctabrightskip=\skip120
+\abovecolumnspenalty=\count273
+\@linestogo=\count274
+\@cellstogo=\count275
+\@cellsincolumn=\count276
+\crtok=\toks19
+\@mincolumnwidth=\dimen163
+\c@newflo@tctr=\count277
+\mem@margin@floatbox=\box52
+\@contcwidth=\skip121
+\@contindw=\skip122
+\abovecaptionskip=\skip123
+\belowcaptionskip=\skip124
+\subfloattopskip=\skip125
+\subfloatcapskip=\skip126
+\subfloatcaptopadj=\skip127
+\subfloatbottomskip=\skip128
+\subfloatlabelskip=\skip129
+\subfloatcapmargin=\dimen164
+\c@@contsubnum=\count278
+\m@mscap@capbox=\box53
+\m@mscap@fbox=\box54
+\sidecapsep=\dimen165
+\sidecapwidth=\dimen166
+\m@m@tempdima=\dimen167
+\m@mscapraise=\dimen168
+\sidecapraise=\dimen169
+\m@mscapmainwidth=\dimen170
+\m@mscaplkern=\dimen171
+\beforeepigraphskip=\skip130
+\afterepigraphskip=\skip131
+\epigraphwidth=\skip132
+\epigraphrule=\skip133
+LaTeX Info: Redefining \em on input line 7654.
+LaTeX Info: Redefining \emph on input line 7662.
+\tocentryskip=\skip134
+\tocbaseline=\skip135
+\cftparskip=\skip136
+\cftbeforebookskip=\skip137
+\cftbookindent=\dimen172
+\cftbooknumwidth=\dimen173
+\cftbeforepartskip=\skip138
+\cftpartindent=\skip139
+\cftpartnumwidth=\skip140
+\cftbeforechapterskip=\skip141
+\cftchapterindent=\skip142
+\cftchapternumwidth=\skip143
+\cftbeforesectionskip=\skip144
+\cftsectionindent=\skip145
+\cftsectionnumwidth=\skip146
+\cftbeforesubsectionskip=\skip147
+\cftsubsectionindent=\skip148
+\cftsubsectionnumwidth=\skip149
+\cftbeforesubsubsectionskip=\skip150
+\cftsubsubsectionindent=\skip151
+\cftsubsubsectionnumwidth=\skip152
+\cftbeforeparagraphskip=\skip153
+\cftparagraphindent=\skip154
+\cftparagraphnumwidth=\skip155
+\cftbeforesubparagraphskip=\skip156
+\cftsubparagraphindent=\skip157
+\cftsubparagraphnumwidth=\skip158
+\prechapterprecisshift=\dimen174
+\c@maxsecnumdepth=\count279
+\bibindent=\dimen175
+\bibitemsep=\skip159
+\indexcolsep=\skip160
+\indexrule=\skip161
+\indexmarkstyle=\toks20
+\@indexbox=\insert252
+\glossarycolsep=\dimen176
+\glossaryrule=\dimen177
+\sideparvshift=\skip162
+\sideins=\insert251
+\sidebartopsep=\skip163
+\sidebarhsep=\skip164
+\sidebarvsep=\skip165
+\sidebarwidth=\skip166
+\footmarkwidth=\skip167
+\footmarksep=\skip168
+\footparindent=\skip169
+\footinsdim=\skip170
+\footinsv@r=\insert250
+\@mpfootinsv@r=\insert249
+\m@m@k=\count280
+\m@m@h=\dimen178
+\m@mipn@skip=\skip171
+\sidefootins=\insert248
+\sidefootadjust=\skip172
+\sidefootheight=\skip173
+\sidefoothsep=\skip174
+\sidefootvsep=\skip175
+\sidefootwidth=\skip176
+\m@mdownsf=\skip177
+\c@sidefootnote=\count281
+\sidefootmarkwidth=\skip178
+\sidefootmarksep=\skip179
+\sidefootparindent=\skip180
+\c@pagenote=\count282
+\c@pagenoteshadow=\count283
+\mem@pn@lastkern=\skip181
+\every@verbatim=\toks21
+\afterevery@verbatim=\toks22
+\verbatim@line=\toks23
+\tab@position=\count284
+\verbatim@in@stream=\read2
+\verbatimindent=\skip182
+\verbatim@out=\write3
+\bvboxsep=\skip183
+\c@memfbvline=\count285
+\c@bvlinectr=\count286
+\bvnumlength=\skip184
+\fb@frw=\dimen179
+\fb@frh=\dimen180
+\FrameRule=\dimen181
+\FrameSep=\dimen182
+\c@cp@cntr=\count287
+\c@ism@mctr=\count288
+\c@xsm@mctr=\count289
+\c@csm@mctr=\count290
+\c@ksm@mctr=\count291
+\c@xksm@mctr=\count292
+\c@cksm@mctr=\count293
+\c@msm@mctr=\count294
+\c@xmsm@mctr=\count295
+\c@cmsm@mctr=\count296
+\c@bsm@mctr=\count297
+\c@workm@mctr=\count298
+\c@sheetsequence=\count299
+\c@lastsheet=\count300
+\c@lastpage=\count301
+
+(c:/texlive/2021/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
+)
+\c@figure=\count302
+\c@lofdepth=\count303
+\cftbeforefigureskip=\skip185
+\cftfigureindent=\skip186
+\cftfigurenumwidth=\skip187
+\c@table=\count304
+\c@lotdepth=\count305
+\cftbeforetableskip=\skip188
+\cfttableindent=\skip189
+\cfttablenumwidth=\skip190
+Package abstract [2008/07/23] emulated by memoir.
+Package appendix [2008/07/23] emulated by memoir.
+Package booktabs [2016/05/16] emulated by memoir.
+Package ccaption [2008/07/23] emulated by memoir.
+Package changepage [2008/07/23] emulated by memoir.
+Package chngcntr [2008/07/23] emulated by memoir.
+Package chngpage [2008/07/23] emulated by memoir.
+Package crop emulated by memoir.
+Package enumerate [2008/07/23] emulated by memoir.
+Package epigraph [2008/07/23] emulated by memoir.
+Package ifmtarg [2008/07/23] emulated by memoir.
+Package index [2008/07/23] emulated by memoir.
+Package makeidx [2008/07/23] emulated by memoir.
+Package moreverb [2008/07/23] emulated by memoir.
+Package needspace [2008/07/23] emulated by memoir.
+Package newfile [2008/07/23] emulated by memoir.
+Package nextpage [2008/07/23] emulated by memoir.
+Package pagenote [2008/07/23] emulated by memoir.
+Package parskip [2008/07/23] emulated by memoir.
+Package patchcmd [2008/07/23] emulated by memoir.
+Package setspace [2008/07/23] emulated by memoir.
+Package shortvrb [2008/07/23] emulated by memoir.
+Package showidx [2008/07/23] emulated by memoir.
+Package titleref [2008/07/23] emulated by memoir.
+Package titling [2008/07/23] emulated by memoir.
+Package tocbibind [2008/07/23] emulated by memoir.
+Package tocloft [2008/07/23] emulated by memoir.
+Package tocvsec2 [2008/07/23] emulated by memoir.
+Package verbatim [2008/07/23] emulated by memoir.
+Package verse [2008/07/23] emulated by memoir.
 )
 (c:/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (c:/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks24
 )
 (c:/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(c:/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-))
-\Gm@cnth=\count191
-\Gm@cntv=\count192
-\c@Gm@tempcnt=\count193
-\Gm@bindingoffset=\dimen139
-\Gm@wd@mp=\dimen140
-\Gm@odd@mp=\dimen141
-\Gm@even@mp=\dimen142
-\Gm@layoutwidth=\dimen143
-\Gm@layoutheight=\dimen144
-\Gm@layouthoffset=\dimen145
-\Gm@layoutvoffset=\dimen146
-\Gm@dimlist=\toks17
+)
+\Gm@cnth=\count306
+\Gm@cntv=\count307
+\c@Gm@tempcnt=\count308
+\Gm@bindingoffset=\dimen183
+\Gm@wd@mp=\dimen184
+\Gm@odd@mp=\dimen185
+\Gm@even@mp=\dimen186
+\Gm@layoutwidth=\dimen187
+\Gm@layoutheight=\dimen188
+\Gm@layouthoffset=\dimen189
+\Gm@layoutvoffset=\dimen190
+\Gm@dimlist=\toks25
 )
 (c:/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks18
-\inpenc@posthook=\toks19
+\inpenc@prehook=\toks26
+\inpenc@posthook=\toks27
 )
 (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/04/20 v2.17j AMS math features
-\@mathmargin=\skip49
+\@mathmargin=\skip191
 
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -65,51 +371,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks20
-\ex@=\dimen147
+\@emptytoks=\toks28
+\ex@=\dimen191
 ))
 (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen148
+\pmbraise@=\dimen192
 )
 (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count194
+\inf@bad=\count309
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count195
-\leftroot@=\count196
+\uproot@=\count310
+\leftroot@=\count311
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count197
-\DOTSCASE@=\count198
+\classnum@=\count312
+\DOTSCASE@=\count313
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box50
-\strutbox@=\box51
-\big@size=\dimen149
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+\big@size=\dimen193
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count199
-\c@MaxMatrixCols=\count266
+\macc@depth=\count314
+\c@MaxMatrixCols=\count315
 \dotsspace@=\muskip16
-\c@parentequation=\count267
-\dspbrk@lvl=\count268
-\tag@help=\toks21
-\row@=\count269
-\column@=\count270
-\maxfields@=\count271
-\andhelp@=\toks22
-\eqnshift@=\dimen150
-\alignsep@=\dimen151
-\tagshift@=\dimen152
-\tagwidth@=\dimen153
-\totwidth@=\dimen154
-\lineht@=\dimen155
-\@envbody=\toks23
-\multlinegap=\skip50
-\multlinetaggap=\skip51
-\mathdisplay@stack=\toks24
+\c@parentequation=\count316
+\dspbrk@lvl=\count317
+\tag@help=\toks29
+\row@=\count318
+\column@=\count319
+\maxfields@=\count320
+\andhelp@=\toks30
+\eqnshift@=\dimen194
+\alignsep@=\dimen195
+\tagshift@=\dimen196
+\tagwidth@=\dimen197
+\totwidth@=\dimen198
+\lineht@=\dimen199
+\@envbody=\toks31
+\multlinegap=\skip192
+\multlinetaggap=\skip193
+\mathdisplay@stack=\toks32
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
@@ -141,37 +447,37 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 (c:/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen156
-\Gin@req@width=\dimen157
+\Gin@req@height=\dimen256
+\Gin@req@width=\dimen257
 )
 (c:/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip52
-\enit@outerparindent=\dimen158
-\enit@toks=\toks25
-\enit@inbox=\box52
-\enit@count@id=\count272
-\enitdp@description=\count273
+\labelindent=\skip194
+\enit@outerparindent=\dimen258
+\enit@toks=\toks33
+\enit@inbox=\box57
+\enit@count@id=\count321
+\enitdp@description=\count322
 )
 (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count274
-\lst@gtempboxa=\box53
-\lst@token=\toks26
-\lst@length=\count275
-\lst@currlwidth=\dimen159
-\lst@column=\count276
-\lst@pos=\count277
-\lst@lostspace=\dimen160
-\lst@width=\dimen161
-\lst@newlines=\count278
-\lst@lineno=\count279
-\lst@maxwidth=\dimen162
+\lst@mode=\count323
+\lst@gtempboxa=\box58
+\lst@token=\toks34
+\lst@length=\count324
+\lst@currlwidth=\dimen259
+\lst@column=\count325
+\lst@pos=\count326
+\lst@lostspace=\dimen260
+\lst@width=\dimen261
+\lst@newlines=\count327
+\lst@lineno=\count328
+\lst@maxwidth=\dimen262
 
 (c:/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count280
-\lst@skipnumbers=\count281
-\lst@framebox=\box54
+\c@lstnumber=\count329
+\lst@skipnumbers=\count330
+\lst@framebox=\box59
 )
 (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -201,13 +507,13 @@ Package: tcolorbox 2021/06/14 version 4.51 text color boxes
 (c:/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (c:/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks27
-\pgfutil@tempdima=\dimen163
-\pgfutil@tempdimb=\dimen164
+\pgfutil@everybye=\toks35
+\pgfutil@tempdima=\dimen263
+\pgfutil@tempdimb=\dimen264
 
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box55
+\pgfutil@abb=\box60
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -221,32 +527,32 @@ Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks28
-\pgfkeys@temptoks=\toks29
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
 
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks30
+\pgfkeys@tmptoks=\toks38
 ))
-\pgf@x=\dimen165
-\pgf@y=\dimen166
-\pgf@xa=\dimen167
-\pgf@ya=\dimen168
-\pgf@xb=\dimen169
-\pgf@yb=\dimen170
-\pgf@xc=\dimen171
-\pgf@yc=\dimen172
-\pgf@xd=\dimen173
-\pgf@yd=\dimen174
-\w@pgf@writea=\write3
-\r@pgf@reada=\read2
-\c@pgf@counta=\count282
-\c@pgf@countb=\count283
-\c@pgf@countc=\count284
-\c@pgf@countd=\count285
-\t@pgf@toka=\toks31
-\t@pgf@tokb=\toks32
-\t@pgf@tokc=\toks33
-\pgf@sys@id@count=\count286
+\pgf@x=\dimen265
+\pgf@y=\dimen266
+\pgf@xa=\dimen267
+\pgf@ya=\dimen268
+\pgf@xb=\dimen269
+\pgf@yb=\dimen270
+\pgf@xc=\dimen271
+\pgf@yc=\dimen272
+\pgf@xd=\dimen273
+\pgf@yd=\dimen274
+\w@pgf@writea=\write4
+\r@pgf@reada=\read3
+\c@pgf@counta=\count331
+\c@pgf@countb=\count332
+\c@pgf@countc=\count333
+\c@pgf@countd=\count334
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
+\pgf@sys@id@count=\count335
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
@@ -260,8 +566,8 @@ File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count287
-\pgfsyssoftpath@bigbuffer@items=\count288
+\pgfsyssoftpath@smallbuffer@items=\count336
+\pgfsyssoftpath@bigbuffer@items=\count337
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -272,12 +578,12 @@ Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen175
-\pgfmath@count=\count289
-\pgfmath@box=\box56
-\pgfmath@toks=\toks34
-\pgfmath@stack@operand=\toks35
-\pgfmath@stack@operation=\toks36
+\pgfmath@dimen=\dimen275
+\pgfmath@count=\count338
+\pgfmath@box=\box61
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
@@ -297,56 +603,56 @@ x)
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
 etics.code.tex)))
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count290
+\c@pgfmathroundto@lastzeros=\count339
 ))
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen176
-\pgf@picmaxx=\dimen177
-\pgf@picminy=\dimen178
-\pgf@picmaxy=\dimen179
-\pgf@pathminx=\dimen180
-\pgf@pathmaxx=\dimen181
-\pgf@pathminy=\dimen182
-\pgf@pathmaxy=\dimen183
-\pgf@xx=\dimen184
-\pgf@xy=\dimen185
-\pgf@yx=\dimen186
-\pgf@yy=\dimen187
-\pgf@zx=\dimen188
-\pgf@zy=\dimen189
+\pgf@picminx=\dimen276
+\pgf@picmaxx=\dimen277
+\pgf@picminy=\dimen278
+\pgf@picmaxy=\dimen279
+\pgf@pathminx=\dimen280
+\pgf@pathmaxx=\dimen281
+\pgf@pathminy=\dimen282
+\pgf@pathmaxy=\dimen283
+\pgf@xx=\dimen284
+\pgf@xy=\dimen285
+\pgf@yx=\dimen286
+\pgf@yy=\dimen287
+\pgf@zx=\dimen288
+\pgf@zy=\dimen289
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
 e.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen190
-\pgf@path@lasty=\dimen191
+\pgf@path@lastx=\dimen290
+\pgf@path@lasty=\dimen291
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
 x
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen192
-\pgf@shorten@start@additional=\dimen193
+\pgf@shorten@end@additional=\dimen292
+\pgf@shorten@start@additional=\dimen293
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box57
-\pgf@hbox=\box58
-\pgf@layerbox@main=\box59
-\pgf@picture@serial@count=\count291
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count340
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
 .tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen194
+\pgflinewidth=\dimen294
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
 ode.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen195
-\pgf@pt@y=\dimen196
-\pgf@pt@temp=\dimen197
+\pgf@pt@x=\dimen295
+\pgf@pt@y=\dimen296
+\pgf@pt@temp=\dimen297
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -360,20 +666,20 @@ File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen198
+\pgfarrowsep=\dimen298
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen199
-\pgf@sys@shading@range@num=\count292
-\pgf@shadingcount=\count293
+\pgf@max=\dimen299
+\pgf@sys@shading@range@num=\count341
+\pgf@shadingcount=\count342
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box60
+\pgfexternal@startupbox=\box65
 ))
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -389,7 +695,7 @@ File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (c:/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
 x
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box61
+\pgfnodeparttextbox=\box66
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
@@ -397,19 +703,13 @@ File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (c:/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
 y
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen256
-\pgf@nodesepend=\dimen257
+\pgf@nodesepstart=\dimen300
+\pgf@nodesepend=\dimen301
 )
 (c:/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
 y
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
-)) (c:/texlive/2021/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks37
-\verbatim@line=\toks38
-\verbatim@in@stream=\read3
-)
-(c:/texlive/2021/texmf-dist/tex/latex/environ/environ.sty
+)) (c:/texlive/2021/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
 (c:/texlive/2021/texmf-dist/tex/latex/trimspaces/trimspaces.sty
@@ -417,26 +717,26 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 (c:/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count294
+\etb@tempcnta=\count343
 )
-\tcb@titlebox=\box62
-\tcb@upperbox=\box63
-\tcb@lowerbox=\box64
-\tcb@phantombox=\box65
-\c@tcbbreakpart=\count295
-\c@tcblayer=\count296
-\c@tcolorbox@number=\count297
-\tcb@temp=\box66
-\tcb@temp=\box67
-\tcb@temp=\box68
-\tcb@temp=\box69
+\tcb@titlebox=\box67
+\tcb@upperbox=\box68
+\tcb@lowerbox=\box69
+\tcb@phantombox=\box70
+\c@tcbbreakpart=\count344
+\c@tcblayer=\count345
+\c@tcolorbox@number=\count346
+\tcb@temp=\box71
+\tcb@temp=\box72
+\tcb@temp=\box73
+\tcb@temp=\box74
 
 (c:/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '4.51'
-\c@tcbrastercolumn=\count298
-\c@tcbrasterrow=\count299
-\c@tcbrasternum=\count300
-\c@tcbraster=\count301
+\c@tcbrastercolumn=\count347
+\c@tcbrasterrow=\count348
+\c@tcbrasternum=\count349
+\c@tcbraster=\count350
 ) (c:/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '4.51'
 (c:/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
@@ -449,10 +749,10 @@ Library (tcolorbox): 'tcbskins.code.tex' version '4.51'
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen258
-\pgffor@skip=\dimen259
-\pgffor@stack=\toks39
-\pgffor@toks=\toks40
+\pgffor@iter=\dimen302
+\pgffor@skip=\dimen303
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
 ))
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
@@ -460,39 +760,39 @@ Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
 de.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count302
-\pgfplotmarksize=\dimen260
+\pgf@plot@mark@count=\count351
+\pgfplotmarksize=\dimen304
 )
-\tikz@lastx=\dimen261
-\tikz@lasty=\dimen262
-\tikz@lastxsaved=\dimen263
-\tikz@lastysaved=\dimen264
-\tikz@lastmovetox=\dimen265
-\tikz@lastmovetoy=\dimen266
-\tikzleveldistance=\dimen267
-\tikzsiblingdistance=\dimen268
-\tikz@figbox=\box70
-\tikz@figbox@bg=\box71
-\tikz@tempbox=\box72
-\tikz@tempbox@bg=\box73
-\tikztreelevel=\count303
-\tikznumberofchildren=\count304
-\tikznumberofcurrentchild=\count305
-\tikz@fig@count=\count306
+\tikz@lastx=\dimen305
+\tikz@lasty=\dimen306
+\tikz@lastxsaved=\dimen307
+\tikz@lastysaved=\dimen308
+\tikz@lastmovetox=\dimen309
+\tikz@lastmovetoy=\dimen310
+\tikzleveldistance=\dimen311
+\tikzsiblingdistance=\dimen312
+\tikz@figbox=\box75
+\tikz@figbox@bg=\box76
+\tikz@tempbox=\box77
+\tikz@tempbox@bg=\box78
+\tikztreelevel=\count352
+\tikznumberofchildren=\count353
+\tikznumberofcurrentchild=\count354
+\tikz@fig@count=\count355
 
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count307
-\pgfmatrixcurrentcolumn=\count308
-\pgf@matrix@numberofcolumns=\count309
+\pgfmatrixcurrentrow=\count356
+\pgfmatrixcurrentcolumn=\count357
+\pgf@matrix@numberofcolumns=\count358
 )
-\tikz@expandcount=\count310
+\tikz@expandcount=\count359
 
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
-\tcb@waterbox=\box74
+\tcb@waterbox=\box79
 
 (c:/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.51'
@@ -508,9 +808,9 @@ Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ))
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box75
-\tcb@totalupperbox=\box76
-\tcb@totallowerbox=\box77
+\tcb@testbox=\box80
+\tcb@totalupperbox=\box81
+\tcb@totallowerbox=\box82
 )
 (c:/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
 Library (tcolorbox): 'tcbhooks.code.tex' version '4.51'
@@ -518,10 +818,10 @@ Library (tcolorbox): 'tcbhooks.code.tex' version '4.51'
 Library (tcolorbox): 'tcbtheorems.code.tex' version '4.51'
 ) (c:/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '4.51'
-\tcbfitdim=\dimen269
-\tcb@lowerfitdim=\dimen270
-\tcb@upperfitdim=\dimen271
-\tcb@cur@hbadness=\count311
+\tcbfitdim=\dimen313
+\tcb@lowerfitdim=\dimen314
+\tcb@upperfitdim=\dimen315
+\tcb@cur@hbadness=\count360
 ) (c:/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
 Library (tcolorbox): 'tcbxparse.code.tex' version '4.51'
 (c:/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
@@ -530,8 +830,8 @@ Package: expl3 2021-07-12 L3 programming layer (loader)
 
 (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count312
-\l__pdf_internal_box=\box78
+\l__color_backend_stack_int=\count361
+\l__pdf_internal_box=\box83
 ))
 Package: xparse 2021-08-04 L3 Experimental document command parser
 ))
@@ -554,7 +854,7 @@ Package pdftexcmds Info: \pdfdraftmode found.
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 ))
-\c@tcblisting=\count313
+\c@tcblisting=\count362
 ))
 (c:/texlive/2021/texmf-dist/tex/latex/listingsutf8/listingsutf8.sty
 Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
@@ -587,16 +887,16 @@ Package: mathtools 2021/04/12 v1.27 mathematical typesetting tools
 
 (c:/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count314
-\calc@Bcount=\count315
-\calc@Adimen=\dimen272
-\calc@Bdimen=\dimen273
-\calc@Askip=\skip53
-\calc@Bskip=\skip54
+\calc@Acount=\count363
+\calc@Bcount=\count364
+\calc@Adimen=\dimen316
+\calc@Bdimen=\dimen317
+\calc@Askip=\skip195
+\calc@Bskip=\skip196
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count316
-\calc@Cskip=\skip55
+\calc@Ccount=\count365
+\calc@Cskip=\skip197
 )
 (c:/texlive/2021/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
@@ -605,25 +905,25 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count317
-\l_MT_multwidth_dim=\dimen274
-\origjot=\skip56
-\l_MT_shortvdotswithinadjustabove_dim=\dimen275
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen276
-\l_MT_above_intertext_sep=\dimen277
-\l_MT_below_intertext_sep=\dimen278
-\l_MT_above_shortintertext_sep=\dimen279
-\l_MT_below_shortintertext_sep=\dimen280
-\xmathstrut@box=\box79
-\xmathstrut@dim=\dimen281
+\g_MT_multlinerow_int=\count366
+\l_MT_multwidth_dim=\dimen318
+\origjot=\skip198
+\l_MT_shortvdotswithinadjustabove_dim=\dimen319
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen320
+\l_MT_above_intertext_sep=\dimen321
+\l_MT_below_intertext_sep=\dimen322
+\l_MT_above_shortintertext_sep=\dimen323
+\l_MT_below_shortintertext_sep=\dimen324
+\xmathstrut@box=\box84
+\xmathstrut@dim=\dimen325
 )
 (c:/texlive/2021/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count318
-\float@exts=\toks41
-\float@box=\box80
-\@float@everytoks=\toks42
-\@floatcapt=\box81
+\c@float@type=\count367
+\float@exts=\toks47
+\float@box=\box85
+\@float@everytoks=\toks48
+\@floatcapt=\box86
 )
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
@@ -646,9 +946,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 (c:/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen282
-\Hy@linkcounter=\count319
-\Hy@pagecounter=\count320
+\@linkdim=\dimen326
+\Hy@linkcounter=\count368
+\Hy@pagecounter=\count369
 
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
@@ -665,7 +965,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (c:/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count321
+\Hy@SavedSpaceFactor=\count370
 
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
@@ -681,14 +981,14 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count322
+\c@Hy@tempcnt=\count371
 
 (c:/texlive/2021/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen283
+\XeTeXLinkMargin=\dimen327
 
 (c:/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -697,9 +997,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count323
-\Field@Width=\dimen284
-\Fld@charsize=\dimen285
+\Fld@menulength=\count372
+\Field@Width=\dimen328
+\Fld@charsize=\dimen329
 Package hyperref Info: Hyper figures OFF on input line 6076.
 Package hyperref Info: Link nesting OFF on input line 6081.
 Package hyperref Info: Hyper index ON on input line 6084.
@@ -714,9 +1014,15 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count324
-\c@Item=\count325
-\c@Hfootnote=\count326
+\Hy@abspage=\count373
+\c@Item=\count374
+\c@Hfootnote=\count375
+)
+(c:/texlive/2021/texmf-dist/tex/latex/memoir/memhfixc.sty
+Package: memhfixc 2021/06/16 v1.19 nameref/hyperref package fixes for memoir cl
+ass
+\c@memhycontfloat=\count376
+\c@Hpagenote=\count377
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -728,8 +1034,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count327
-\c@bookmark@seq@number=\count328
+\Fld@listcount=\count378
+\c@bookmark@seq@number=\count379
 
 (c:/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -740,63 +1046,50 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip57
-)
-(c:/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen286
-\lightrulewidth=\dimen287
-\cmidrulewidth=\dimen288
-\belowrulesep=\dimen289
-\belowbottomsep=\dimen290
-\aboverulesep=\dimen291
-\abovetopsep=\dimen292
-\cmidrulesep=\dimen293
-\cmidrulekern=\dimen294
-\defaultaddspace=\dimen295
-\@cmidla=\count329
-\@cmidlb=\count330
-\@aboverulesep=\dimen296
-\@belowrulesep=\dimen297
-\@thisruleclass=\count331
-\@lastruleclass=\count332
-\@thisrulewidth=\dimen298
+\Hy@SectionHShift=\skip199
 )
 (c:/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
-\LTleft=\skip58
-\LTright=\skip59
-\LTpre=\skip60
-\LTpost=\skip61
-\LTchunksize=\count333
-\LTcapwidth=\dimen299
-\LT@head=\box82
-\LT@firsthead=\box83
-\LT@foot=\box84
-\LT@lastfoot=\box85
-\LT@gbox=\box86
-\LT@cols=\count334
-\LT@rows=\count335
-\c@LT@tables=\count336
-\c@LT@chunks=\count337
-\LT@p@ftn=\toks43
+\LTleft=\skip256
+\LTright=\skip257
+\LTpre=\skip258
+\LTpost=\skip259
+\LTchunksize=\count380
+\LTcapwidth=\dimen330
+\LT@head=\box87
+\LT@firsthead=\box88
+\LT@foot=\box89
+\LT@lastfoot=\box90
+\LT@gbox=\box91
+\LT@cols=\count381
+\LT@rows=\count382
+\c@LT@tables=\count383
+\c@LT@chunks=\count384
+\LT@p@ftn=\toks49
 )
 (c:/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
 (c:/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen300
-\captionmargin@=\dimen301
-\captionwidth=\dimen302
-\caption@tempdima=\dimen303
-\caption@indent=\dimen304
-\caption@parindent=\dimen305
-\caption@hangindent=\dimen306
-Package caption Info: Standard document class detected.
-)
-\c@caption@flags=\count338
-\c@continuedfloat=\count339
+\captionmargin=\dimen331
+\captionmargin@=\dimen332
+\captionwidth=\dimen333
+\caption@tempdima=\dimen334
+\caption@indent=\dimen335
+\caption@parindent=\dimen336
+\caption@hangindent=\dimen337
+Package caption Info: memoir document class detected.
+
+(c:/texlive/2021/texmf-dist/tex/latex/caption/caption-memoir.sto
+File: caption-memoir.sto 2020/10/10 v2.1 Adaption of the caption package to the
+ memoir document class (AR)
+))
+\c@caption@flags=\count385
+\c@continuedfloat=\count386
+Package caption Info: changepage package is loaded.
+\caption@adjustwidth@hsize=\dimen338
+\caption@adjustwidth@linewidth=\dimen339
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -810,16 +1103,12 @@ input line 26.
 
 (c:/texlive/2021/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
-Package newfloat Info: Document class `book' detected (Hy).
 )
 Package newfloat Info: New float `code' with options `' on input line 26.
-\c@code=\count340
+\c@code=\count387
 Package newfloat Info: float type `code'=4 on input line 26.
- (./phys1320.aux
-
-LaTeX Warning: Label `eq:uc' multiply defined.
-
-)
+\c@locodedepth=\count388
+ (./phys1320.aux)
 \openout1 = `phys1320.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -857,15 +1146,15 @@ LaTeX Font Info:    ... okay on input line 62.
 * \textheight=686.56499pt
 * \oddsidemargin=-18.06749pt
 * \evensidemargin=-18.06749pt
-* \topmargin=-48.13498pt
-* \headheight=12.0pt
-* \headsep=18.06749pt
-* \topskip=10.0pt
-* \footskip=25.29494pt
-* \marginparwidth=125.0pt
+* \topmargin=-57.2487pt
+* \headheight=17.5pt
+* \headsep=21.68121pt
+* \topskip=14.4pt
+* \footskip=28.90755pt
+* \marginparwidth=53.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -877,17 +1166,17 @@ LaTeX Font Info:    ... okay on input line 62.
 
 (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count341
-\scratchdimen=\dimen307
-\scratchbox=\box87
-\nofMPsegments=\count342
-\nofMParguments=\count343
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count344
-\MPscratchDim=\dimen308
-\MPnumerator=\count345
-\makeMPintoPDFobject=\count346
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count389
+\scratchdimen=\dimen340
+\scratchbox=\box92
+\nofMPsegments=\count390
+\nofMParguments=\count391
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count392
+\MPscratchDim=\dimen341
+\MPnumerator=\count393
+\makeMPintoPDFobject=\count394
+\everyMPtoPDFconversion=\toks51
 ) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -897,7 +1186,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count347
+\c@lstlisting=\count395
 Package hyperref Info: Link coloring OFF on input line 62.
 
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -909,15 +1198,17 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count348
+\c@section@level=\count396
 )
+Redoing nameref's sectioning
+Redoing nameref's label
+LaTeX Info: Redefining \nameref on input line 62.
 LaTeX Info: Redefining \ref on input line 62.
 LaTeX Info: Redefining \pageref on input line 62.
 LaTeX Info: Redefining \nameref on input line 62.
-
 (./phys1320.out) (./phys1320.out)
-\@outlinefile=\write4
-\openout4 = `phys1320.out'.
+\@outlinefile=\write5
+\openout5 = `phys1320.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -936,88 +1227,112 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-Chapter 1.
-<fig/fig_05_05.jpg, id=232, 636.87938pt x 276.28218pt>
+<fig/fig_05_05.jpg, id=146, 636.87938pt x 276.28218pt>
 File: fig/fig_05_05.jpg Graphic file (type jpg)
 <use fig/fig_05_05.jpg>
 Package pdftex.def Info: fig/fig_05_05.jpg  used on input line 86.
 (pdftex.def)             Requested size: 254.74724pt x 110.51091pt.
-[1
+ [1
 
  <./fig/fig_05_05.jpg>]
-<fig/fig_05_06.jpg, id=243, 318.43968pt x 415.5525pt>
+<fig/fig_05_06.jpg, id=156, 318.43968pt x 415.5525pt>
 File: fig/fig_05_06.jpg Graphic file (type jpg)
 <use fig/fig_05_06.jpg>
 Package pdftex.def Info: fig/fig_05_06.jpg  used on input line 104.
 (pdftex.def)             Requested size: 127.37361pt x 166.21805pt.
- [2 <./fig/fig_05_06.jpg>]
-<fig/fig_05_07.jpg, id=256, 636.87938pt x 276.28218pt>
+
+
+Class memoir Warning: The material used in the headers is too large
+(34.99998pt) for the given head height (17.5pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 113.
+
+
+Overfull \vbox (17.49998pt too high) has occurred while \output is active []
+
+
+[2 <./fig/fig_05_06.jpg>] [3]
+<fig/fig_05_07.jpg, id=173, 636.87938pt x 276.28218pt>
 File: fig/fig_05_07.jpg Graphic file (type jpg)
 <use fig/fig_05_07.jpg>
 Package pdftex.def Info: fig/fig_05_07.jpg  used on input line 141.
 (pdftex.def)             Requested size: 254.74724pt x 110.51091pt.
-<fig/fig_05_08.jpg, id=257, 636.87938pt x 276.28218pt>
+<fig/fig_05_08.jpg, id=174, 636.87938pt x 276.28218pt>
 File: fig/fig_05_08.jpg Graphic file (type jpg)
 <use fig/fig_05_08.jpg>
 Package pdftex.def Info: fig/fig_05_08.jpg  used on input line 152.
 (pdftex.def)             Requested size: 254.74724pt x 110.51091pt.
- [3 <./fig/fig_05_07.jpg> <./fig/fig_05_08.jpg>]
-<fig/fig_05_10.jpg, id=264, 637.4214pt x 276.5532pt>
+
+Overfull \vbox (17.49998pt too high) has occurred while \output is active []
+
+
+[4 <./fig/fig_05_07.jpg> <./fig/fig_05_08.jpg>]
+<fig/fig_05_10.jpg, id=182, 637.4214pt x 276.5532pt>
 File: fig/fig_05_10.jpg Graphic file (type jpg)
 <use fig/fig_05_10.jpg>
 Package pdftex.def Info: fig/fig_05_10.jpg  used on input line 175.
 (pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
-<fig/fig_05_11.jpg, id=265, 636.87938pt x 276.28218pt>
+
+Overfull \hbox (11.21844pt too wide) in paragraph at lines 181--183
+[]\OT1/cmr/m/n/14.4 Both pos-i-tive and neg-a-tive ob-jects at-tract a neu-tral
+ ob-ject by po-lar-iz-ing its molecules. 
+ []
+
+[5 <./fig/fig_05_10.jpg>]
+<fig/fig_05_11.jpg, id=191, 636.87938pt x 276.28218pt>
 File: fig/fig_05_11.jpg Graphic file (type jpg)
 <use fig/fig_05_11.jpg>
 Package pdftex.def Info: fig/fig_05_11.jpg  used on input line 190.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4 <./fig/fig_05_10.jpg>]
-<fig/fig_05_12.jpg, id=271, 319.1925pt x 415.5525pt>
+<fig/fig_05_12.jpg, id=192, 319.1925pt x 415.5525pt>
 File: fig/fig_05_12.jpg Graphic file (type jpg)
 <use fig/fig_05_12.jpg>
 Package pdftex.def Info: fig/fig_05_12.jpg  used on input line 206.
 (pdftex.def)             Requested size: 191.51697pt x 249.33342pt.
-<fig/fig_05_13.jpg, id=272, 636.87938pt x 276.28218pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<fig/fig_05_13.jpg, id=193, 636.87938pt x 276.28218pt>
 File: fig/fig_05_13.jpg Graphic file (type jpg)
 <use fig/fig_05_13.jpg>
 Package pdftex.def Info: fig/fig_05_13.jpg  used on input line 216.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \vbox (17.49998pt too high) has occurred while \output is active []
 
- [5 <./fig/fig_05_11.jpg> <./fig/fig_05_12.jpg>]
-<fig/NewtonsLawGravitation.png, id=280, 323.39525pt x 144.02007pt>
+
+[6 <./fig/fig_05_11.jpg>]
+<fig/NewtonsLawGravitation.png, id=199, 323.39525pt x 144.02007pt>
 File: fig/NewtonsLawGravitation.png Graphic file (type png)
 <use fig/NewtonsLawGravitation.png>
 Package pdftex.def Info: fig/NewtonsLawGravitation.png  used on input line 228.
 
 (pdftex.def)             Requested size: 194.03864pt x 86.4127pt.
-<fig/fig_05_14.jpg, id=282, 603.6954pt x 110.3322pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./fig/fig_05_12.jpg> <./fig/fig_05_13.jpg>]
+<fig/fig_05_14.jpg, id=210, 603.6954pt x 110.3322pt>
 File: fig/fig_05_14.jpg Graphic file (type jpg)
 <use fig/fig_05_14.jpg>
 Package pdftex.def Info: fig/fig_05_14.jpg  used on input line 252.
 (pdftex.def)             Requested size: 362.22003pt x 66.19981pt.
 
+Overfull \vbox (17.49998pt too high) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./fig/fig_05_13.jpg> <./fig/NewtonsLawGravitation.png>] [7 <./fig/fig_05_14
-.jpg>]
-<fig/fig_05_15.jpg, id=308, 636.87938pt x 276.28218pt>
+[8 <./fig/NewtonsLawGravitation.png> <./fig/fig_05_14.jpg>] [9]
+<fig/fig_05_15.jpg, id=235, 636.87938pt x 276.28218pt>
 File: fig/fig_05_15.jpg Graphic file (type jpg)
 <use fig/fig_05_15.jpg>
 Package pdftex.def Info: fig/fig_05_15.jpg  used on input line 318.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
-<fig/fig_05_18.jpg, id=309, 324.46219pt x 274.02374pt>
+<fig/fig_05_18.jpg, id=236, 324.46219pt x 274.02374pt>
 File: fig/fig_05_18.jpg Graphic file (type jpg)
 <use fig/fig_05_18.jpg>
 Package pdftex.def Info: fig/fig_05_18.jpg  used on input line 345.
@@ -1026,317 +1341,340 @@ Package pdftex.def Info: fig/fig_05_18.jpg  used on input line 345.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/fig_05_22.jpg, id=310, 636.87938pt x 276.28218pt>
+
+Overfull \vbox (17.49998pt too high) has occurred while \output is active []
+
+
+[10 <./fig/fig_05_15.jpg>]
+<fig/fig_05_22.jpg, id=244, 636.87938pt x 276.28218pt>
 File: fig/fig_05_22.jpg Graphic file (type jpg)
 <use fig/fig_05_22.jpg>
 Package pdftex.def Info: fig/fig_05_22.jpg  used on input line 372.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
-[8 <./fig/fig_05_15.jpg>] [9 <./fig/fig_05_18.jpg> <./fig/fig_05_22.jpg>]
-<fig/fig_05_23.jpg, id=328, 637.4214pt x 276.5532pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11 <./fig/fig_05_18.jpg>]
+<fig/fig_05_23.jpg, id=253, 637.4214pt x 276.5532pt>
 File: fig/fig_05_23.jpg Graphic file (type jpg)
 <use fig/fig_05_23.jpg>
 Package pdftex.def Info: fig/fig_05_23.jpg  used on input line 421.
 (pdftex.def)             Requested size: 382.4558pt x 165.9332pt.
 
-[10 <./fig/fig_05_23.jpg>]
-<fig/fig_05_28.jpg, id=344, 319.1925pt x 415.5525pt>
+Overfull \vbox (17.49998pt too high) has occurred while \output is active []
+
+
+[12 <./fig/fig_05_22.jpg>] [13 <./fig/fig_05_23.jpg>]
+Overfull \vbox (17.49998pt too high) has occurred while \output is active []
+
+
+[14]
+<fig/fig_05_28.jpg, id=288, 319.1925pt x 415.5525pt>
 File: fig/fig_05_28.jpg Graphic file (type jpg)
 <use fig/fig_05_28.jpg>
 Package pdftex.def Info: fig/fig_05_28.jpg  used on input line 511.
 (pdftex.def)             Requested size: 191.51697pt x 249.33342pt.
- [11]
-<fig/fig_05_29.jpg, id=359, 636.87938pt x 276.28218pt>
+<fig/fig_05_29.jpg, id=289, 636.87938pt x 276.28218pt>
 File: fig/fig_05_29.jpg Graphic file (type jpg)
 <use fig/fig_05_29.jpg>
 Package pdftex.def Info: fig/fig_05_29.jpg  used on input line 529.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
-<fig/fig_05_30.jpg, id=360, 636.87938pt x 276.28218pt>
+ [15 <./fig/fig_05_28.jpg>]
+<fig/fig_05_30.jpg, id=296, 636.87938pt x 276.28218pt>
 File: fig/fig_05_30.jpg Graphic file (type jpg)
 <use fig/fig_05_30.jpg>
 Package pdftex.def Info: fig/fig_05_30.jpg  used on input line 537.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<fig/fig_05_31.jpg, id=361, 636.87938pt x 276.28218pt>
+<fig/fig_05_31.jpg, id=297, 636.87938pt x 276.28218pt>
 File: fig/fig_05_31.jpg Graphic file (type jpg)
 <use fig/fig_05_31.jpg>
 Package pdftex.def Info: fig/fig_05_31.jpg  used on input line 545.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12 <./fig/fig_05_28.jpg> <./fig/fig_05_29.jpg>] [13 <./fig/fig_05_30.jpg> <./f
-ig/fig_05_31.jpg>] [14
+
+Overfull \vbox (17.49998pt too high) has occurred while \output is active []
+
+
+[16 <./fig/fig_05_29.jpg> <./fig/fig_05_30.jpg>] [17 <./fig/fig_05_31.jpg>]
+[18
 
 ]
-Chapter 2.
-<fig/fig_06_04.jpg, id=378, 636.87938pt x 276.28218pt>
+<fig/fig_06_04.jpg, id=314, 636.87938pt x 276.28218pt>
 File: fig/fig_06_04.jpg Graphic file (type jpg)
 <use fig/fig_06_04.jpg>
 Package pdftex.def Info: fig/fig_06_04.jpg  used on input line 569.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
-<fig/fig_06_07.jpg, id=379, 636.87938pt x 276.28218pt>
+ [19 <./fig/fig_06_04.jpg>]
+<fig/fig_06_07.jpg, id=320, 636.87938pt x 276.28218pt>
 File: fig/fig_06_07.jpg Graphic file (type jpg)
 <use fig/fig_06_07.jpg>
 Package pdftex.def Info: fig/fig_06_07.jpg  used on input line 588.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
-[15 <./fig/fig_06_04.jpg>]
-<fig/fig_06_08.jpg, id=386, 636.87938pt x 276.28218pt>
+<fig/fig_06_08.jpg, id=321, 636.87938pt x 276.28218pt>
 File: fig/fig_06_08.jpg Graphic file (type jpg)
 <use fig/fig_06_08.jpg>
 Package pdftex.def Info: fig/fig_06_08.jpg  used on input line 606.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
- [16 <./fig/fig_06_07.jpg> <./fig/fig_06_08.jpg>]
-<fig/fig_06_13.jpg, id=395, 637.4214pt x 276.5532pt>
+
+Underfull \vbox (badness 1014) has occurred while \output is active []
+
+ [20 <./fig/fig_06_07.jpg>] [21 <./fig/fig_06_08.jpg>]
+<fig/fig_06_13.jpg, id=340, 637.4214pt x 276.5532pt>
 File: fig/fig_06_13.jpg Graphic file (type jpg)
 <use fig/fig_06_13.jpg>
 Package pdftex.def Info: fig/fig_06_13.jpg  used on input line 658.
 (pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
-
-[17 <./fig/fig_06_13.jpg>]
-<fig/fig_06_23.jpg, id=409, 636.87938pt x 276.28218pt>
+ [22 <./fig/fig_06_13.jpg>] [23]
+<fig/fig_06_23.jpg, id=363, 636.87938pt x 276.28218pt>
 File: fig/fig_06_23.jpg Graphic file (type jpg)
 <use fig/fig_06_23.jpg>
 Package pdftex.def Info: fig/fig_06_23.jpg  used on input line 731.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
- [18]
-<fig/fig_06_24.jpg, id=424, 636.87938pt x 276.28218pt>
+
+[24 <./fig/fig_06_23.jpg>]
+<fig/fig_06_24.jpg, id=374, 636.87938pt x 276.28218pt>
 File: fig/fig_06_24.jpg Graphic file (type jpg)
 <use fig/fig_06_24.jpg>
 Package pdftex.def Info: fig/fig_06_24.jpg  used on input line 763.
 (pdftex.def)             Requested size: 254.74724pt x 110.51091pt.
- [19 <./fig/fig_06_23.jpg> <./fig/fig_06_24.jpg>]
-<fig/fig_06_29.jpg, id=437, 318.9516pt x 415.3116pt>
+<fig/fig_06_29.jpg, id=376, 318.9516pt x 415.3116pt>
 File: fig/fig_06_29.jpg Graphic file (type jpg)
 <use fig/fig_06_29.jpg>
 Package pdftex.def Info: fig/fig_06_29.jpg  used on input line 786.
 (pdftex.def)             Requested size: 127.57837pt x 166.12169pt.
- [20 <./fig/fig_06_29.jpg>]
-<fig/fig_06_30.jpg, id=452, 318.4698pt x 415.3116pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25 <./fig/fig_06_24.jpg>] [26 <./fig/fig_06_29.jpg>]
+<fig/fig_06_30.jpg, id=397, 318.4698pt x 415.3116pt>
 File: fig/fig_06_30.jpg Graphic file (type jpg)
 <use fig/fig_06_30.jpg>
 Package pdftex.def Info: fig/fig_06_30.jpg  used on input line 840.
 (pdftex.def)             Requested size: 127.38565pt x 166.12169pt.
-<fig/fig_06_33.jpg, id=453, 637.4214pt x 276.5532pt>
+ [27 <./fig/fig_06_30.jpg>]
+<fig/fig_06_33.jpg, id=408, 637.4214pt x 276.5532pt>
 File: fig/fig_06_33.jpg Graphic file (type jpg)
 <use fig/fig_06_33.jpg>
 Package pdftex.def Info: fig/fig_06_33.jpg  used on input line 872.
 (pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
- [21 <./fig/fig_06_30.jpg>]
-<fig/fig_06_35.jpg, id=466, 637.4214pt x 276.5532pt>
+ [28 <./fig/fig_06_33.jpg>]
+<fig/fig_06_35.jpg, id=420, 637.4214pt x 276.5532pt>
 File: fig/fig_06_35.jpg Graphic file (type jpg)
 <use fig/fig_06_35.jpg>
-Package pdftex.def Info: fig/fig_06_35.jpg  used on input line 913.
+Package pdftex.def Info: fig/fig_06_35.jpg  used on input line 920.
 (pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
- [22 <./fig/fig_06_33.jpg>]
-<fig/fig_06_37.jpg, id=478, 637.4214pt x 276.5532pt>
+ [29 <./fig/fig_06_35.jpg>]
+<fig/fig_06_37.jpg, id=431, 637.4214pt x 276.5532pt>
 File: fig/fig_06_37.jpg Graphic file (type jpg)
 <use fig/fig_06_37.jpg>
-Package pdftex.def Info: fig/fig_06_37.jpg  used on input line 940.
+Package pdftex.def Info: fig/fig_06_37.jpg  used on input line 947.
 (pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
- [23 <./fig/fig_06_35.jpg> <./fig/fig_06_37.jpg>]
-<fig/fig_06_39.jpg, id=489, 636.87938pt x 276.28218pt>
+<fig/fig_06_39.jpg, id=432, 636.87938pt x 276.28218pt>
 File: fig/fig_06_39.jpg Graphic file (type jpg)
 <use fig/fig_06_39.jpg>
-Package pdftex.def Info: fig/fig_06_39.jpg  used on input line 969.
+Package pdftex.def Info: fig/fig_06_39.jpg  used on input line 972.
 (pdftex.def)             Requested size: 254.74724pt x 110.51091pt.
-<fig/fig_06_40.jpg, id=490, 319.1925pt x 415.5525pt>
+ [30 <./fig/fig_06_37.jpg>]
+<fig/fig_06_40.jpg, id=443, 319.1925pt x 415.5525pt>
 File: fig/fig_06_40.jpg Graphic file (type jpg)
 <use fig/fig_06_40.jpg>
-Package pdftex.def Info: fig/fig_06_40.jpg  used on input line 994.
+Package pdftex.def Info: fig/fig_06_40.jpg  used on input line 997.
 (pdftex.def)             Requested size: 95.75848pt x 124.6667pt.
+
+[31 <./fig/fig_06_39.jpg> <./fig/fig_06_40.jpg>]
+<fig/fig_06_41.jpg, id=454, 318.43968pt x 415.5525pt>
+File: fig/fig_06_41.jpg Graphic file (type jpg)
+<use fig/fig_06_41.jpg>
+Package pdftex.def Info: fig/fig_06_41.jpg  used on input line 1024.
+(pdftex.def)             Requested size: 95.53264pt x 124.6667pt.
+ [32 <./fig/fig_06_41.jpg>]
+<fig/fig_07_02.jpg, id=464, 636.87938pt x 276.28218pt>
+File: fig/fig_07_02.jpg Graphic file (type jpg)
+<use fig/fig_07_02.jpg>
+Package pdftex.def Info: fig/fig_07_02.jpg  used on input line 1040.
+(pdftex.def)             Requested size: 318.4389pt x 138.14075pt.
+<fig/fig_07_03.jpg, id=465, 637.4214pt x 276.5532pt>
+File: fig/fig_07_03.jpg Graphic file (type jpg)
+<use fig/fig_07_03.jpg>
+Package pdftex.def Info: fig/fig_07_03.jpg  used on input line 1052.
+(pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24 <./fig/fig_06_39.jpg>]
-<fig/fig_06_41.jpg, id=500, 318.43968pt x 415.5525pt>
-File: fig/fig_06_41.jpg Graphic file (type jpg)
-<use fig/fig_06_41.jpg>
-Package pdftex.def Info: fig/fig_06_41.jpg  used on input line 1021.
-(pdftex.def)             Requested size: 95.53264pt x 124.6667pt.
- [25 <./fig/fig_06_40.jpg> <./fig/fig_06_41.jpg>] [26
+ [33
 
-]
-Chapter 3.
-<fig/fig_07_02.jpg, id=516, 636.87938pt x 276.28218pt>
-File: fig/fig_07_02.jpg Graphic file (type jpg)
-<use fig/fig_07_02.jpg>
-Package pdftex.def Info: fig/fig_07_02.jpg  used on input line 1037.
-(pdftex.def)             Requested size: 318.4389pt x 138.14075pt.
-<fig/fig_07_03.jpg, id=517, 637.4214pt x 276.5532pt>
-File: fig/fig_07_03.jpg Graphic file (type jpg)
-<use fig/fig_07_03.jpg>
-Package pdftex.def Info: fig/fig_07_03.jpg  used on input line 1049.
-(pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
-
-Underfull \vbox (badness 1852) has occurred while \output is active []
-
- [27 <./fig/fig_07_02.jpg> <./fig/fig_07_03.jpg>]
-<fig/fig_07_05.jpg, id=524, 637.4214pt x 276.5532pt>
+ <./fig/fig_07_02.jpg>]
+<fig/fig_07_05.jpg, id=471, 637.4214pt x 276.5532pt>
 File: fig/fig_07_05.jpg Graphic file (type jpg)
 <use fig/fig_07_05.jpg>
-Package pdftex.def Info: fig/fig_07_05.jpg  used on input line 1079.
+Package pdftex.def Info: fig/fig_07_05.jpg  used on input line 1082.
 (pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
-<fig/fig_07_08.jpg, id=525, 637.4214pt x 276.5532pt>
+
+Underfull \vbox (badness 7796) has occurred while \output is active []
+
+ [34 <./fig/fig_07_03.jpg>]
+<fig/fig_07_08.jpg, id=480, 637.4214pt x 276.5532pt>
 File: fig/fig_07_08.jpg Graphic file (type jpg)
 <use fig/fig_07_08.jpg>
-Package pdftex.def Info: fig/fig_07_08.jpg  used on input line 1093.
+Package pdftex.def Info: fig/fig_07_08.jpg  used on input line 1096.
 (pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
- [28 <./fig/fig_07_05.jpg> <./fig/fig_07_08.jpg>] [29] [30]
-<fig/fig_07_15.jpg, id=566, 637.4214pt x 276.5532pt>
+ [35 <./fig/fig_07_05.jpg> <./fig/fig_07_08.jpg>] [36] [37]
+[38]
+<fig/fig_07_15.jpg, id=526, 637.4214pt x 276.5532pt>
 File: fig/fig_07_15.jpg Graphic file (type jpg)
 <use fig/fig_07_15.jpg>
-Package pdftex.def Info: fig/fig_07_15.jpg  used on input line 1256.
+Package pdftex.def Info: fig/fig_07_15.jpg  used on input line 1259.
 (pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
- [31 <./fig/fig_07_15.jpg>]
-<fig/fig_07_17.jpg, id=580, 637.4214pt x 276.5532pt>
+<fig/fig_07_17.jpg, id=527, 637.4214pt x 276.5532pt>
 File: fig/fig_07_17.jpg Graphic file (type jpg)
 <use fig/fig_07_17.jpg>
-Package pdftex.def Info: fig/fig_07_17.jpg  used on input line 1279.
+Package pdftex.def Info: fig/fig_07_17.jpg  used on input line 1282.
 (pdftex.def)             Requested size: 254.96404pt x 110.61931pt.
- [32 <./fig/fig_07_17.jpg>]
-[33]
-<fig/fig_07_28.jpg, id=609, 276.28218pt x 276.28218pt>
+ [39 <./fig/fig_07_15.jpg>] [40 <./fig/fig_07_17.jpg>] [41]
+<fig/fig_07_28.jpg, id=561, 276.28218pt x 276.28218pt>
 File: fig/fig_07_28.jpg Graphic file (type jpg)
 <use fig/fig_07_28.jpg>
-Package pdftex.def Info: fig/fig_07_28.jpg  used on input line 1405.
+Package pdftex.def Info: fig/fig_07_28.jpg  used on input line 1408.
 (pdftex.def)             Requested size: 110.51091pt x 110.51091pt.
-<fig/fig_07_29.jpg, id=610, 318.4698pt x 415.3116pt>
+ [42]
+<fig/fig_07_29.jpg, id=576, 318.4698pt x 415.3116pt>
 File: fig/fig_07_29.jpg Graphic file (type jpg)
 <use fig/fig_07_29.jpg>
-Package pdftex.def Info: fig/fig_07_29.jpg  used on input line 1415.
+Package pdftex.def Info: fig/fig_07_29.jpg  used on input line 1418.
 (pdftex.def)             Requested size: 127.38565pt x 166.12169pt.
- [34 <./fig/fig_07_28.jpg> <./fig/fig_07_29.jpg>]
-<fig/fig_07_30.jpg, id=624, 636.87938pt x 276.28218pt>
+<fig/fig_07_30.jpg, id=577, 636.87938pt x 276.28218pt>
 File: fig/fig_07_30.jpg Graphic file (type jpg)
 <use fig/fig_07_30.jpg>
-Package pdftex.def Info: fig/fig_07_30.jpg  used on input line 1443.
+Package pdftex.def Info: fig/fig_07_30.jpg  used on input line 1446.
 (pdftex.def)             Requested size: 318.4389pt x 138.14075pt.
-<fig/fig_07_31.jpg, id=625, 636.87938pt x 276.28218pt>
+ [43 <./fig/fig_07_28.jpg> <./fig/fig_07_29.jpg>] [44 <./fig/fig_07_30.jpg>]
+<fig/fig_07_31.jpg, id=597, 636.87938pt x 276.28218pt>
 File: fig/fig_07_31.jpg Graphic file (type jpg)
 <use fig/fig_07_31.jpg>
-Package pdftex.def Info: fig/fig_07_31.jpg  used on input line 1475.
+Package pdftex.def Info: fig/fig_07_31.jpg  used on input line 1478.
 (pdftex.def)             Requested size: 318.4389pt x 138.14075pt.
- [35 <./fig/fig_07_30.jpg>]
-<fig/fig_07_32.jpg, id=636, 636.87938pt x 276.28218pt>
+<fig/fig_07_32.jpg, id=598, 636.87938pt x 276.28218pt>
 File: fig/fig_07_32.jpg Graphic file (type jpg)
 <use fig/fig_07_32.jpg>
-Package pdftex.def Info: fig/fig_07_32.jpg  used on input line 1485.
+Package pdftex.def Info: fig/fig_07_32.jpg  used on input line 1488.
 (pdftex.def)             Requested size: 318.4389pt x 138.14075pt.
-<fig/fig_07_35.jpg, id=637, 318.9516pt x 415.3116pt>
+<fig/fig_07_35.jpg, id=599, 318.9516pt x 415.3116pt>
 File: fig/fig_07_35.jpg Graphic file (type jpg)
 <use fig/fig_07_35.jpg>
-Package pdftex.def Info: fig/fig_07_35.jpg  used on input line 1496.
+Package pdftex.def Info: fig/fig_07_35.jpg  used on input line 1499.
 (pdftex.def)             Requested size: 159.4754pt x 207.65529pt.
- [36 <./fig/fig_07_31.jpg> <./fig/fig_07_32.jpg> <./fig/fig_07_35.jpg>]
-<fig/fig_07_37.jpg, id=646, 318.4698pt x 415.3116pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45 <./fig/fig_07_31.jpg> <./fig/fig_07_32.jpg>]
+<fig/fig_07_37.jpg, id=607, 318.4698pt x 415.3116pt>
 File: fig/fig_07_37.jpg Graphic file (type jpg)
 <use fig/fig_07_37.jpg>
-Package pdftex.def Info: fig/fig_07_37.jpg  used on input line 1525.
+Package pdftex.def Info: fig/fig_07_37.jpg  used on input line 1528.
 (pdftex.def)             Requested size: 159.2345pt x 207.65529pt.
-
-[37 <./fig/fig_07_37.jpg>]
-<fig/fig_07_38.jpg, id=667, 636.87938pt x 276.28218pt>
+ [46 <./fig/fig_07_35.jpg>] [47 <./fig/fig_07_37.jpg>]
+<fig/fig_07_38.jpg, id=638, 636.87938pt x 276.28218pt>
 File: fig/fig_07_38.jpg Graphic file (type jpg)
 <use fig/fig_07_38.jpg>
-Package pdftex.def Info: fig/fig_07_38.jpg  used on input line 1570.
+Package pdftex.def Info: fig/fig_07_38.jpg  used on input line 1573.
 (pdftex.def)             Requested size: 318.4389pt x 138.14075pt.
- [38 <./fig/fig_07_38.jpg>]
-<fig/fig_07_39.jpg, id=686, 637.4214pt x 276.5532pt>
+ [48 <./fig/fig_07_38.jpg>]
+<fig/fig_07_39.jpg, id=652, 637.4214pt x 276.5532pt>
 File: fig/fig_07_39.jpg Graphic file (type jpg)
 <use fig/fig_07_39.jpg>
-Package pdftex.def Info: fig/fig_07_39.jpg  used on input line 1622.
+Package pdftex.def Info: fig/fig_07_39.jpg  used on input line 1625.
 (pdftex.def)             Requested size: 318.70992pt x 138.27626pt.
-<fig/fig_07_40.jpg, id=688, 636.87938pt x 276.28218pt>
+ [49 <./fig/fig_07_39.jpg>]
+<fig/fig_07_40.jpg, id=663, 636.87938pt x 276.28218pt>
 File: fig/fig_07_40.jpg Graphic file (type jpg)
 <use fig/fig_07_40.jpg>
-Package pdftex.def Info: fig/fig_07_40.jpg  used on input line 1659.
+Package pdftex.def Info: fig/fig_07_40.jpg  used on input line 1662.
 (pdftex.def)             Requested size: 318.4389pt x 138.14075pt.
- [39 <./fig/fig_07_39.jpg>]
-<fig/fig_07_4x.jpg, id=701, 168.63pt x 319.9152pt>
+<fig/fig_07_4x.jpg, id=665, 168.63pt x 319.9152pt>
 File: fig/fig_07_4x.jpg Graphic file (type jpg)
 <use fig/fig_07_4x.jpg>
-Package pdftex.def Info: fig/fig_07_4x.jpg  used on input line 1679.
+Package pdftex.def Info: fig/fig_07_4x.jpg  used on input line 1682.
 (pdftex.def)             Requested size: 84.31479pt x 159.9572pt.
- [40 <./fig/fig_07_40.jpg> <./fig/fig_07_4x.jpg>]
-Chapter 4.
-<fig/fig_08_03.jpg, id=711, 318.43968pt x 415.5525pt>
+ [50 <./fig/fig_07_40.jpg>] [51 <./fig/fig_07_4x.jpg>] [52
+
+]
+<fig/fig_08_03.jpg, id=685, 318.43968pt x 415.5525pt>
 File: fig/fig_08_03.jpg Graphic file (type jpg)
 <use fig/fig_08_03.jpg>
-Package pdftex.def Info: fig/fig_08_03.jpg  used on input line 1694.
+Package pdftex.def Info: fig/fig_08_03.jpg  used on input line 1697.
 (pdftex.def)             Requested size: 159.21945pt x 207.77574pt.
-[41
 
- <./fig/fig_08_03.jpg>]
-<fig/fig_08_07.jpg, id=724, 636.87938pt x 276.28218pt>
+Underfull \vbox (badness 4316) has occurred while \output is active []
+
+ [53 <./fig/fig_08_03.jpg>]
+<fig/fig_08_07.jpg, id=697, 636.87938pt x 276.28218pt>
 File: fig/fig_08_07.jpg Graphic file (type jpg)
 <use fig/fig_08_07.jpg>
-Package pdftex.def Info: fig/fig_08_07.jpg  used on input line 1750.
+Package pdftex.def Info: fig/fig_08_07.jpg  used on input line 1753.
 (pdftex.def)             Requested size: 318.4389pt x 138.14075pt.
- [42 <./fig/fig_08_07.jpg>]
-<fig/fig_08_11.jpg, id=740, 636.87938pt x 276.28218pt>
+ [54] [55 <./fig/fig_08_07.jpg>]
+<fig/fig_08_11.jpg, id=727, 636.87938pt x 276.28218pt>
 File: fig/fig_08_11.jpg Graphic file (type jpg)
 <use fig/fig_08_11.jpg>
-Package pdftex.def Info: fig/fig_08_11.jpg  used on input line 1797.
+Package pdftex.def Info: fig/fig_08_11.jpg  used on input line 1804.
 (pdftex.def)             Requested size: 286.59306pt x 124.32582pt.
- [43 <./fig/fig_08_11.jpg>]
-<fig/fig_08_12.jpg, id=751, 636.87938pt x 276.28218pt>
+ [56 <./fig/fig_08_11.jpg>]
+<fig/fig_08_12.jpg, id=737, 636.87938pt x 276.28218pt>
 File: fig/fig_08_12.jpg Graphic file (type jpg)
 <use fig/fig_08_12.jpg>
-Package pdftex.def Info: fig/fig_08_12.jpg  used on input line 1829.
+Package pdftex.def Info: fig/fig_08_12.jpg  used on input line 1836.
 (pdftex.def)             Requested size: 382.13057pt x 165.77057pt.
-<fig/fig_08_15.jpg, id=752, 318.43968pt x 415.5525pt>
+<fig/fig_08_15.jpg, id=738, 318.43968pt x 415.5525pt>
 File: fig/fig_08_15.jpg Graphic file (type jpg)
 <use fig/fig_08_15.jpg>
-Package pdftex.def Info: fig/fig_08_15.jpg  used on input line 1857.
+Package pdftex.def Info: fig/fig_08_15.jpg  used on input line 1867.
 (pdftex.def)             Requested size: 159.21945pt x 207.77574pt.
- [44 <./fig/fig_08_12.jpg>] [45 <./fig/fig_08_15.jpg>] [46]
-Appendix A.
-[47
 
-] [48]
-Appendix B.
-[49
+[57 <./fig/fig_08_12.jpg>] [58 <./fig/fig_08_15.jpg>] [59] [60
+
+] [61] [62]
+
+Class memoir Warning: The material used in the headers is too large
+(34.99998pt) for the given head height (17.5pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 2033.
+
+[63
 
 ] (./phys1320.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `phys1320.out' has not changed.
-(rerunfilecheck)             Checksum: 2028B9D6BD4974621A6A03F5C5C9726D;9101.
+(rerunfilecheck)             Checksum: 46AF500A7CC597224BA400A0B2550C0A;4816.
  ) 
 Here is how much of TeX's memory you used:
- 29693 strings out of 478542
- 575415 string characters out of 5854396
- 908116 words of memory out of 5000000
- 46715 multiletter control sequences out of 15000+600000
- 412894 words of font info for 63 fonts, out of 8000000 for 9000
+ 32914 strings out of 478542
+ 619955 string characters out of 5854396
+ 988150 words of memory out of 5000000
+ 49907 multiletter control sequences out of 15000+600000
+ 416287 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,9n,102p,919b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 91i,12n,102p,919b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/tex
-live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/
-texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/20
-21/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pf
-b><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tex
-live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist
-/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on phys1320.pdf (51 pages, 2044662 bytes).
+live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/
+texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/202
+1/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2021/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-supe
+r/sfrm1440.pfb>
+Output written on phys1320.pdf (65 pages, 1998681 bytes).
 PDF statistics:
- 981 PDF objects out of 1000 (max. 8388607)
- 802 compressed objects within 9 object streams
- 384 named destinations out of 1000 (max. 500000)
- 779 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 956 PDF objects out of 1000 (max. 8388607)
+ 774 compressed objects within 8 object streams
+ 400 named destinations out of 1000 (max. 500000)
+ 611 words of extra memory for PDF output out of 10000 (max. 10000000)
 

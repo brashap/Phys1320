@@ -1990,6 +1990,94 @@ which matches Equation \ref{eq:uc}.
 
 \subsection{Capacitor with a Dielectric}
 
+An insulating material placed between the plates of a capacitor is know as a dielectric.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_08_17.jpg}
+\caption{Adding a Dielectric to a Capacitor}
+\label{fig:08_17}
+\end{center}
+\end{figure}
+
+
+Consider a capacitor of capacitance $C_0$ with air between the electrodes. When it is fully charged and then disconnected from the power source the potential between the plates is measured at $V_0$. Now suppose a dielectric is placed between the two plates. The new voltage is measured to be
+
+\begin{equation}
+V = \frac{1}{\kappa} V_0
+\end{equation}
+
+where $\kappa$ is called the Dielectric Constant and $\kappa > 1$.
+
+As the charge on the plate has not changed, this implies:
+
+\begin{equation}
+C = \frac{Q_0}{V} = \frac{Q_0}{\kappa V_0} = \kappa \frac{Q_0}{V_0} = \kappa C_0
+\end{equation}
+
+This, in turn, changes the potential energy stored in the capacitor
+
+\begin{equation}
+U = \frac{1}{2} \frac{Q^2}{C} = \frac{1}{2} \frac{Q_0^2}{\kappa C_0} = \frac{1}{\kappa} U_0
+\end{equation}
+
+\subsection{Molecular Model of a Dielectric}
+
+We can understand the effect of the dielectric on the capacitance by looking at the molecular level.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_08_19.jpg}
+\caption{Polarized Atom}
+\label{fig:08_19}
+\end{center}
+\end{figure}
+
+When an external electric field $\vec{E_0}$ is applied, the polar molecules align. The opposite charges in adjacent dipoles with the volume of the dielectric neutralize each other, so there is no net charge within the dielectric. However,at the edges of the dielectric that are perpendicular to the electric field, this is not the case. This creates an induced surface charge $+Q_i$ and $Q_i$. These produce an additional electric field, the induced electric field, $\vec{E_i}$ that opposes $\vec{E_0}$.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_08_20.jpg}
+\caption{Dielectric Effect on Electric Field}
+\label{fig:08_20}
+\end{center}
+\end{figure}
+
+Note: the same effect happens for non-polar molecules as they acquire an induced electric-dipole moment because of the external electric field. 
+
+The net electric field across the capacitor is 
+
+\begin{equation}
+\vec{E} = \vec{E_0} + \vec{E_i}
+\end{equation}
+
+and the effective charge becomes
+\begin{equation}
+Q = Q_0 - Q_i
+\end{equation}
+
+This leads to the definition of the dielectric constant ($\kappa$) as
+\begin{equation}
+\kappa = \frac{E_0}{E}
+\end{equation}
+
+As $E_i$ always opposes $E_0$, $E$ is always less than $E_0$ and $kappa > 1$. All of this leads to
+\begin{equation}
+\vec{E_i} = (\frac{1}{\kappa} - 1) \vec{E_0}
+\end{equation}
+
+If the magnitude of the electric field becomes too large, the molecules in the dielectric become ionized creating free electrons and the material becomes conducting. This is known as dielectric breakdown. 
+
+The critical value of the electric field ($E_C$) at which molecules in an insulator become conducting is called the dielectric strength. 
+
+For air, $E_C = 3.0 \frac{MV}{m}$, so for an air-filled capacitor with a plate separation of $d = 1.00mm$:
+
+\begin{equation}
+V = E_C d = (3.0 * 10^6 \frac{V}{m}(1.0 x 10^{-3}m) = 3.0 kV.
+\end{equation}
+
+\chapter{Current and Resistance}
+
 \appendix
 
 \chapter{Integration by Trig Substitution}

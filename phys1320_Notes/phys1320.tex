@@ -2078,6 +2078,113 @@ V = E_C d = (3.0 * 10^6 \frac{V}{m}(1.0 x 10^{-3}m) = 3.0 kV.
 
 \chapter{Current and Resistance}
 
+\subsection{Electric Current}
+
+Electric current is defined as the rate at which charge flows.
+
+\begin{equation}
+I = \frac{\Delta Q}{Delta t}
+\end{equation}
+
+where the unit for $I$ is the ampere \footnote{named for French physicist Andr\`e-Marie Amp\`ere} ($A$) where 
+\begin{equation}
+1 A = 1 \frac{C}{s}
+\end{equation}
+
+Instantaneous electric current
+\begin{equation}
+I = \lim_{\Delta t \rightarrow 0} \frac{\Delta Q}{\Delta t} = \frac{dQ}{dt}
+\end{equation}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_09_02.jpg}
+\caption{Rate of Flow}
+\label{fig:09_02}
+\end{center}
+\end{figure}
+
+
+\subsubsection{Example: Calculating Instantaneous Current}
+
+Consider a charge moving in a cross-section of wire where the charge is modeled as
+\begin{equation}
+Q(t) = Q_M (1 - e^{-\frac{t}{\tau}})
+\end{equation}
+
+where $Q_M$ is the charge after a long time ($t \rightarrow \infty)$).
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_09_03.jpg}
+\caption{Charge moving through a wire over time}
+\label{fig:09_03}
+\end{center}
+\end{figure}
+
+Using the equality:
+\begin{equation}
+\frac{d}{dx} e^u = e^u \frac{du}{dx}
+\end{equation}
+
+\begin{equation}
+I = \frac{dQ}{dt} = \frac{d}{dt}[Q_M (1 - e^{-\frac{t}{\tau}})] = \frac{Q_M}{\tau} e^{-\frac{t}{\tau}}
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_09_04.jpg}
+\caption{Current through a wire over time}
+\label{fig:09_04}
+\end{center}
+\end{figure}
+
+\subsection{Current in a Circuit}
+
+When the switch is closed, current flows
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_09_05.jpg}
+\caption{Current in a circuit}
+\label{fig:09_05}
+\end{center}
+\end{figure}
+
+Conventionally, the direction of current represents the direction that positive charge would flow (positive terminal to negative terminal). However, we know that in fact, it is electrons (negative charge) that is flowing in the wire in the opposite direction of the current.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_09_06.jpg}
+\caption{Direction of flow}
+\label{fig:09_06}
+\end{center}
+\end{figure}
+
+\section{Model of Conduction in Metals}
+
+\subsection{Drift Velocity}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.35]{fig/fig_09_07.jpg}
+\caption{Charge in a volume}
+\label{fig:09_07}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_09_08.jpg}
+\caption{Drift}
+\label{fig:09_08}
+\end{center}
+\end{figure}
+
+
+
+
 \appendix
 
 \chapter{Integration by Trig Substitution}

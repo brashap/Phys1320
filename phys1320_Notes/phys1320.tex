@@ -2166,6 +2166,10 @@ Conventionally, the direction of current represents the direction that positive 
 
 \subsection{Drift Velocity}
 
+The electrical signals carried by currents travel at a significant portion of the speed of light (of the magnitude of $10^8$ m/s. However, individual electrons typically drift at speeds are around $10^{-4}$ m/s. How are these two different speeds reconciled?
+
+The high speed electrical signals result from teh force between charges acting rapidly at a distance. When free charge is forced into a wire, the incoming charge pushes on the other charges ahead of it due to the repulsive force between like charges. The density of charge in the wire can't be readily increased, so the signal is passed rapidly. The resulting electrical "shock wave" moves through the system near the speed of light. To be precise, the fast-moving signal is a rapidly propagating change in the electric field. 
+
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.35]{fig/fig_09_07.jpg}
@@ -2174,6 +2178,8 @@ Conventionally, the direction of current represents the direction that positive 
 \end{center}
 \end{figure}
 
+However, as the individual free charges (electrons) move, they collide with atoms in the conductor. The distance the electrons move before collision is quite small. The electron paths appear to be random; however, there is an electric field in the conductor that causes the electrons to drift in the direction opposite the field. The drift velocity $\vec{V_d}$ is the average velocity of the free charges. 
+
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.50]{fig/fig_09_08.jpg}
@@ -2181,6 +2187,58 @@ Conventionally, the direction of current represents the direction that positive 
 \label{fig:09_08}
 \end{center}
 \end{figure}
+
+The relationship between current and drift velocity can be found by considering the number of free charges in a segment of wire. The number density of free charges (n) is given by
+\begin{equation}
+n = \frac{\text{number of charges}}{\text{volume}}
+\end{equation}
+where the value of n depends on the material. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_09_10.jpg}
+\caption{Drift Velocity}
+\label{fig:09_10}
+\end{center}
+\end{figure}
+
+Consider the volume $A v_d dt$. The number of charges is thus $n A v_d dt$, and therefore $dQ = q n A v_d dt$.
+
+From the current definition: 
+\begin{equation}
+I = \frac{dQ}{dt} = q n A v_d
+\end{equation}
+
+This leads to a drift velocity of
+\begin{equation}
+v_d = \frac{I}{nqA}
+\end{equation}
+
+
+\subsection{Current Density}
+
+While current is a scalar with a + or - to indicate direction, it is sometimes useful to consider the details of the motion of the charge. 
+
+We will consider the current density, $\vec{J}$, the flow of charge through an infinitesimal area, divided by the area. Consider the differential current through an area of $\vec{A}$
+
+\begin{equation}
+dI = \vec{J} \cdot d\vec{A} = J dA \cos{\theta}
+\end{equation}
+
+Integrating
+\begin{equation}
+I = \iint_{area} \vec{J} \cdot d\vec{A}
+\end{equation}
+
+Consider the magnitude of the current density
+\begin{equation}
+J = \frac{I}{A} = \frac{n |q| A v_d}{A} = n |q| v_d
+\end{equation}
+
+Thus
+\begin{equation}
+\vec{J} = nq \vec{v_d}
+\end{equation}
 
 
 

@@ -1570,7 +1570,7 @@ placing conducting plates at the equipotential lines at the potentials shown.
 \end{center}
 \end{figure}
 
-\subsubsection{Examples}
+\subsubsection{Example - Calculating Equipotential Lines}
 
 Consider Figure \ref{fig:07_30} with $Q = +10nC$ at the Origin. What are the equipotential surfaces at which the potential is:
 
@@ -1590,6 +1590,7 @@ For $V = k\frac{q}{r}$, V is a constant. Thus, $r = k\frac{q}{V}$.
 \item 10V $r = 9.0m$
 \end{enumerate}
 
+\subsubsection{Example - Potential Difference between Oppositely Charged Parallel Plates}
 
 \begin{figure}[H]
 \begin{center}
@@ -1598,6 +1599,8 @@ For $V = k\frac{q}{r}$, V is a constant. Thus, $r = k\frac{q}{V}$.
 \label{fig:07_37}
 \end{center}
 \end{figure}
+
+
 
 Two large conducting plates carry equal and opposite charges, with a surface charge density $\sigma = 6.81 * 10^{-7} \frac{C}{m^2}$ of magnitude as shown in Figure \ref{fig:07_37}. The separation between the plates is $l = 6.5mm$ 
 \begin{enumerate}[(a)]
@@ -1635,6 +1638,8 @@ Assume the size of the plates ($L$) is much larger than the distance $l$.
 	x = 1.3 * 10^{-3}m
 	\end{equation}
 \end{enumerate}
+
+\subsection{Distribution of Charges on Conductors}
 
 \begin{figure}[H]
 \begin{center}
@@ -2083,7 +2088,7 @@ V = E_C d = (3.0 * 10^6 \frac{V}{m}(1.0 x 10^{-3}m) = 3.0 kV.
 Electric current is defined as the rate at which charge flows.
 
 \begin{equation}
-I = \frac{\Delta Q}{Delta t}
+I = \frac{\Delta Q}{\Delta t}
 \end{equation}
 
 where the unit for $I$ is the ampere \footnote{named for French physicist Andr\`e-Marie Amp\`ere} ($A$) where 
@@ -2240,6 +2245,250 @@ Thus
 \vec{J} = nq \vec{v_d}
 \end{equation}
 
+\subsection{Resistivity and Resistance}
+
+When a voltage is applied to a conductor an electric field $\vec{E}$ is created and charges in the conductor experience the force from the electric field. The resulting current density, $\vec{J}$, depends on the electric field and properties of the conductor:
+
+\begin{equation}
+\vec{J} = \sigma \vec{E}
+\end{equation}
+
+where $\sigma$ is the electrical conductivity of the material. 
+
+\begin{equation}
+\sigma = \frac{|J|}{|E|} (\frac{A}{V \cdot m})
+\end{equation}
+
+Next we define the ohm\footnote{Names for Georg Simon Ohm} ($\Omega$). The $\Omega$ is defined at $\frac{1 V}{1 A}$, given $\sigma$ the units of $(\Omega \cdot m)^{-1}$.
+
+The inverse of conductivity is resistivity ($\rho$):
+\begin{equation}
+\rho = \frac{1}{\sigma} (\Omega \cdot m)
+\end{equation}
+
+
+We can define resistivity in terms of Electric Field and Current Density
+
+
+\begin{equation}
+\rho = \frac{E}{J}
+\end{equation}
+
+\subsubsection{Example - Copper Wire}
+
+Consider 5 meters of copper wire of diameter $2.053mm$ (12-gauge) carrying a current of $10mA$.
+
+First calculate the current density
+
+\begin{equation}
+J = \frac{I}{A} = \frac{10 * 10^{-3}}{(2.053*10^{-3})^2 \pi} \frac{A}{m^2} = \frac{10 * 10^{-3}}{3.31 * 10^{-6}} \frac{A}{m^2} =  3.0 * 10^3 \frac{A}{m^2}
+\end{equation}
+
+Next, the resistance use $\rho_{copper} = 1.68 * 10^{-8} (\Omega \cdot m)$:
+\begin{equation}
+R = \rho \frac{L}{A} = 1.68 * 10^{-8} (\Omega \cdot m) \frac{5.00 m}{3.31* 10^{-6} m^2} = 0.025 \Omega
+\end{equation}
+
+Finally, the Electric Field
+
+\begin{equation}
+E = \rho J = 1.68 * 10^{-8} (\Omega \cdot m) \cdot 3.0 * 10^3 \frac{A}{m^2} = 5.07 * 10^{-5} \frac{V}{m}
+\end{equation}
+
+This hints at Ohm's Law $A \cdot \Omega = V$ or $ V = IR$.
+
+\subsection{Temperature Dependence of Resitivity}
+The Resistivity Table contains "Temperature Coefficient" as some materials the resistivity has a strong temperature dependence. 
+
+\begin{equation}
+\rho = \rho_0 [1+\alpha(T-T_0)]
+\end{equation}
+
+where $\rho_0$ at $T_0$ are the resistivity at room temperature (usually assumed to be $20^o C$.
+
+\subsection{Resistance}
+Resistance is a measure of how difficult it is for current to pass through a wire. 
+
+Consider this diagram:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_09_13.jpg}
+\caption{Resistance}
+\label{fig:09_13}
+\end{center}
+\end{figure}
+
+\begin{equation}
+E = \rho J
+\end{equation}
+
+\begin{equation}
+\frac{V}{L} = \rho \frac{I}{A}
+\end{equation}
+
+\begin{equation}
+V = (\rho \frac{L}{A})I
+\end{equation}
+
+
+This leads us closer to Ohm's Law. The Resistance is defined as the ratio of Voltage to Current or
+\begin{equation}
+R = \frac{V}{I}
+\end{equation}
+
+\subsubsection{Application}
+Combining the concept of Resistance with Temperature Dependence, we get
+\begin{equation}
+R = R_0 (1 + \alpha \Delta T)
+\end{equation}
+where $\Delta T$ is the difference in temperature relative to room temperature.
+
+This is how a digital thermometer works. 
+
+\section{Ohm's Law}
+The relationship between Voltage and Current was empirically determined by Goerg Ohm\footnote{A presented in a paper published in 1827}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_09_19.jpg}
+\caption{Goerg Ohm's Setup}
+\label{fig:09_19}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_09_20.jpg}
+\caption{Goerg Ohm's Data}
+\label{fig:09_20}
+\end{center}
+\end{figure}
+
+Ohm's Law
+\begin{equation}
+V = I \cdot R
+\end{equation}
+
+\subsection{Diode}
+
+A diode allows current to flow in one direction. It has low resistance when forward biased and high resistance when reverse biased. Until breakdown.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_09_21.jpg}
+\caption{Diode Setup}
+\label{fig:09_21}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_09_22.jpg}
+\caption{Diode Resistance}
+\label{fig:09_22}
+\end{center}
+\end{figure}
+
+\section{Electrical Energy and Power}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_09_24.jpg}
+\caption{Power}
+\label{fig:09_24}
+\end{center}
+\end{figure}
+
+To explore electric power, consider a voltage difference existing across a material. An electric potential difference exists with $V_1$ being higher than $V_2$ which is caused by an Electric field pointing from the higher to lower potential. Recall that $V = \frac{\Delta U}{q}$ and that a charge $\Delta Q$ loses potential energy moving through the potential difference.
+
+\begin{equation}
+\vec{F} = m \vec{a} = \Delta Q \vec{E}
+\end{equation}
+
+The force does not accelerate the charge across the entire length $\Delta L$ as the charge interacts with the atoms and free electrons in the material. Thus, the charge has the same Drift Velocity $v_d$ passing through $A_2$ as it does at $A_1$. However, there is work done on the charge. 
+
+\begin{equation}
+E = \frac{(V_2 - V_1)}{\Delta L} = \frac{V}{\Delta L}
+\end{equation}
+
+\begin{equation}
+W = F \Delta L = (\Delta Q E) \Delta L = (\Delta Q \frac{V}{\Delta L})\Delta L = \Delta Q V = \Delta U
+\end{equation}
+
+The lost potential energy appears as thermal energy in the material. 
+
+Power is work per unit time.
+
+\begin{equation}
+P = \frac{\Delta U}{\Delta t} = \frac{\Delta Q V}{\Delta t} = IV
+\end{equation}
+
+For a resistor
+
+\begin{equation}
+P = IV = I(IR) = I^2R
+\end{equation}
+or
+\begin{equation}
+P = IV = \frac{V}{R} = \frac{V^2}{R}
+\end{equation}
+
+The units for power is Watts ($W$):
+
+\begin{equation}
+1 W = (1 A) (1 V) = (1 \frac{C}{s})(1 \frac{J}{C}) = 1 \frac{J}{s}
+\end{equation}
+
+\subsection{Cost of Electricity}
+
+You pay for energy used. Power is change in Energy over time or $P = \frac{dE}{dt}$. This leads to 
+
+\begin{equation}
+E = \int P dt
+\end{equation}
+
+\subsubsection{Cost Effectiveness of an LED Bulb}
+
+Consider that a $7.5 W$ LED bulb has the same light output as a $100 W$ incandescent bulb.
+
+\begin{equation}
+E_{incan} = Pt = 75 W (\frac{1 kW}{1000 W})(\frac{3 h}{day}) 365 days = 81.125 kW \cdot h
+\end{equation}
+
+\begin{equation}
+E_{LED} = Pt = 7.5 W (\frac{1 kW}{1000 W})(\frac{3 h}{day}) 365 days = 8.113 kW \cdot h
+\end{equation}
+
+The average cost of electricity in Albuquerque is $14.60 \frac{cents}{kWh}$
+
+\begin{equation}
+\Delta Cost = (81.125 kWh - 8,113 kWh) * \frac{\$0.146}{kWh} = \$10.66
+\end{equation}
+
+\section{Superconductors}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_09_27.jpg}
+\caption{Superconductor}
+\label{fig:09_27}
+\end{center}
+\end{figure}
+
+In 1911, Heike Kamerlingh Onnes found that when mercury was cooled before a critical temperature $(4.2^o K)$ the resistance went to zero. Zero resistance means no power loss as $P = I^2R$
+
+Additionally, there is a second effect, the exclusion of magnetic fields. Known as the Meissner effect allowing a light magnet to levitate above a superconducting surface. 
+
+\chapter{Direct Current Circuits}
+
+\section{Electromotive Force}
+
+\section{Resistors in Series and Parallel}
+
+\section{Kirchhoff's Laws}
+
+\section{RC Circuits}
 
 
 

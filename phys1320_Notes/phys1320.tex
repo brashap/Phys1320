@@ -2482,15 +2482,273 @@ Additionally, there is a second effect, the exclusion of magnetic fields. Known 
 
 \chapter{Direct Current Circuits}
 
+
 \section{Electromotive Force}
+
+A special type of potential difference is the Electromotive Force (EMF). It is not a force, but it is still called this for historical\footnote{Alessandro Volta coined the term EMF in the 1800s} reasons. 
+
+Where does EMF come from. A battery can be considered a two-terminal device with one terminal always at a higher potential than the other. The higher terminal is referred to as the positive terminal (+) and the low potential terminal referred to a the negative terminal (-). 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_10_03.jpg}
+\caption{Electromotive Force}
+\label{fig:10_03}
+\end{center}
+\end{figure}
+
+To maintain the higher potential on the positive terminal, negative charges must be moved to the negative terminal. This requires work which is supplied by the chemical reaction and this is what is referred to as the EMF. The EMF is equal to the work done on the charge per unit charge:
+\begin{equation}
+\epsilon = \frac{dW}{dq}
+\end{equation}
+when there is no charge flowing. SInce the unit for work is the Joule and the unit for charge is the Coulomb, the unit for EMF is the volt ($1V = \frac{J}{C}$).
+
+\subsection{Internal Resistance and the Terminal Voltage}
+
+Batteries have internal resistance, so 
+\begin{equation}
+V_{terminal} = \epsilon - Ir
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_10_07.jpg}
+\caption{Voltage Source and Load}
+\label{fig:10_07}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_10_08.jpg}
+\caption{Voltage through the circuit}
+\label{fig:10_08}
+\end{center}
+\end{figure}
+
 
 \section{Resistors in Series and Parallel}
 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_10_12.jpg}
+\caption{Resistors in Series}
+\label{fig:10_12}
+\end{center}
+\end{figure}
+
+For resistors in Series
+
+\begin{equation}
+V = V_1 + V_2 + V_3
+\end{equation}
+
+\begin{equation}
+V = 1R_1 + 1R_2 + 1R_3
+\end{equation}
+
+\begin{equation}
+I = \frac{V}{R_1 + R_2 + R_3}
+\end{equation}
+
+So
+
+\begin{equation}
+R_{eq} = \sum_{i=1}^{N} R_i
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_10_14.jpg}
+\caption{Resistors Parallel}
+\label{fig:10_14}
+\end{center}
+\end{figure}
+
+\begin{equation}
+V = V_1 = V_2
+\end{equation}
+
+\begin{equation}
+I = I_1 + I_2
+\end{equation}
+
+\begin{equation}
+\frac{V}{R_{eq}} = \frac{V_1}{R_1} + \frac{V_2}{R_2}
+\end{equation}
+
+Because the Voltage is equal across the resistors
+\begin{equation}
+\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2}
+\end{equation}
+
+Or, more generically
+
+\begin{equation}
+R_{eq} = (\sum_{i=1}{N} \frac{1}{R_i})^{-1}
+\end{equation}
+
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_10_16.jpg}
+\caption{Resistors in Series and Parallel}
+\label{fig:10_16}
+\end{center}
+\end{figure}
+
 \section{Kirchhoff's Laws}
+
+\subsection{Kirchhoff's First Law (the Node Law or the Junction Rule)} 
+The sum of all currents entering a junction must equal the sum of all currents leaving the junction.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_10_20.jpg}
+\caption{Kirchholff's Node Law}
+\label{fig:10_20}
+\end{center}
+\end{figure}
+
+\begin{equation}
+\sum I_{in} = \sum I_{out}
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_10_24.jpg}
+\caption{Kirchholff's Node Law Example}
+\label{fig:10_24}
+\end{center}
+\end{figure}
+
+\subsection{Kirchhoff's Second Law (the Loop Law or the Loop Rule)}
+
+The sum off all potential differences, including those supplied by voltage sources and resistive elements, around a closed loop equals zero.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_10_21.jpg}
+\caption{Kirchholff's Loop Law}
+\label{fig:10_21}
+\end{center}
+\end{figure}
+
+\begin{equation}
+\sum_{closed loop} V = 0
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_10_25.jpg}
+\caption{Kirchholff's Loop Law Example}
+\label{fig:10_25}
+\end{center}
+\end{figure}
+
+\subsection{Kirchhoff Examples}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_10_28.jpg}
+\caption{Kirchholff Example}
+\label{fig:10_28}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_10_29.jpg}
+\caption{Kirchholff Examples}
+\label{fig:10_29}
+\end{center}
+\end{figure}
 
 \section{RC Circuits}
 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_10_38.jpg}
+\caption{RC Circuit}
+\label{fig:10_38}
+\end{center}
+\end{figure}
 
+When the switch is moved to Position A, from Kirchhoff's Loop Law
+\begin{equation}
+\epsilon - V_R - V_C =0
+\end{equation}
+
+The voltage across C is $V_C = \frac{q}{C}$ and the voltage across R is $V_R = IR$ with the current $I = \frac{dq}{dt}$.
+
+\begin{equation}
+\epsilon - R \frac{dq}{dt}  - \frac{q}{C} = 0
+\end{equation}
+
+This differential equation can be solved by rearranging
+\begin{equation}
+\frac{dq}{dt} = \frac{\epsilon C - q}{RC}
+\end{equation}
+
+\begin{equation}
+\int_0^q \frac{dq}{\epsilon C - q} = \frac{1}{RC} \int_0^t dt
+\end{equation}
+
+By substitution if $u = \epsilon C - q$ then $du = -dq$
+
+\begin{equation}
+- \int_0^q \frac{du}{u} = \frac{1}{RC} \int_0^t dt
+\end{equation}
+
+Integrating
+
+\begin{equation}
+\ln{\frac{\epsilon C - q}{\epsilon C}} = - \frac{1}{RC} t
+\end{equation}
+
+\begin{equation}
+\frac{\epsilon C - q}{\epsilon C} = e^{-\frac{t}{RC}}
+\end{equation}
+
+Simplifying
+\begin{equation}
+q(t) = C\epsilon(1-e^{\frac{t}{RC}}) = Q(1-e^{-\frac{1}{\tau}})
+\end{equation}
+
+Where $\tau$ is the RC Time Constant ($\tau = RC$).
+
+Note, as time approaches $\infty$, the exponential goes to zero, so the charge approaches the maximum charge $Q = C \epsilon$.
+
+The current can likewise be calculated
+
+\begin{equation}
+I(t) = \frac{dq}{dt} = \frac{d}{dt} [C\epsilon(1-e^{-\frac{t}{RC}}]
+\end{equation}
+
+\begin{equation}
+I(t) = C \epsilon (\frac{1}{RC}) e^{-\frac{t}{RC}} = \frac{\epsilon}{R}e^{-\frac{t}{RC}} = I_0 e^{-\frac{1}{\tau}}
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.90]{fig/fig_10_39.jpg}
+\caption{RC Circuit Charging}
+\label{fig:10_39}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.90]{fig/fig_10_40.jpg}
+\caption{RC Circuit Discharging}
+\label{fig:10_40}
+\end{center}
+\end{figure}
+
+\subsection{Examples}
+
+\chapter{Magnetic Forces and Fields}
 
 \appendix
 

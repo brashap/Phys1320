@@ -2750,6 +2750,143 @@ I(t) = C \epsilon (\frac{1}{RC}) e^{-\frac{t}{RC}} = \frac{\epsilon}{R}e^{-\frac
 
 \chapter{Magnetic Forces and Fields}
 
+We all know one big magnet. The North of the compass points towards the South pole of the magnet. So, the Geographic North Pole is actually near the Magnetic South Pole. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_11_02.jpg}
+\caption{One Big Magnet}
+\label{fig:11_02}
+\end{center}
+\end{figure}
+
+\section{Magnetic Fields and Lines}
+
+A magnetic field is defined by the force of that a charged particle experiences moving in this field. The magnitude of the force is proportional to the amount of charge $q$, the speed of the charged particle $v$, and the magnitude of the applied magnetic field. The direction is perpendicular to both the direction of the moving charged particle and the direction of the applied magnetic field. 
+
+\begin{equation}
+\vec{F}_m = q \vec{v} \bigtimes \vec{B}
+\end{equation}
+
+where $\theta$ is the angle between the velocity and the magnetic field and the $\vec{B}$ is defined as the magnetic field. 
+
+This gives a magnitude of
+\begin{equation}
+F_m = q v B sin \theta
+\end{equation}
+
+where the units for $B$ are tesla (T). 
+
+\begin{equation}
+1 T = \frac{1 N}{A \cdot m}
+\end{equation}
+
+Sometimes it is useful to use a smaller unit, teh gauss (G), where $1 G = 10^{-4} T$.
+
+The direction of the Magnetic Force is given by the right hand rule:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.60]{fig/fig_11_04.jpg}
+\caption{Right Hand Rule}
+\label{fig:11_04}
+\end{center}
+\end{figure}
+
+
+\subsection{Example}
+
+\subsection{Representing Magnetic Fields}
+
+\begin{itemize}
+\item The direction of the magnetic field is tangent to the field line at any point in space. 
+\item The strength of the field is proportional to the closeness of the lines. 
+\item Magnetic field lines can never cross
+\item Magnetic field lines are continuous, forming closed loops without a beginning or end. They are directed from the North Pole to the South Pole. 
+\end{itemize}
+
+The last property is related to the fact hat North and South poles can not be separated. This makes then different from electric field lines. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.60]{fig/fig_11_06.jpg}
+\caption{Magnetic Field Lines}
+\label{fig:11_06}
+\end{center}
+\end{figure}
+
+\section{Motion of Charged Particle In a Magnetic Field}
+
+Consider the case where the charged particle moves perpendicular to a uniform B-field. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.60]{fig/fig_11_07.jpg}
+\caption{Motion in a Magnetic Field}
+\label{fig:11_07}
+\end{center}
+\end{figure}
+
+The magnetic force supplies the centripetal force $F_c = \frac{m v^2}{r}$. Noting the velocity is perpendicular to the magnetic field, the magnetic force reduces to $F_m = qvB$. Because $F_m$ supplies $F_c$:
+
+\begin{equation}
+qvB = \frac{m v^2}{r}
+\end{equation}
+
+Solving for $r$ yields:
+
+\begin{equation}
+r = \frac{mv}{qB}
+\end{equation}
+
+The period can then be derived as 
+
+\begin{equation}
+T = \frac{2 \pi r}{v} = \frac{2 \pi}{v} \frac{mv}{qB} = \frac{2 \pi m}{qB}
+\end{equation}
+
+
+If the velocity is not perpendicular to the magnetic field then the velocity can be broken into components
+
+\begin{equation}
+v_{perp} = v \sin{\theta}
+\end{equation}
+
+and
+
+\begin{equation}
+v_{para} = v \cos{\theta}
+\end{equation}
+
+The parallel motion determines the pitch ($p$) of the helix
+
+\begin{equation}
+p = v_{para} T
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.80]{fig/fig_11_08.jpg}
+\caption{Helical Motion}
+\label{fig:11_08}
+\end{center}
+\end{figure}
+
+\section{Magnetic Force on a Current-Carrying Conductor}
+
+Second right hand rule
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.80]{fig/fig_11_11.jpg}
+\caption{Right Hand Rule Revisited}
+\label{fig:11_11}
+\end{center}
+\end{figure}
+
+
+
+
 \appendix
 
 \chapter{Integration by Trig Substitution}

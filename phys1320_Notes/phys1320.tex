@@ -2665,6 +2665,41 @@ The sum off all potential differences, including those supplied by voltage sourc
 \end{center}
 \end{figure}
 
+\subsection{Examples - Circuits}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/circuit2.png}
+\caption{Example Circuit 1}
+\label{fig:cir1}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/circuit1.png}
+\caption{Example Circuit 2}
+\label{fig:cir2}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/circuit3.png}
+\caption{Example Circuit 3}
+\label{fig:cir3}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.40]{fig/circuit4.png}
+\caption{Example Circuit 4}
+\label{fig:cir4}
+\end{center}
+\end{figure}
+
+
 \section{RC Circuits}
 
 \begin{figure}[H]
@@ -2746,7 +2781,47 @@ I(t) = C \epsilon (\frac{1}{RC}) e^{-\frac{t}{RC}} = \frac{\epsilon}{R}e^{-\frac
 \end{center}
 \end{figure}
 
-\subsection{Examples}
+\subsection{Example - Intermittent Wiper}
+
+An intermittent works using a relaxation oscillator to control a pair of windshield wipers. Once the voltage on $V_{out}$ reaches $10V$ the wiper motor engages and the capacitor discharges. After one cycle of the blades wiping, the capacitor starts charging again. The potentiometer can be adjusted from $0.00 \Omega$ to $10.00k\Omega$ to control the speed of charging.  
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_10_iw.jpg}
+\caption{Intermittent Wiper}
+\label{fig:11_iw}
+\end{center}
+\end{figure}
+
+In Figure \ref{fig:11_iw}, assume that $C = 10mF$. What do we need to adjust the poteniometer $R$ to in order to get the wiper frequency to be once every 10 seconds. 
+
+Start by noting that 
+\begin{equation}
+V_out(t) = V(1 - e^{-\frac{t}{\tau}})
+\end{equation}
+
+This leads to 
+\begin{equation}
+e^{-\frac{t}{\tau}} = 1 -\frac{V_{out}(t)}{V}
+\end{equation}
+
+With $\tau = RC$ and taking the natural log of both sides:
+
+\begin{equation}
+-\frac{1}{RC} = ln(1 - \frac{V_{out}(t)}{V})
+\end{equation}
+
+Solving for $R$:
+\begin{equation}
+R = \frac{-t}{C ln(1 - \frac{V_{out}(t)}{V})}
+\end{equation}
+
+Using the parameters from above
+\begin{equation}
+R = \frac{- 10.00 s}{(10*10^{-3}F) ln(1 - \frac{10 V}{12 V})} = 558.11 \Omega
+\end{equation}
+
+
 
 \chapter{Magnetic Forces and Fields}
 
@@ -3017,6 +3092,87 @@ F = IRB \int_{\pi}^{2\pi} \sin{\theta} d\theta = IBR \bigg\rvert_{\pi}^{2\pi} = 
 \end{equation}
 
 And the total force is thus equal to zero.
+
+\section{Force and Torque on a Current Loop}
+
+One application of the magnetic force on a current-carrying wire is a motor. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_11_15.jpg}
+\caption{DC Electric Motor}
+\label{fig:11_15}
+\end{center}
+\end{figure}
+
+In a uniform magnetic field, a current-carrying loop experiences both forces and torques on the loop. In the case of Figure \ref{fig:11_15}, the rectangular loop has sides of lengths $a$ and $b$, and is in a uniform magnetic field: $\vec{B} = B \hat{j}$.
+
+The magnetic force on the wire is 
+\begin{equation}
+\vec{F} = l \vec{I} \bigtimes \vec{B}
+\end{equation}
+
+In order to find the total force on the loop, we look at the force on each of the sides.
+
+\begin{equation}
+\vec{F}_1 = l a B \sin(90^o - \theta) \hat{i} = l a B \cos(\theta) \hat{i}
+\end{equation}
+
+\begin{equation}
+\vec{F}_3 = l a B \sin(90^o + \theta) \hat{i} = -l a B \cos(\theta) \hat{i}
+\end{equation}
+
+Sides 2 and 4 are perpendicular to the magentic field $\vec{B}$:
+
+\begin{equation}
+\vec{F}_2 = l b B \hat{k}
+\end{equation}
+
+\begin{equation}
+\vec{F}_4 = -l b B \hat{k}
+\end{equation}
+
+
+The net force on the loop is the sum of the four components
+\begin{equation}
+\sum \vec{F}_{net} = \vec{F}_1 + \vec{F}_2 + \vec{F}_3 + \vec{F}_4 = 0
+\end{equation}
+
+This holds generally for a current-carrying loop in a uniform magnetic field at the net force on it is zero.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_11_16.jpg}
+\caption{Torque but not Force}
+\label{fig:11_16}
+\end{center}
+\end{figure}
+
+In Figure \ref{fig:11_16}, consider first forces $\vec{F}_1$ and $\vec{F}_3$. Since they have the same line of action and are equal but opposite, the sum of their torques about any axis is zero. Thus, any torque on the loop must be furnished by  $\vec{F}_2$ and $\vec{F}_4$.
+
+Consider Point O which is a distance $x$ from side 2 and a distance $(a-x)$ from side 4. The moment arms for $F_2$ and $F_4$ are $x\sin{\theta}$ and $(a-x)\sin{\theta}$, respectively. This gives the torque:
+
+\begin{equation}
+\sum \vec{\tau} = \vec{\tau}_2 + \vec{\tau}_4 = F_2 x \sin{\theta} \hat{i} - F_4 (a-x) \sin{\theta} \hat{i}
+\end{equation}
+
+or 
+
+\begin{equation}
+\sum \vec{\tau} = l b B x \sin{\theta} \hat{i} - l b B (a-x) \sin{\theta} \hat{i}
+\end{equation}
+
+If we consider $A = a * b$, the area inside the loop, then this simplifies to 
+
+\begin{equation}
+\vec{\tau} = - l AB \sin{\theta} \hat{i}
+\end{equation}
+
+
+
+
+
+
 
 
 

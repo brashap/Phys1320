@@ -3225,7 +3225,78 @@ U = -\vec{u} \cdot \vec{B} = -\mu B \cos{\theta} - (-2.5 * 10^{-6} A \cdot m^2)(
 \end{center}
 \end{figure}
 
+Edwin Hall \footnote{in 1879 in the US} investigated motion of electrons in a strip subject to a magnetic field.
+
+Consider a magnetic strip of width $l$ in a uniform magnetic field. As electrons move in the strip (i.e., current), the magnetic field pushes the electrons to one side of the strip. This leads to an excess of positive charge on the other side of the strip and leads to an electric field across the strip (perpendicular to the direction of the current). This electric field pulls the electrons against the magnetic force until an equilibrium is reached. Giving:
+
+\begin{equation}
+qE = q v_d B
+\end{equation}
+
+or a drift velocity of 
+\begin{equation}
+v_d = \frac{E}{B}
+\end{equation}
+
+Recall that if the current in the strip is $I$, then 
+\begin{equation}
+I = n q v_d A
+\end{equation}
+where $n$ is the density of charge carriers and $A$ is the cross-sectional area of the strip. 
+
+Combining,
+\begin{equation}
+I = n q \frac{E}{B} A
+\end{equation}
+
+Noting that $E = \frac{V}{l}$, we get a Hall Potential ($V_{hall})$ of
+\begin{equation}
+V_{hall} = \frac{I B l}{n q A}
+\end{equation}
+
+Or, substituting $qE = q v_d B$ leads to
+\begin{equation}
+V = B l v_d
+\end{equation}
+
+The Hall Effect can be used to "select" charges of a certain velocity and can be used to measure strength of a magnetic field.
+
 \section{Applications of Magnetic Forces and Fields}
+
+\subsection{Mass Spectrometer}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_11_19.jpg}
+\caption{Mass Spectrometer}
+\label{fig:11_19}
+\end{center}
+\end{figure}
+
+\subsection{Cyclotron}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_11_20.jpg}
+\caption{Cyclotron}
+\label{fig:11_20}
+\end{center}
+\end{figure}
+
+\subsection{Example}
+
+A cyclotron used to accelerate alpha-particles ($m = 6.64*10^{-27}kg$ and $q = 3.2*10^{-19}C$) has a radius of $0.50m$ and a magnetic field of $1.8T$. 
+
+Period: Distance traveled in one revolution divided by the speed
+
+\begin{equation}
+T = \frac{2 \pi R}{\frac{q B R}{m}}=\frac{2 \pi m}{q B} = \frac{2 \pi (6.64*10^{-27}kg)}{(3.2*10^{-19}C){1.8T}} = 7.3*10^{-8} s
+\end{equation}
+
+Kinetic Energy:
+\begin{equation}
+\frac{1}{2} m v^2 = \frac{q^2 B^2 R^2}{2m} = \frac{(3.2*10^{-19}C)^2(1.8T)^2(0.50m)^2}{2(6.64*10^{-27}kg)} = 6.2 * 10^{-12} J = 39 MeV
+\end{equation}
 
 
 

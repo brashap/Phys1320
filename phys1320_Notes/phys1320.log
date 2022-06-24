@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.18)  24 JUN 2022 11:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.18)  24 JUN 2022 12:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2004,29 +2004,42 @@ File: fig/fig_11_17.jpg Graphic file (type jpg)
 <use fig/fig_11_17.jpg>
 Package pdftex.def Info: fig/fig_11_17.jpg  used on input line 3222.
 (pdftex.def)             Requested size: 290.28378pt x 114.42722pt.
- [105 <./fig/fig_11_17.jpg>] [106
+ [105 <./fig/fig_11_17.jpg>]
+<fig/fig_11_19.jpg, id=1312, 636.87938pt x 276.28218pt>
+File: fig/fig_11_19.jpg Graphic file (type jpg)
+<use fig/fig_11_19.jpg>
+Package pdftex.def Info: fig/fig_11_19.jpg  used on input line 3270.
+(pdftex.def)             Requested size: 318.4389pt x 138.14075pt.
 
-] [107] [108]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [106]
+<fig/fig_11_20.jpg, id=1323, 636.87938pt x 276.28218pt>
+File: fig/fig_11_20.jpg Graphic file (type jpg)
+<use fig/fig_11_20.jpg>
+Package pdftex.def Info: fig/fig_11_20.jpg  used on input line 3280.
+(pdftex.def)             Requested size: 318.4389pt x 138.14075pt.
+
+[107 <./fig/fig_11_19.jpg> <./fig/fig_11_20.jpg>] [108] [109
+
+] [110]
 
 Class memoir Warning: The material used in the headers is too large
 (34.99998pt) for the given head height (17.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 3347.
+(in both cases you will find help in the memoir manual). on input line 3418.
 
-[109
+[111
 
 ] (./phys1320.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `phys1320.out' has not changed.
 (rerunfilecheck)             Checksum: 96C7EAE68C99A85231CF73AEC0DE4301;8030.
  ) 
 Here is how much of TeX's memory you used:
- 33636 strings out of 478542
- 632223 string characters out of 5854396
- 993312 words of memory out of 5000000
- 50299 multiletter control sequences out of 15000+600000
+ 33668 strings out of 478542
+ 632756 string characters out of 5854396
+ 993518 words of memory out of 5000000
+ 50313 multiletter control sequences out of 15000+600000
  418781 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,12n,102p,919b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2044,10 +2057,10 @@ t/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2021/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-supe
 r/sfrm1440.pfb>
-Output written on phys1320.pdf (111 pages, 4163486 bytes).
+Output written on phys1320.pdf (113 pages, 4229561 bytes).
 PDF statistics:
- 1553 PDF objects out of 1728 (max. 8388607)
- 1267 compressed objects within 13 object streams
- 678 named destinations out of 1000 (max. 500000)
- 1007 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1582 PDF objects out of 1728 (max. 8388607)
+ 1292 compressed objects within 13 object streams
+ 694 named destinations out of 1000 (max. 500000)
+ 1017 words of extra memory for PDF output out of 10000 (max. 10000000)
 

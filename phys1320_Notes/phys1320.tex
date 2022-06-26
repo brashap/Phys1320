@@ -3265,6 +3265,8 @@ The Hall Effect can be used to "select" charges of a certain velocity and can be
 
 \subsection{Mass Spectrometer}
 
+A mass spectrometer is a device that separates ions (charged particles) by their charge-to-mass ratio. 
+
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.50]{fig/fig_11_19.jpg}
@@ -3273,7 +3275,22 @@ The Hall Effect can be used to "select" charges of a certain velocity and can be
 \end{center}
 \end{figure}
 
+\begin{enumerate}
+\item Ions are first sent through a velocity selector where all ions emerge with the speed $v = \frac{E}{B}$ as all other ions are deflected by either the electric or magnetic force.
+\item The ions next enter the uniform magnetic field $B_0$ where they travel in a circular path $R$ given by
+\begin{equation}
+R = \frac{m q v}{B_0}
+\end{equation}
+\item Given that $v = \frac{E}{B}$, the ion moves in a circular path:
+\begin{equation}
+\frac{q}{m} = \frac{E}{B B_0 R}
+\end{equation}
+\item Ions of the appropriate charge-to-mass ratio are detected by the Particle detector at radius $R$. 
+\end{enumerate}
+
 \subsection{Cyclotron}
+
+The cyclotron was developed by Ernest Lawrence \footnote{Founder of both the Berkeley-Lawrence and the Lawrence-Livermore labs} to accelerate charged particles. The particle moves between two charged containers called Dees. The dess are placed in a uniform mognetic field, $\vec{B}$. 
 
 \begin{figure}[H]
 \begin{center}
@@ -3282,6 +3299,27 @@ The Hall Effect can be used to "select" charges of a certain velocity and can be
 \label{fig:11_20}
 \end{center}
 \end{figure}
+
+A charged particle is injected into the gap and is accelerated from D2 to D1 (due to the electric field between the two of them). Once inside D1, the particle moves with a radius of 
+\begin{equation}
+r = \frac{mv}{qB}
+\end{equation}
+
+with a period of
+\begin{equation}
+T = \frac{2 \pi m}{qB}
+\end{equation}
+
+The voltage between D1 and D2 is alternated with a period of $\frac{T}{2}$ so that when the particle enters the gap between D1 and D2 again, it is accelerated, gaining kinetic energy. The orbital period is independent of the radius and the kinetic energy, so the alternating voltage source only needs to be set to one value. 
+
+Eventually, the ion gets to the outer most radius and is ejected from the cyclotron with velocity
+\begin{equation}
+V_{max} = \frac{qBR}{m}
+\end{equation}
+and thus with kinetic energy
+\begin{equation}
+\frac{1}{2} m v_{max} = \frac{q^2 B^2 R^2}{2m} 
+\end{equation}
 
 \subsection{Example}
 
@@ -3301,7 +3339,28 @@ Kinetic Energy:
 
 
 
+\chapter{Sources of Magnetic Fields}
 
+\section{The Biot-Savart Law}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_12_02.jpg}
+\caption{Biot-Savart Law}
+\label{fig:12_02}
+\end{center}
+\end{figure}
+
+The Biot-Savart law states that at any point P, the magnetic field $d\vec{B}$ due to the element $d\vec{I}$ of a current-carrying wire is given by
+
+\begin{equation}
+d\vec{B} = \frac{\mu_0}{4\pi} \frac{I d\vec{I} \bigtimes \hat{r}}{r^2}
+\end{equation}
+
+where $\mu_0$ is known as the permeability of free space and is exactly 
+\begin{equation}
+\mu_0 = 4\pi * 10^{-7} T \cdot \frac{m}{A}
+\end{equation}
 
 
 

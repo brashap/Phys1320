@@ -3415,6 +3415,100 @@ We get
 B = \frac{\mu_0}{4\pi} \int_{wire} \frac{I dl \sin{\theta}}{r^2}
 \end{equation}
 
+From the geometry of Figure \ref{fig:12_05}
+
+\begin{equation}
+r = \sqrt{x^2 + R^2}
+\end{equation}
+
+and
+
+\begin{equation}
+\sin{\theta} = \frac{R}{\sqrt{x^2 + R^2}}
+\end{equation}
+
+This leads to
+
+\begin{equation}
+B = \frac{\mu_0}{4\pi} \int_{0}^{\infty} \frac{Rdx}{(x^2 + R^2)^\frac{3}{2}}
+\end{equation}
+
+or
+
+\begin{equation}
+B = \frac{\mu_0 I}{4\pi R} [\frac{x}{(x^2 + R^2)^\frac{1}{2}}] \bigg\rvert_{0}^{\infty}
+\end{equation}
+
+Which leads to 
+
+\begin{equation}
+B = \frac{\mu_0 I}{4\pi R}
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_12_07.jpg}
+\caption{Shape of Magnetic Field Around A Wire}
+\label{fig:12_07}
+\end{center}
+\end{figure}
+
+\subsection{Magnetic Field Due to Three Wire}
+
+Consider three wires sitting on the corners of a square with a side of $1 cm$. Each wire cares $2 A$. What is the magnetic field at the forth corner?
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_12_08.jpg}
+\caption{Magnetic Field from Three Wires}
+\label{fig:12_08}
+\end{center}
+\end{figure}
+
+The magnitude of the magnetic field from Wires 1 and 3 are the same:
+
+\begin{equation}
+B_1 = B_3 = \frac{\mu_0 I}{4\pi R} = \frac{(4\pi * 10^{-7} T \frac{m}{A})(2A)}{2 \pi (0.01m)} = 4 * 10^{-5} T
+\end{equation}
+
+As Wire 2 has a longer distance:
+
+\begin{equation}
+B_1 = B_3 = \frac{\mu_0 I}{4\pi R} = \frac{(4\pi * 10^{-7} T \frac{m}{A})(2A)}{2 \pi (0.01414m)} = 2.83 * 10^{-5} T
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.50]{fig/fig_12_08b.jpg}
+\caption{Magnetic Field Direction from Three Wires}
+\label{fig:12_08b}
+\end{center}
+\end{figure}
+
+The direction of each component is given by the tangent to a circle centered on each wire as seen in Figure \ref{fig:12_08b}.
+
+\begin{equation}
+B_x = -B_3 -B_2 \cos{\theta} = -(4 * 10^{-5} T) - (2.83 * 10^{-5} T) (0.707) = -6 * 10^{-5} T
+\end{equation}
+
+and
+
+\begin{equation}
+B_y = -B_3 -B_1 \cos{\theta} = -(4 * 10^{-5} T) - (2.83 * 10^{-5} T) (0.707) = -6 * 10^{-5} T
+\end{equation}
+
+Therefore
+
+\begin{equation}
+B = \sqrt{B_x^2 + B_y^2} = \sqrt{ (-6 * 10^{-5} T)^2 + (-6 * 10^{-5} T)^2} = 8.49 * 10^{-5} T
+\end{equation}
+
+with 
+
+\begin{equation}
+\theta = 180^o + \arctan{\frac{B_y}{B_x}} = 225^o
+\end{equation}
+
 \appendix
 
 \chapter{Integration by Trig Substitution}

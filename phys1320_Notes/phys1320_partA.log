@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.18)  6 JUL 2022 16:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.18)  6 JUL 2022 17:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2078,16 +2078,38 @@ File: fig/fig_12_05.jpg Graphic file (type jpg)
 <use fig/fig_12_05.jpg>
 Package pdftex.def Info: fig/fig_12_05.jpg  used on input line 3399.
 (pdftex.def)             Requested size: 318.70992pt x 138.27626pt.
- [112 <./fig/fig_12_05.jpg>] [113] [114
+ [112 <./fig/fig_12_05.jpg>]
+<fig/fig_12_07.jpg, id=1400, 637.4214pt x 276.5532pt>
+File: fig/fig_12_07.jpg Graphic file (type jpg)
+<use fig/fig_12_07.jpg>
+Package pdftex.def Info: fig/fig_12_07.jpg  used on input line 3450.
+(pdftex.def)             Requested size: 318.70992pt x 138.27626pt.
 
-] [115] [116]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [113]
+<fig/fig_12_08.jpg, id=1412, 637.4214pt x 276.5532pt>
+File: fig/fig_12_08.jpg Graphic file (type jpg)
+<use fig/fig_12_08.jpg>
+Package pdftex.def Info: fig/fig_12_08.jpg  used on input line 3462.
+(pdftex.def)             Requested size: 318.70992pt x 138.27626pt.
+<fig/fig_12_08b.jpg, id=1413, 318.4698pt x 415.3116pt>
+File: fig/fig_12_08b.jpg Graphic file (type jpg)
+<use fig/fig_12_08b.jpg>
+Package pdftex.def Info: fig/fig_12_08b.jpg  used on input line 3482.
+(pdftex.def)             Requested size: 159.2345pt x 207.65529pt.
+
+[114 <./fig/fig_12_07.jpg> <./fig/fig_12_08.jpg>] [115 <./fig/fig_12_08b.jpg>]
+[116
+
+] [117] [118]
 
 Class memoir Warning: The material used in the headers is too large
 (34.99998pt) for the given head height (17.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 3526.
+(in both cases you will find help in the memoir manual). on input line 3620.
 
-[117
+[119
 
 ] (./phys1320_partA.aux)
 
@@ -2097,10 +2119,10 @@ Package rerunfilecheck Info: File `phys1320_partA.out' has not changed.
 (rerunfilecheck)             Checksum: F1255CE3CE326CA4A7EBD24ED1DA0090;9025.
  ) 
 Here is how much of TeX's memory you used:
- 33733 strings out of 478542
- 633855 string characters out of 5854396
- 993877 words of memory out of 5000000
- 50343 multiletter control sequences out of 15000+600000
+ 33774 strings out of 478542
+ 634578 string characters out of 5854396
+ 994224 words of memory out of 5000000
+ 50364 multiletter control sequences out of 15000+600000
  418781 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,12n,102p,925b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2118,10 +2140,10 @@ t/fonts/type1/public/amsfonts/cm/cmsl12.pfb><c:/texlive/2021/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-supe
 r/sfrm1440.pfb>
-Output written on phys1320_partA.pdf (119 pages, 4415218 bytes).
+Output written on phys1320_partA.pdf (121 pages, 4572739 bytes).
 PDF statistics:
- 1657 PDF objects out of 1728 (max. 8388607)
- 1354 compressed objects within 14 object streams
- 725 named destinations out of 1000 (max. 500000)
- 1061 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1689 PDF objects out of 1728 (max. 8388607)
+ 1381 compressed objects within 14 object streams
+ 742 named destinations out of 1000 (max. 500000)
+ 1076 words of extra memory for PDF output out of 10000 (max. 10000000)
 

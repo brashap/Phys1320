@@ -3355,7 +3355,7 @@ Kinetic Energy:
 \frac{1}{2} m v^2 = \frac{q^2 B^2 R^2}{2m} = \frac{(3.2*10^{-19}C)^2(1.8T)^2(0.50m)^2}{2(6.64*10^{-27}kg)} = 6.2 * 10^{-12} J = 39 MeV
 \end{equation}
 
-\chapter{Sources of Magnetic Fields}
+\chapter{Module 8: Chapter 12 Sources of Magnetic Fields}
 
 \section{The Biot-Savart Law}
 
@@ -3550,7 +3550,7 @@ and is attractive between the two wires.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.4=7f0]{fig/fig_12_11.jpg}
+\includegraphics[scale=0.4]{fig/fig_12_11.jpg}
 \caption{Magnetic Field current-carrying loop}
 \label{fig:12_11}
 \end{center}
@@ -3613,7 +3613,7 @@ When $y >> R$:
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.4=7f0]{fig/fig_12_12.jpg}
+\includegraphics[scale=0.4]{fig/fig_12_12.jpg}
 \caption{Magnetic Field lines around a current-carrying loop}
 \label{fig:12_12}
 \end{center}
@@ -3629,7 +3629,7 @@ The static magnetic field is NOT conservative. Instead there is a relationship b
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.4=7f0]{fig/fig_12_14.jpg}
+\includegraphics[scale=0.7]{fig/fig_12_14.jpg}
 \caption{Non conservative static magnetic field}
 \label{fig:12_14}
 \end{center}
@@ -3659,8 +3659,261 @@ For path N, which circulates both positive (counterclockwise) and negative (cloc
 \oint_N \vec{B} \cdot d\vec{I} = 0
 \end{equation}
 
-\subsection{Using Ampere's Law to Calculate the Magnetic Field due to a Wire}
+\subsection{Example: Using Ampere's Law to Calculate the Magnetic Field due to a Wire}
 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_12_15.jpg}
+\caption{Magnetic Field Components due to Current I}
+\label{fig:12_15}
+\end{center}
+\end{figure}
+
+Consider an arbitrary plane perpendicular to a wire with current directed out of the page. The possible magnetic field components are $B_r$ and $B_\theta$. Since the field is cylindrical symmetric, neither $B_r$ nor $B_\theta$ vary with position. 
+
+The radial lines, if they exist, must be directed either all inward or all outward from the wire. This means that there must be a net magnetic flux across cylinders that are concentric with the wire. This means the radial magnetic component must be zero because $\vec{B}_r \cdot d \vec{I} = 0$. Therefore applying ampere's law to the circular path as shown in Figure \ref{fig:12_15}:
+
+\begin{equation}
+\oint \vec{B} \cdot d \vec{I} = B_\theta \oint dl = B_\theta (2 \pi r)
+\end{equation}
+
+Thus, Ampere's Law reduces to
+\begin{equation}
+B_\theta (2 \pi r) = \mu_0 I
+\end{equation}
+
+And, since the only subscript that remains is $theta$, it can be dropped giving Biot-Savart
+\begin{equation}
+B = \frac{\mu_0 I}{2 \pi r}
+\end{equation}
+
+\subsubsection{Example: Magnetic Field of a Thick Wire with Ampere's Law}
+
+Consider a long straight wire of radius $a$ carrying a current $I_0$. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_12_16.jpg}
+\caption{Think Wire and Ampere's Law}
+\label{fig:12_16}
+\end{center}
+\end{figure}
+
+For any circular path of radius $r$ that is centered on the wire:
+
+\begin{equation}
+\oint \vec{B} \cdot d \vec{l} = \oint B dl = B \oint dl = B (2 \pi r)
+\end{equation}
+
+By Ampere's law, this equals $\mu_0$ times the current passing through any surface bounded by the path of integration. 
+
+First consider $r < a$. The current passing through area enclosed by the path of integration is given by the current density $J$ times the area. Since the current density is uniform:
+
+\begin{equation}
+J = \frac{I_0}{\pi a^2}
+\end{equation}
+
+and therefore
+
+\begin{equation}
+I = \frac{\pi r^2}{\pi a^2} I_0 = \frac{r^2}{a^2} I_0
+\end{equation}
+
+From Ampere's Law
+\begin{equation}
+B(2 \pi r) = \mu_0 (\frac{r^2}{a^2}) I_0
+\end{equation}
+
+and thus the Magnetic Field inside the wire ($r<a$) is
+\begin{equation}
+B = \frac{\mu_0 I_0}{2 \pi} (\frac{r}{a^2})
+\end{equation}
+
+as seen in the left side of Figure \ref{fig:12_17}.
+
+Outside of the wire, the $I = I_0$ leading to
+\begin{equation}
+B = \frac{\mu_0 I_0}{2 \pi r}
+\end{equation}
+as seens in the right aide of Figure \ref{fig:12_17}.
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_12_17.jpg}
+\caption{Magnetic Field inside and outside of thick wire}
+\label{fig:12_17}
+\end{center}
+\end{figure}
+
+
+\section{Solenoids and Toroids}
+
+A long wire that forms a helical coil is known as a Solenoid. 
+
+Consider the Solenoid shown in Figure \ref{fig:12_19} consisting of $N$ turns of tightly wound wire of length $L$. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_12_19.jpg}
+\caption{Solenoid}
+\label{fig:12_19}
+\end{center}
+\end{figure}
+
+The number of turns per unit length is $\frac{N}{L}$ and therefore the number of turns over an infinitesimal length $dy$ are $\frac{N}{L} dy$ turns.
+\begin{equation}
+dl = \frac{N}{L} dy
+\end{equation}
+
+To calculate the magnetic field at point P on the center axis of the solenoid. 
+\begin{equation}
+d \vec{B} = \frac{\mu_0 r^2 dl}{2(y^2 + R^2)^{\frac{3}{2}}} \hat{j} = [\frac{\mu_0 I R^2 N}{2L} \hat{j}] \frac{dy}{2(y^2 + R^2)^{\frac{3}{2}}}
+\end{equation}
+
+
+Note that, from inspection,
+\begin{equation}
+\sin{\theta} = \frac{y}{\sqrt{y^2 + R^2}}
+\end{equation}
+taking the differential of both sides:
+\begin{equation}
+\cos{\theta} d\theta = [-\frac{y^2}{2(y^2 + R^2)^{\frac{3}{2}}} + \frac{1}{\sqrt{y^2 + R^2}}] dy = \frac{R^2 dy}{2(y^2 + R^2)^{\frac{3}{2}}}
+\end{equation}
+
+This leads to 
+\begin{equation}
+\vec{B} = \frac{\mu_0 I N}{2L} \hat{j} \int_{\theta_1}^{\theta_2} \cos{\theta} d\theta = \frac{\mu_0 I N}{2L} (\sin{\theta_2} - \sin{\theta_1}) \hat{j}
+\end{equation}
+
+Consider the special case where $L >> R$, in which $\theta_1 = - \frac{\pi}{2}$ and $\theta_2 = + \frac{\pi}{2}$:
+
+\begin{equation}
+\vec{B} =  \frac{\mu_0 I N}{2L} (\sin{(\frac{\pi}{2})} - \sin{(- \frac{\pi}{2})}) \hat{j} = \frac{\mu_0 I N}{L} \hat{j}
+\end{equation}
+
+or 
+\begin{equation}
+\vec{B}  = \mu_0 n I \hat{j}
+\end{equation}
+
+where $n$ is the number of turns per unit length
+
+\subsection{Toroids}
+
+A similar method can be used to calculate the magnetic field in a toroid (Figure \ref{fig:12_22}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_12_22.jpg}
+\caption{Toroid}
+\label{fig:12_22}
+\end{center}
+\end{figure}
+
+\begin{equation}
+\vec{B} = \frac{\mu_0 N I}{2 \pi r}
+\end{equation}
+
+\chapter{Module 11 - Chapter 13 Electromagnetic Induction}
+
+
+\chapter{Module 12 - Chapter 16 Electromagnetic Waves}
+
+Recall from Ampere's law, the integral of a magnetic field around a closed loop C is proportional to the current I passing through any surface whose boundary is loop C itself:
+
+\begin{equation}
+\oint_C \vec{B} \cdot d\vec{s} = \mu_0 I
+\end{equation}
+
+Consider the setup in Figure \ref{fig:fig_16_03}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_16_03.jpg}
+\caption{Current through unequal surfaces}
+\label{fig:16_03}
+\end{center}
+\end{figure}
+
+\begin{equation}
+\oint_C \vec{B} \cdot d\vec{s} = \begin{cases}
+\mu_0 I, & \text{if surface S1 is used} \\
+0, & \text{if surface S2 is used}
+\end{cases}
+\end{equation}
+
+Ampere's law in its usual form doesn't work here. Ampere's law previosly was applied to steady charge, which is not the case in this example. Maxwell suggested adding a displacement current $I_d$,
+
+\begin{equation}
+\oint_C \vec{B} \cdot d\vec{s} = \mu_0 (I + I_0) 
+\end{equation}
+where the displacement current is defined as 
+\begin{equation}
+I_d = \epsilon_0 \frac{d\Phi_E}{dt}
+\end{equation}
+where $\epsilon_0$ is the permittivity of free space and $\Phi$ is the electric flux:
+
+\begin{equation}
+\Phi_E = \iint_S \vec{E} \cdot d\vec{A}
+\end{equation}
+
+
+
+
+\subsection{Maxwell's Equations}
+
+\subsubsection{Gauss's Law}
+\begin{equation}
+\oint \vec{E} \cdot d\vec{A} = \frac{Q_{in}}{\epsilon_0} 
+\end{equation}
+
+\subsubsection{Gauss's Law for Magnetism}
+\begin{equation}
+\oint \vec{B} \cdot d\vec{A} = 0  
+\end{equation}
+
+\subsubsection{Faraday's Law}
+\begin{equation}
+\oint \vec{E} \cdot d\vec{s} = -\frac{\Phi_{M}}{dt} 
+\end{equation}
+
+\subsubsection{Ampere-Maxwell Law}
+\begin{equation}
+\oint \vec{B} \cdot d\vec{s} = \mu_0 I + \epsilon_0 \mu_0 \frac{\Phi_{E}}{dt} 
+\end{equation}
+
+Once the fields have been calculated using these four equations, the Lorentz force equation becomes
+
+\begin{equation}
+F = q \vec{E} + q \vec{v} \bigtimes \vec{B}
+\end{equation}
+
+
+\subsection{The Mechanism of Electromagnetic Wave Propagation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_16_04.jpg}
+\caption{How changing $\vec{E}$ and $\vec{B}$ fields propagate}
+\label{fig:16_04}
+\end{center}
+\end{figure}
+
+Consider a time-varying magnetic field $\vec{B}_0(t)$ produced by the high-frequency alternating current seen in Figure \ref{fig:16_04}. ($\vec{B}_0(t)$ in the diagram is represented by one of it's field lines). From Faraday's Law, the changing magnetic field through a surface induces a time-varying electric field $\vec{E}_0(t)$ at the boundary of the surface. The displacement current source for the electric field, like the Faraday's law source for the magnetic field, produces only closed loops. The changing field $\vec{E}_0(t)$ creates a magnetic feild $\vec{B}_1(t)$ according to the modified Ampere's Law. The changing field induces $\vec{E}_1(t)$, which induces $\vec{B}_2(t)$, and so on. 
+
+\subsection{Hertz Observations}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_16_05.jpg}
+\caption{How changing $\vec{E}$ and $\vec{B}$ fields propagate}
+\label{fig:16_05}
+\end{center}
+\end{figure}
+
+
+\section{Plane Electromagnetic Waves}
 
 \appendix
 

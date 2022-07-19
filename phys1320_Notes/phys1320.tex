@@ -4315,7 +4315,24 @@ Applying Faraday's law over Side 3 fof the Gaussian surface, using the path show
 \begin{equation}
 \oint \vec{E} \cdot d \vec{s} = -E_y(x,t)l + E_y(x + \Delta x, t)l
 \end{equation}
- 
+
+Assuming that $\Delta x$ is small and approximating  $E_y(x + \Delta x, t)$ by
+\begin{equation}
+E_y(x + \Delta x, t) = E_y(x, t) + \frac{\delta E_y(x, t)}{\delta x} \Delta x
+\end{equation}
+
+and we obtain
+\begin{equation}
+\oint \vec{E} \cdot d \vec{s} = \frac{\delta E_y(x, t)}{\delta x} (l \Delta x)
+\end{equation}
+
+
+Additionally, because $\Delta x$ is small, the magnetic flux through the face can be approximated by its value in the center of the area traversed, specifically $B_z(x + \frac{\Delta x}{2},t)$. The flux on Side 3 is therefore
+
+\begin{equation}
+\oint_S \vec{B} \cdot \hat{n} dA = B_z(x + \frac{\Delta x}{2},t) (l \Delta x)
+\end{equation}
+
 
 
 

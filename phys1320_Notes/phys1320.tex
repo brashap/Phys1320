@@ -3886,7 +3886,7 @@ I = \frac{e}{R} = \frac{0.50V}{5.0 \Omega} = 0.10 A
 
 \section{Lenz's Law}
 
-Lenz's Law\footnote{named in honor of Heinrich Lorz (1804-1865), but also discovered independently by Michael Faraday}: The direction of the induced emf drives a current around the a wire loop to always oppose the change in magnetic flux that cuases the emf. 
+Lenz's Law\footnote{named in honor of Heinrich Lenz (1804-1865), but also discovered independently by Michael Faraday}: The direction of the induced emf drives a current around the a wire loop to always oppose the change in magnetic flux that cuases the emf. 
 
 
 \begin{figure}[H]
@@ -3964,7 +3964,7 @@ Thus, the power produced and the power dissipated, satisfying of the law of cons
 
 \subsubsection{Example: A Rectangular Coil Rotating in a Magnetic Field}
 
-Consider a rectangular coil of area $A$ and $N$ turns placed in a uniform magnetic field $\vec{B} = B \hat{j}$ as shown in Figure 
+Consider a rectangular coil of area $A$ and $N$ turns placed in a uniform magnetic field $\vec{B} = B \hat{j}$ as shown in Figure \ref{fig:13_17}.
 
 
 \begin{figure}[H]
@@ -3972,6 +3972,187 @@ Consider a rectangular coil of area $A$ and $N$ turns placed in a uniform magnet
 \includegraphics[scale=0.5]{fig/fig_13_17.jpg}
 \caption{A Rectangular Coil Rotating in a Magnetic Field}
 \label{fig:13_17}
+\end{center}
+\end{figure}
+
+\begin{equation}
+\Phi_M = \int_S \vec{B} \cdot \hat{n} dA = B A \cos{\theta}
+\end{equation}
+
+From Faraday's Law
+\begin{equation}
+\epsilon = -N \frac{d \Phi_M}{dt} = N B A \sin{\theta} \frac{d\theta}{dt}
+\end{equation}
+
+The constant angular velocity is  $\omega = \frac{d\theta}{dt}$. Where the angle $\theta$ represents the time evolution of the angular velocity $\theta = \omega t$. 
+
+Which leads to 
+\begin{equation}
+\epsilon = \epsilon_\omega \sin{(\omega t})
+\end{equation}
+where $\epsilon_\omega = B N A \omega$
+
+\section{Induced Electric Fields}
+
+The work done my an electric field $\vec{E}$ in moving a unit charge completely around a circuit is the induced emf $\epsilon$:
+\begin{equation}
+\epsilon = \oint \vec{E} \cdot d \vec{I}
+\end{equation}
+
+Leading to Faraday's law being written in terms of the induced electric field
+
+\begin{equation}
+\epsilon = \oint \vec{E} \cdot d \vec{I} = \frac{d \Phi_M}{dt}
+\end{equation}
+
+\subsubsection{Example: Electric Field Induced by the Changing Magnetic Field of a Solenoid}
+
+Consider a long solenoid with radius $R$ and $n$ turns per unit length. The current decreases with time according to $I = I_0 e^{-\alpha t}$ as shown in Figure 
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_13_18.jpg}
+\caption{Electric Field Induced in Solenoid}
+\label{fig:13_18}
+\end{center}
+\end{figure}
+
+Using the formulas for the  a magnetic field inside of a solenoid and Faraday's law:
+
+\begin{equation}
+B = \mu_0 n I = \mu_0 n I_0 e^{-\alpha t}
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1.2]{fig/Bsolenoid}
+\caption{Magnetic field in Solenoid}
+\label{fig:Bsol}
+\end{center}
+\end{figure}
+
+The magnetic field is much weaker outside of the solenoid. This all leads to the magnetic flux through a circular path whole radius $r$ is greater than $R$ (the solenoid radius):
+\begin{equation}
+\Phi_M = BA = \mu_0 n I_0 \pi R^2 e^{-\alpha t}
+\end{equation}
+
+The induced field $\vec{E}$ is tangent to this path, and because of cylindrical symmetry, its magnitude is constant on the path. Hence:
+
+\begin{equation}
+| \oint \vec{E} \cdot d \vec{I}| = |\frac{d \Phi_M}{dt}|
+\end{equation}
+
+\begin{equation}
+E (2 \pi r) = |\frac{d}{dt} (\mu_0 n I_0 \pi R^2 e^{-\alpha t})| = \alpha \mu_0 n I_0 \pi R^2 e^{-\alpha t} 
+\end{equation}
+
+or for $r > R$:
+
+\begin{equation}
+E = \frac{\alpha \mu_0 n I_0 R^2}{2r} e^{-\alpha t} 
+\end{equation}
+
+Now, for a path of radius $r$ inside ($r<R$) the solenoid, $\Phi_M = B \pi r^2$, leading to 
+ \begin{equation}
+E (2 \pi r) = |\frac{d}{dt} (\mu_0 n I_0 \pi r^2 e^{-\alpha t})| = \alpha \mu_0 n I_0 \pi r^2 e^{-\alpha t} 
+\end{equation}
+
+And the induced field 
+\begin{equation}
+E = \frac{\alpha \mu_0 n I_0 r}{2} e^{-\alpha t} 
+\end{equation}
+
+Note, the electric field increase linearly inside the solenoid and drops off with $\frac{1}{r}$ outside the solenoid. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_13_19.jpg}
+\caption{Electric Field inside and outside of a Solenoid}
+\label{fig:13_19}
+\end{center}
+\end{figure}
+
+\section{Electrical Generators}
+
+Electric generators induce an emf by rotating a coil in a magnetic field. Consider Figure \ref{fig:13_28} where a square loop of width $w$ and length $l$ is rotating in a uniform magnetic field.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_13_28.jpg}
+\caption{Generator}
+\label{fig:13_28}
+\end{center}
+\end{figure}
+
+Charges in the wires of the loop experience the magentic force as they are moving in a magnetic field. 
+\begin{itemize}
+\item Charges in the Vertical Wires experience forces parallel to the wire, causing current.
+\item Charges in the Top/Bottom Wires experience forces perpendicular to the wire, which does not cause a current. 
+\end{itemize}
+
+Find the induced emf by first considering on side of the loop.
+
+The motional emf is given by:
+\begin{equation}
+\epsilon = B l v
+\end{equation}
+where the velocity $v$ is perpendicular to the magnetic field. For the velocity at angle $\theta$ the component perpendicular to $\vec{B}$ is $ v \sin{\theta}$.
+
+Thus, the total emf around the loop is
+\begin{equation}
+\epsilon = 2 B l v \sin{\theta}
+\end{equation}
+
+To find the emf as a function of time, we assume the coil rotates at a constant angular velocity $\omega$. The angle $\theta$ is related t angular velocity by $\theta = \omega t$. Leading to 
+\begin{equation}
+\epsilon = 2 B l v \sin{(\omega t)}
+\end{equation}
+
+The linear velocity $v$ is related to the angular velocity $\omega$ by $v = r \omega$, where $r = \frac{w}{2}$ 
+\begin{equation}
+\epsilon = 2 B l \frac{w}{2} \omega \sin{(\omega t)} = B (lw) \omega \sin{(\omega t)}
+\end{equation}
+
+Noting that the area of the loop $A = lw$ and allowing for $N$ loops, we find that
+\begin{equation}
+\epsilon =  N B A \omega \sin{(\omega t)}
+\end{equation}
+
+That can also be expressed as 
+\begin{equation}
+\epsilon =  \epsilon_0 \sin{(\omega t)}
+\end{equation}
+where
+\begin{equation}
+\epsilon_0 = N B A \omega
+\end{equation}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_13_29.jpg}
+\caption{Generator creating ac emf}
+\label{fig:13_29}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_13_30.jpg}
+\caption{Generator with split rings (commutators) produce pulsed dc}
+\label{fig:13_30}
+\end{center}
+\end{figure}
+
+\section{Back emf}
+
+When the coil of a motor is turned, magnetic flux changes through the coil, and an emf (consistent with Faraday’s law) is induced. The motor thus acts as a generator whenever its coil rotates. This happens whether the shaft is turned by an external input, like a belt drive, or by the action of the motor itself. That is, when a motor is doing work and its shaft is turning, an emf is generated. Lenz’s law tells us the emf opposes any change, so that the input emf that powers the motor is opposed by the motor’s self-generated emf, called the back emf of the motor as shown in \ref{fig:13_32}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_13_31.jpg}
+\caption{Back emf}
+\label{fig:13_32}
 \end{center}
 \end{figure}
 
@@ -3984,7 +4165,7 @@ Recall from Ampere's law, the integral of a magnetic field around a closed loop 
 \oint_C \vec{B} \cdot d\vec{s} = \mu_0 I
 \end{equation}
 
-Consider the setup in Figure \ref{fig:fig_16_03}.
+Consider the setup in Figure \ref{fig:16_03}.
 
 \begin{figure}[H]
 \begin{center}
@@ -4022,21 +4203,31 @@ where $\epsilon_0$ is the permittivity of free space and $\Phi$ is the electric 
 \subsection{Maxwell's Equations}
 
 \subsubsection{Gauss's Law}
+The electric flux out of any closed surface is proportional to the total charge enclosed within the surface.
+
 \begin{equation}
-\oint \vec{E} \cdot d\vec{A} = \frac{Q_{in}}{\epsilon_0} 
+\oint \vec{E} \cdot d\vec{A} = \frac{Q_{enc}}{\epsilon_0} 
 \end{equation}
 
 \subsubsection{Gauss's Law for Magnetism}
+The net magnetic flux out of any closed surface is zero.
+
 \begin{equation}
 \oint \vec{B} \cdot d\vec{A} = 0  
 \end{equation}
 
 \subsubsection{Faraday's Law}
+
+The line integral of the electric field around a closed loop is equal to the negative of the rate of change of the magnetic flux through the area enclosed by the loop.
+
 \begin{equation}
 \oint \vec{E} \cdot d\vec{s} = -\frac{\Phi_{M}}{dt} 
 \end{equation}
 
 \subsubsection{Ampere-Maxwell Law}
+
+In the case of static electric field, the line integral of the magnetic field around a closed loop is proportional to the electric current flowing through the loop.
+
 \begin{equation}
 \oint \vec{B} \cdot d\vec{s} = \mu_0 I + \epsilon_0 \mu_0 \frac{\Phi_{E}}{dt} 
 \end{equation}
@@ -4061,16 +4252,83 @@ F = q \vec{E} + q \vec{v} \bigtimes \vec{B}
 Consider a time-varying magnetic field $\vec{B}_0(t)$ produced by the high-frequency alternating current seen in Figure \ref{fig:16_04}. ($\vec{B}_0(t)$ in the diagram is represented by one of it's field lines). From Faraday's Law, the changing magnetic field through a surface induces a time-varying electric field $\vec{E}_0(t)$ at the boundary of the surface. The displacement current source for the electric field, like the Faraday's law source for the magnetic field, produces only closed loops. The changing field $\vec{E}_0(t)$ creates a magnetic feild $\vec{B}_1(t)$ according to the modified Ampere's Law. The changing field induces $\vec{E}_1(t)$, which induces $\vec{B}_2(t)$, and so on. 
 
 \subsection{Hertz Observations}
+
+The German physicist Heinrich Hertz (1857–1894) was the first to generate and detect certain types of electromagnetic waves in the laboratory. Starting in 1887, he performed a series of experiments that not only confirmed the existence of electromagnetic waves but also verified that they travel at the speed of light.
+
+Hertz used an alternating-current RLC (resistor-inductor-capacitor) circuit that resonates at a known frequency  $f_0 = \frac{1}{2 \pi \sqrt{LC}}$ and connected it to a loop of wire, as shown in Figure \ref{fig:16_05}. High voltages induced across the gap in the loop produced sparks that were visible evidence of the current in the circuit and helped generate electromagnetic waves.
+
 \begin{figure}[H]
 \begin{center}
 \includegraphics[scale=0.5]{fig/fig_16_05.jpg}
-\caption{How changing $\vec{E}$ and $\vec{B}$ fields propagate}
+\caption{Apparatus used to generate and detect electromagnetic wave}
 \label{fig:16_05}
 \end{center}
 \end{figure}
 
 
 \section{Plane Electromagnetic Waves}
+
+We will consider the propagation of electromagnetic waves along the x-axis of a given coordinate system. 
+
+\subsection{Electromagnetic waves in one direction}
+Start by examining Gauss's law for electric fields and the implications on the relative direction of the electric field and propagation direction in a electromagnetic wave.  Consider the Gaussian surface of a box showing in Figure \ref{fig:16_06}. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.7]{fig/fig_16_06.jpg}
+\caption{Gaussian Surface of $l$ x $l$ x $\Delta t$}
+\label{fig:16_06}
+\end{center}
+\end{figure}
+
+Because the electric field is only a function a $x$ and $t$, the y-component of the electric field is the same on both the top and bottom of the box, so these two contributions cancel. Likewise of the z-axis. Therefore $E_x(x,t)$ is constant over the face of the box with area A and possibly has a different value $E_x(x+\Delta x, t)$ 
+
+\begin{equation}
+\text{Net Flux} = -E_x(x,t)A + E_x(x+\Delta x, t)A = \frac{Q_{enc}}{\epsilon_0}
+\end{equation}
+where $A = l * l$. 
+
+Given that $Q_{enc} = 0$ this leads to for any $\Delta x$.
+\begin{equation}
+E_x(x,t) + E_x(x+\Delta x, t) 
+\end{equation}
+Therefore, if there is an x-component to the electric field, it can not vary with $x$. A field of this kind would be superimposed on the traveling wave for example by having a pair of charged plates. And, thus, such a component $E_x(x,t)$ would not be part of the traveling wave. Therefore
+\begin{equation}
+E_x(x,t) = 0
+\end{equation}
+and the only non-zero components of the traveling wave are $E_y(x,t)$ and $E_z(x,t)$.
+
+A similar argument can be made substituting $\vec{B}$ for $\vec{E}$ and applying Gauss's Law for Magnetism. The electromagnetic wave is therefore a transverse wave, with its oscillating electric and magnetic fields perpendicular to its direction of propagation. 
+
+\subsection{The speed of propagation of electromagnetic waves}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.7]{fig/fig_16_07.jpg}
+\caption{Faraday's law applied to propagation of EM wave}
+\label{fig:16_07}
+\end{center}
+\end{figure}
+
+Applying Faraday's law over Side 3 fof the Gaussian surface, using the path shown in \ref{fig:16_07}, and because $E_x(x,t) = 0$, we have
+
+\begin{equation}
+\oint \vec{E} \cdot d \vec{s} = -E_y(x,t)l + E_y(x + \Delta x, t)l
+\end{equation}
+ 
+
+
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_16_08.jpg}
+\caption{Plane wave solution to Maxwell's equation}
+\label{fig:16_08}
+\end{center}
+\end{figure}
+
+
 
 \appendix
 

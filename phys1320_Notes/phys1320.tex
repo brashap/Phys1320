@@ -4194,7 +4194,7 @@ I_d = \epsilon_0 \frac{d\Phi_E}{dt}
 where $\epsilon_0$ is the permittivity of free space and $\Phi$ is the electric flux:
 
 \begin{equation}
-\Phi_E = \iint_S \vec{E} \cdot d\vec{A}
+\Phi_E = \int_S \vec{E} \cdot d\vec{A}
 \end{equation}
 
 
@@ -4327,15 +4327,116 @@ and we obtain
 \end{equation}
 
 
-Additionally, because $\Delta x$ is small, the magnetic flux through the face can be approximated by its value in the center of the area traversed, specifically $B_z(x + \frac{\Delta x}{2},t)$. The flux on Side 3 is therefore
+Additionally, because $\Delta x$ is small, the magnetic flux through the face can be approximated by its value in the center of the area traversed, specifically $B_z(x + \frac{\Delta x}{2},t)$. 
+
+The flux on Side 3 is therefore
 
 \begin{equation}
 \oint_S \vec{B} \cdot \hat{n} dA = B_z(x + \frac{\Delta x}{2},t) (l \Delta x)
 \end{equation}
 
+From Faraday's Law
+\begin{equation}
+\oint \vec{E} \cdot \vec{s} = -\frac{d}{dt}\int_S \vec{B} \cdot \hat{n} dA
+\end{equation}
+
+This leads to:
+\begin{equation}
+\frac{\delta E_y(x, t)}{\delta x} (l \Delta x) = -\frac{\delta}{\delta t} [B_z(x + \frac{\Delta x}{2},t)] (l \Delta x)
+\end{equation}
+
+Taking the limit $ \Delta x \rightarrow 0$, we are left with
+\begin{equation}
+\frac{\delta E_y(x, t)}{\delta x}  = -\frac{\delta B_z(x,t)}{\delta t}
+\end{equation}
+
+Likewise, we can apply Faraday's law to the top surface which yields:
+\begin{equation}
+\frac{\delta E_z(x, t)}{\delta x}  = -\frac{\delta B_y(x,t)}{\delta t}
+\end{equation}
+
+The equations are describing the spatially dependent $E$ field produced by the time-dependent $B$ field. 
 
 
+Next, apply the Ampere-Maxwell law (with $I = 0$) over the same two surfaces
 
+\begin{equation}
+\oint \vec{B} \cdot d\vec{s} = \mu_0 \epsilon_0 \frac{d}{dt} \int_S \vec{E} \cdot \hat{n} dA
+\end{equation}
+
+This yields
+\begin{equation}
+\frac{\delta B_y(x, t)}{\delta x}  = - \mu_0 \epsilon_0 \frac{\delta E_z(x,t)}{\delta t}
+\end{equation}
+
+and 
+
+\begin{equation}
+\frac{\delta B_z(x, t)}{\delta x}  = - \mu_0 \epsilon_0 \frac{\delta E_y(x,t)}{\delta t}
+\end{equation}
+
+These equations are describing the spatially dependent $B$ field produced by the time-dependent $E$ field. 
+
+
+Combining the equations showing a changing $B$ field producing an $E$ field with the equations showing a changing $E$ field producing an $B$ field, and taking the derivative with respect to $x$ we get
+
+\begin{equation}
+\frac{\delta^2 E_y}{\delta x^2} = \frac{\delta}{\delta x} (\frac{\delta E_y}{\delta x}) = - \frac{\delta}{\delta x} (\frac{\delta B_z}{\delta t}) = - \frac{\delta}{\delta t} (\frac{\delta B_z}{\delta x}) =  \frac{\delta}{\delta t} (\mu_0 \epsilon_0 \frac{\delta E_y}{\delta t})
+\end{equation}
+
+or, finally,
+
+\begin{equation}
+\frac{\delta^2 E_y}{\delta x^2} =   \mu_0 \epsilon_0 \frac{\delta^2 E_y}{\delta t^2}
+\label{eq:wave}
+\end{equation}
+
+A general solution to this equation is the arbitrary functions $f(x - vt)$ and $g(x + vt)$ for waves traveling in the positive and negative directions. Since this is quite general, we can opt for a sinusoidal function of wavelength $\lambda$. Which allows us to write
+
+\begin{equation}
+E = E_0 \sin{(\frac{2 \pi}{\lambda}(x - vt))}
+\end{equation}
+
+Which leads to
+\begin{equation}
+\frac{\delta^2 E_y}{\delta x^2} =   -E_0 (\frac{2 \pi}{\lambda})^2 \sin{(\frac{2 \pi}{\lambda}(x - vt))}
+\end{equation}
+
+and
+
+\begin{equation}
+\frac{\delta^2 E_y}{\delta t^2} =   -E_0 (\frac{2 \pi v}{\lambda})^2 \sin{(\frac{2 \pi}{\lambda}(x - vt))}
+\end{equation}
+
+Combining into Equation \ref{eq:wave}:
+\begin{equation}
+-E_0 (\frac{2 \pi}{\lambda})^2 \sin{(\frac{2 \pi}{\lambda}(x - vt))} = \mu_0 \epsilon_0 [-E_0 (\frac{2 \pi v}{\lambda})^2 \sin{(\frac{2 \pi}{\lambda}(x - vt))}]
+\end{equation}
+
+simplifying to
+\begin{equation}
+1 = \mu_0 \epsilon_0 v^2
+\end{equation}
+
+or
+
+\begin{equation}
+v = \frac{1}{\sqrt{\mu_0 \epsilon_0}}
+\end{equation}
+
+Solving we obtain the speed of light
+
+\begin{equation}
+v = \frac{1}{\sqrt{\mu_0 \epsilon_0}} = \frac{1}{\sqrt{(4 \pi * 10^{-7} \frac{T m}{A})(8.85*10^{-12} \frac{C^2}{N m^2})}} = 2.99 * 10^8 \frac{m}{s} = c
+\end{equation}
+
+\subsection{How are E and B fields related}
+
+The E field and B field are in phase. And, it can be shown that 
+
+\begin{equation}
+\frac{E_y}{B_z} = \frac{E_0}{B_0} = c
+\end{equation}
 
 \begin{figure}[H]
 \begin{center}
@@ -4345,6 +4446,78 @@ Additionally, because $\Delta x$ is small, the magnetic flux through the face ca
 \end{center}
 \end{figure}
 
+\section{Energy Carried by Electromagnetic Waves}
+
+Consider a plane-wave moving in the positive x direction, so that the maximum is at the origin at t = 0, the electric and magnetic fields obey
+
+\begin{equation}
+E_y(x,t) = E_0 \cos{(kx-\omega t)}
+\end{equation}
+and
+\begin{equation}
+B_z(x,t) = B_0 \cos{(kx-\omega t)}
+\end{equation}
+
+The energy density $u$ is the sum of the energy density of the E-field, $U_E$, and the B-field, $u_B$. This leads to:
+
+\begin{equation}
+u(x,t) = u_E + u_B = \frac{\epsilon_0}{2}  E^2 + \frac{1}{2 \mu_0} B^2
+\end{equation}
+
+Given that $\frac{E_0}{B_0} = c$ or $E = cB$ or
+\begin{equation}
+E = \frac{1}{\sqrt{\mu_0 \epsilon_0}} B
+\end{equation}
+this leads to the energy densities being equal.
+
+This equality leads to
+\begin{equation}
+u(x,t) =  \epsilon_0  E^2 = \frac{1}{\mu_0} B^2
+\end{equation}
+
+The reate of transport of energy can be found by considering a small time interval $\Delta t$ and looking at the energy contained in a cylinder of length $c \Delta t$ with a cross-sectional area $A$.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_16_11.jpg}
+\caption{The energy $u A c \Delta t$}
+\label{fig:16_11}
+\end{center}
+\end{figure}
+
+The energy passing through the area $A$ in time $\Delta t$ is
+\begin{equation}
+u * \text{ volume} = uAc \Delta t
+\end{equation}
+
+The energy per unit area per unit time through a plane perpendicular to the wave is called the energy flux ($S$)
+
+More generally, when dependent on orientation 
+\begin{equation}
+\vec{S} = \frac{1}{\mu_0}\vec{E} \bigtimes \vec{B}
+\end{equation}
+that is the cross-product of $\vec{E}$ and $\vec{B}$ is the direction perpendicular to both vectors. 
+
+The energy flux varies with time
+\begin{equation}
+S(x,t) = c \epsilon_0 E_0^2 \cos^2{(kx-\omega t)}
+\end{equation}
+
+The time average of the energy flux is the intensity $I$ of the electromagnetic wave
+\begin{equation}
+I = S_{avg} = c \epsilon_0 E^2 \frac{1}{T} \int_0^T \cos^2{(2 \pi \frac{t}{T})} dt
+\end{equation}
+
+If we evaluate the average of either cos() or sin() we get equivalence as they only differ in phase. Meaning
+
+\begin{equation}
+< \cos^2{\xi} > = \frac{1}{2} [< \cos^2{\xi} > + < \sin^2{\xi} >= \frac{1}{2} <1> = \frac{1}{2}
+\end{equation}
+Where the triangle brackets $<...>$ stand for the time-averaging operation .
+
+\begin{equation}
+I = S_{avg} = \frac{1}{2} c \epsilon_0 E_0^2
+\end{equation}
 
 
 \appendix

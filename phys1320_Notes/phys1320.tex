@@ -4511,14 +4511,155 @@ I = S_{avg} = c \epsilon_0 E^2 \frac{1}{T} \int_0^T \cos^2{(2 \pi \frac{t}{T})} 
 If we evaluate the average of either cos() or sin() we get equivalence as they only differ in phase. Meaning
 
 \begin{equation}
-< \cos^2{\xi} > = \frac{1}{2} [< \cos^2{\xi} > + < \sin^2{\xi} >= \frac{1}{2} <1> = \frac{1}{2}
+< \cos^2{\xi} > = \frac{1}{2} [< \cos^2{\xi} > + < \sin^2{\xi} >= \frac{1}{2} <1>] = \frac{1}{2}
 \end{equation}
-Where the triangle brackets $<...>$ stand for the time-averaging operation .
+Where the triangle brackets $<...>$ stand for the time-averaging operation.
 
 \begin{equation}
 I = S_{avg} = \frac{1}{2} c \epsilon_0 E_0^2
 \end{equation}
 
+or, starting with the B-field wave:
+
+\begin{equation}
+I = \frac{c B_0^2}{2 \mu_0}
+\end{equation}
+
+Given that $c B_0 = E_0$, then
+
+\begin{equation}
+I = \frac{E_0 B_0}{2 \mu_0}
+\end{equation}
+
+\section{Momentum and Radiation Pressure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_16_13.jpg}
+\caption{Pressure from EM Wave}
+\label{fig:16_13}
+\end{center}
+\end{figure}
+
+When a plane wave is incident on a sheet of conducting metal, as in Figure \ref{fig:16_13}, an E-field in the $\hat{j}$ direction causes electrons to move in the $-\hat{j}$ direction. As a result the force on electron (negatively charged) from the B-field (which is in the $\hat{k}$ direction is in the $\hat{i}$ direction. When the E-field changes direction, so does the B-field, and thus the force is still in the positive $\hat{i}$ direction. This force is from the pressure of the electromagnetic wave and holds in the general case (as opposed to the specific case outlined here). 
+
+The radiation pressure $p_{rad}$ applied to an electromagnetic wave on a perfectly absorbing surface is equal to the energy density of the wave:
+\begin{equation}
+p_{rad} = u (\text{ Perfect absorber})
+\end{equation}
+
+If the surface is perfectly reflecting, the pressure exerted is twice this, as the momentum direction of hte wave reverse, but its magnitude is unchanged. 
+\begin{equation}
+p_{rad} = 2u (\text{Perfect reflector})
+\end{equation}
+
+As were usually interested in average we can use intensity:
+
+\begin{equation}
+p = < p_{rad} > =\begin{cases}
+    \frac{I}{c} & \text{ Perfect absorber}\\
+    \frac{2I}{c} & \text{ Perfect reflector}
+  \end{cases}
+\end{equation}
+
+
+\section{The Electromagnetic Spectrum}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_16_17.jpg}
+\caption{EM Spectrum}
+\label{fig:16_17}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/fig_16_20.jpg}
+\caption{Visible Light Spectrum}
+\label{fig:16_20}
+\end{center}
+\end{figure}
+
+\chapter{Thermodynamics}
+
+
+\chapter{The End of Physics}
+
+\section{Mystery of the Bohr Atom}
+
+Why doesn't the electron in an hydrogen atom have its orbit decay and collide with the nucleus.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1]{fig/bohrmystery.png}
+\caption{Bohr Atom Mystery}
+\label{fig:bm}
+\end{center}
+\end{figure} 
+
+\section{Special Relativity}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{fig/lightclock.png}
+\caption{Special Relativity}
+\label{fig:lc}
+\end{center}
+\end{figure} 
+
+
+Assumptions:
+\begin{itemize}
+\item Laws of Physics are the same for all observers in inertial reference frames.
+\item The Speed of Light is the same for all observers.  
+\end{itemize}
+
+If the distance between mirrors on the space shit is $d$, and for the astronaut the time ($\tau$) it takes the light to go complete one round trip is $\frac{d}{\tau}$ or $d = c \tau$. For an observer on the ground, it takes $ct$ to complete the same trip.
+
+As seen in Figure \ref{fig:lc}, from the right triangle
+
+\begin{equation}
+(ct)^2 = (vt)^2 + d^2
+\end{equation}
+or
+
+\begin{equation}
+c^2 t^2 = v^2 t^2 + c^2 \tau^2
+\end{equation}
+
+Leading to
+\begin{equation}
+(c^2 - v^2) t^2 = c^2 \tau^2
+\end{equation}
+
+\begin{equation}
+t^2 = \frac{1}{1 - \frac{v^2}{c^2}} \tau^2
+\end{equation}
+
+or finally
+\begin{equation}
+t = \frac{1}{\sqrt{1 - \frac{v^2}{c^2}}} \tau
+\end{equation}
+
+\subsection{Example}
+Consider a rocket moving at $v = 0.9c$, what is the time dilation effect?
+
+\begin{equation}
+t = \frac{1}{\sqrt{1 - \frac{(0.9c)^2}{c^2}}} \tau
+\end{equation}
+
+\begin{equation}
+t = \frac{1}{0.56} \tau
+\end{equation}
+
+\begin{equation}
+t = 1.78 \tau
+\end{equation}
+
+For every second the astronaut experiences, $1.78$ seconds has passed on Earth
 
 \appendix
 
@@ -4592,6 +4733,10 @@ Which finally leads to
 \begin{equation}
 \int \frac{1}{(a^2 + x^2)^{\frac{3}{2}}} =  \frac{x}{a^2} [\frac{1}{\sqrt{a^2+x^2}}] + C
 \end{equation}
+
+
+
+
 
 \chapter{Chain Rule}
 

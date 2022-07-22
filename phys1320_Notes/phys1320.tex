@@ -4583,7 +4583,141 @@ p = < p_{rad} > =\begin{cases}
 \end{center}
 \end{figure}
 
-\chapter{Thermodynamics}
+\chapter{Thermodynamics - Chapters 1 through 4}
+
+\section{Temperature and Thermal Equilibrium}
+
+\begin{itemize}
+\item Temperature is operationally defined as the quantity measured by a thermometer. It is proportional to the average kinetic energy of atoms and molecules in a system.
+\item Thermal equilibrium occurs when two bodies are in contact with each other and can freely exchange energy. Systems are in thermal equilibrium when they have the same temperature.
+\item The zeroth law of thermodynamics states that when two systems, A and B, are in thermal equilibrium with each other, and B is in thermal equilibrium with a third system C, then A is also in thermal equilibrium with C.
+\end{itemize}
+
+\section{Molecular Model of an Ideal Gas}
+
+Ideal Gas Law
+
+\begin{equation}
+pV = N k_B T
+\end{equation}
+where $p$ is pressure, $V$ is volume, $T$ is temperature ($^o K$), $N$ is the number of molecules in the gas, and $k_B = 1.38 * 10^{-23} \frac{J}{^o K}$ is the Boltzmann Constant. 
+
+\subsection{Moles and Avogadro's Number}
+
+A mole (abbreviated mol) is defined as the amount of any substance that contains as many molecules as there are atoms.
+
+The number of molecules in one mole is called Avogadro’s number ($N_A$),  and the value of Avogadro’s number is now known to be
+
+\begin{equation}
+N_A = 6.02 * 10^{23} mol^{-1}
+\end{equation}
+
+Leading to  $N=N_A n$ , where $n$ represents the number of moles of a substance.
+
+\subsection{Ideal Gas Law Restated}
+
+\begin{equation}
+pV = N k_B T
+\end{equation}
+
+then
+
+\begin{equation}
+pV = \frac{N}{N_A} N_A k_B T
+\end{equation}
+
+defining the Universal Gas Constant $R = N_A k_B$
+
+\begin{equation}
+pV = n R T
+\end{equation}
+where $R = 8.31 \frac{J}{mol \cdot ^oK}$.
+
+\section{Pressure, Temperature, and RMS Speed}
+
+In analyzing an ideal gas in a rigid container, we make four assumptions:
+
+\begin{enumerate}
+\item There is a very large number N of molecules, all identical and each having mass m.
+\item The molecules obey Newton’s laws and are in continuous motion, which is random and isotropic, that is, the same in all directions.
+\item The molecules are much smaller than the average distance between them, so their total volume is much less than that of their container (which has volume V). 
+\item The molecules make perfectly elastic collisions with the walls of the container and with each other. Other forces on them, are negligible (as is necessary for the assumption of isotropy).
+\end{enumerate}
+
+A calculation of the average force exerted by molecules on the walls of the box leads us to the ideal gas law and to the connection between temperature and molecular kinetic energy. (In fact, we will take two averages: one over time to get the average force exerted by one molecule with a given velocity, and then another average over molecules with different velocities.) This approach was developed by Daniel Bernoulli (1700–1782), who is best known in physics for his work on fluid flow (hydrodynamics). Remarkably, Bernoulli did this work before Dalton established the view of matter as consisting of atoms.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1]{fig/fig_02_10.jpg}
+\caption{Bohr Atom Mystery}
+\label{fig:02_10}
+\end{center}
+\end{figure} 
+
+Considering Figure \ref{fig:02_10}, the elastic collision of the gas molecule is broken down into two components. With the rigid wall, the collision is elastic (no change in the molecules kinetic energy as there is no place for the energy to go). With the kinetic energy constant, the speed and momentum is constant as well. (There are also models that allow the exchange of energy and momentum with the wall, but we will used the simplied assumptions for now).
+
+Given that the molecule changes direction in the x-direction from $-mv_x$ to $+mv_x$ the change in momentum is $\Delta mv = 2 m v_x$. 
+
+According to the Impulse-Momentum theorem, the force exerted by the $ith$ molecule is given by:
+\begin{equation}
+F_i = \frac{\Delta p_i}{\Delta t} = \frac{2 m v_{ix}}{\Delta t}
+\end{equation}
+where p represents momentum, not pressure. 
+
+Looking at the average force, consider $\Delta t$ to be the time between collisions with the wall. If the length of the box in the x-direction is $l$, then $\Delta t$ is the time it takes the molecule to go back and forth ($2l$) divided by the speed ($v_x$). Leading to
+
+\begin{equation}
+F_i = \frac{2 m v_{ix}}{\frac{2l}{v_{ix}}} = \frac{m v_{ix}^2}{l}
+\end{equation}
+
+The total force is the contribution of $N$ molecules
+\begin{equation}
+F = \sum_{i=1}^N F_i = \sum_{i=1}^N \frac{m v_{ix}^2}{l} = \frac{m}{l} \sum_{i=1}^N  v_{ix}
+\end{equation}
+
+Taking the average
+\begin{equation}
+F = N \frac{m}{l} (\frac{1}{N} \sum_{i=1}^N   v_{ix}) = N \frac{m \bar{v}_{ix}^2}{l}
+\end{equation}
+
+
+Looking at total speed vs just the x-component,
+
+\begin{equation}
+\bar{v}^2 = \bar{v}_{x}^2 + \bar{v}_{y}^2 + \bar{v}_{z}^2
+\end{equation}
+and due to the assumption of Isotropy, all three components are equal, so
+\begin{equation}
+\bar{v}^2 = 3 \bar{v}_{xi}^2
+\end{equation}
+
+Now
+\begin{equation}
+F = N \frac{m \bar{v}^2}{3l}
+\end{equation}
+
+Given that Pressure is $p = \frac{F}{A}$
+
+\begin{equation}
+p = N \frac{m \bar{v}^2}{3Al} = N \frac{m \bar{v}^2}{3V} 
+\end{equation}
+where the volume $V = Al$.
+
+This yields the all important
+\begin{equation}
+pV = \frac{1}{3} N m \bar{v}^2
+\end{equation}
+
+Combining with $pV = N k_B T$ yields
+\begin{equation}
+\frac{1}{3} N m \bar{v}^2 = N k_B T
+\end{equation}
+
+Leading to the average kinetic energy of
+\begin{equation}
+\bar{K} = \frac{1}{2} m \bar{v}^2 = \frac{2}{3} k_B T = 
+\end{equation}
+
 
 
 \chapter{The End of Physics}
@@ -4594,7 +4728,7 @@ Why doesn't the electron in an hydrogen atom have its orbit decay and collide wi
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=1]{fig/bohrmystery.png}
+\includegraphics[scale=.6]{fig/bohrmystery.png}
 \caption{Bohr Atom Mystery}
 \label{fig:bm}
 \end{center}
@@ -4617,7 +4751,7 @@ Assumptions:
 \item The Speed of Light is the same for all observers.  
 \end{itemize}
 
-If the distance between mirrors on the space shit is $d$, and for the astronaut the time ($\tau$) it takes the light to go complete one round trip is $\frac{d}{\tau}$ or $d = c \tau$. For an observer on the ground, it takes $ct$ to complete the same trip.
+If the distance between mirrors on the space ship is $d$, and for the astronaut the time ($\tau$) it takes the light to go complete one round trip is $\frac{d}{\tau}$ or $d = c \tau$. For an observer on the ground, it takes $ct$ to complete the same trip.
 
 As seen in Figure \ref{fig:lc}, from the right triangle
 

@@ -4595,7 +4595,7 @@ p = < p_{rad} > =\begin{cases}
 
 \section{Molecular Model of an Ideal Gas}
 
-Ideal Gas Law
+Ideal Gas Law\footnote{It was first stated by Benoît Paul Emile Clapeyron in 1834 as a combination of the empirical Boyle's law, Charles's law, Avogadro's law, and Gay-Lussac's law}
 
 \begin{equation}
 pV = N k_B T
@@ -4648,7 +4648,7 @@ A calculation of the average force exerted by molecules on the walls of the box 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=1]{fig/fig_02_10.jpg}
+\includegraphics[scale=.5]{fig/fig_02_10.jpg}
 \caption{Bohr Atom Mystery}
 \label{fig:02_10}
 \end{center}
@@ -4715,10 +4715,168 @@ Combining with $pV = N k_B T$ yields
 
 Leading to the average kinetic energy of
 \begin{equation}
-\bar{K} = \frac{1}{2} m \bar{v}^2 = \frac{2}{3} k_B T = 
+\bar{K} = \frac{1}{2} m \bar{v}^2 = \frac{3}{2} k_B T 
+\end{equation}
+
+We can solve this for the typical speed of a molecule in an ideal gas, known as the root-mean-square speed
+\begin{equation}
+v_{rms} = \sqrt{\bar{v}^2} = \sqrt{\frac{3 k_B T}{m}}
+\end{equation}
+
+In terms of the gas constant $R$ and the molar mass $M$ in $(\frac{kg}{mol})$:
+\begin{equation}
+v_{rms} = \sqrt{\frac{3 R T}{M}}
+\end{equation}
+
+\section{Distribution of Molecular Speeds}
+
+The motion of molecules in a gas is random in magnitude and direction for individual molecules, but a gas of many molecules has a predictable distribution of molecular speeds. This predictable distribution of molecular speeds is known as the Maxwell-Boltzmann distribution (Figure \ref{fig:02_15}, after its originators, who calculated it based on kinetic theory, and it has since been confirmed experimentally. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.6]{fig/fig_02_15.jpg}
+\caption{Maxwell-Boltzmann distribution}
+\label{fig:02_15}
+\end{center}
+\end{figure} 
+
+We define the distribution function $f(v)$ such that the expected number $N(v_1,v_2)$ of particles with speeds between $v_1$ and $v_2$ is given by
+\begin{equation}
+N(v_1,v_2) = N \int_{v_1}^{v_2} f(v) dv
+\end{equation}
+where $N$ is the total number of particles and the units of $f(v)$  has units $\frac{s}{m}$. 
+
+rewriting 
+\begin{equation}
+dN = N f(v)dv
+\end{equation}
+which mean that the probability that a molecule's speed is between $v$ and $v = dv$ is $f(v)dv$.
+
+The Maxwell-Boltzmann Distribution of Speed states that the distribution function for speeds of particles in an ideal gas temperature $T$ is 
+\begin{equation}
+f(v) = \frac{4}{\sqrt{\pi}}(\frac{m}{2 k_B T})^{\frac{3}{2}} v^2 e^{-\frac{mv^2}{2 k_B T}}
 \end{equation}
 
 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.6]{fig/fig_02_16.jpg}
+\caption{Maxwell-Boltzmann distribution at higher temperatures.}
+\label{fig:02_16}
+\end{center}
+\end{figure} 
+
+From this distribution, the average speed $\bar{v}$ is
+\begin{equation}
+\bar{v} = \int_0^\infty v f(v) dv = \sqrt{\frac{8}{\pi} \frac{k_B T}{m}} =  \sqrt{\frac{8}{\pi} \frac{R T}{M}}
+\end{equation}
+
+and thus, 
+\begin{equation}
+v_{rms} = \sqrt{\bar{v^2}} = \sqrt{\int_0^\infty v^2 f(v) dv} = \sqrt{\frac{3 k_B T}{m}} = \sqrt{\frac{3RT}{M}}
+\end{equation}
+
+finally, the most probable speed, also known as the peak speed $v_p$ which is given by the derivative of the distribution function.
+\begin{equation}
+v_p = \sqrt{\frac{2 k_B T}{m}} = \sqrt{\frac{2 R T}{M}}
+\end{equation}
+
+\section{Zeroth Law of Thermodynamics}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.6]{fig/fig_03_02.jpg}
+\caption{Thermodynamically Closed System}
+\label{fig:03_02}
+\end{center}
+\end{figure} 
+
+
+If object 1 is in thermal equilibrium with objects 2 and 3, respectively, then objects 2 and 3 must also be in thermal equilibrium. Mathematically:
+\begin{equation}
+\text{If } T_1 = T_2 \text{ and } T_1 = T_3 \text{, then } T_2 = T_3
+\end{equation}
+
+This is the most fundamental way of defining temperature: Two objects must be at the same temperature thermodynamically if the net heat transfer between them is zero when they are put in thermal contact and have reached a thermal equilibrium.
+
+For a closed system the equation of state $f() = 0$, in this case
+\begin{equation}
+f(p,V,T) = 0
+\end{equation}
+or
+\begin{equation}
+f(p,V,T) = pV - nRT = 0
+\end{equation}
+
+
+\section{Work, Heat, and Internal Energy}
+
+\subsection{Work Done by a System}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.6]{fig/fig_03_04.jpg}
+\caption{Work done by a system}
+\label{fig:03_04}
+\end{center}
+\end{figure}
+
+Figure \ref{fig:03_04} shows a gas confined to a cylinder that has a movable piston at one end. If the gas expands against the piston, it exerrs a force through a distance and does work on the piston. 
+
+\begin{equation}
+dW = F dx = p A dx
+\end{equation}
+
+since $dV = A dx$, this becomes
+
+\begin{equation}
+dW = p dV
+\end{equation}
+
+For a finite change from volume $V_1$ to $V_2$, integrating gets the net work
+\begin{equation}
+W = \int_{V_1}^{V2} p dV
+\end{equation}
+
+NOTE: This integral is only meaningful for a quasi-static process, which means a process that takes place in infinitesimally small steps, keeping the system at thermal equilibrium.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.6]{fig/fig_03_05.jpg}
+\caption{Slowly expanding gas}
+\label{fig:03_05}
+\end{center}
+\end{figure}
+
+Figure \ref{fig:03_06} shows three quasi-static  transitions. We start with the path AC which  shows an Isothermal process where the gas is kept at a constant temperature $T$ by keeping it in thermal equilibrium with a heat reservoir at that temperature.
+
+\begin{equation}
+W = \int_{V_1}^{V_2} pdV = \int_{V_1}^{V_2} (\frac{nRT}{V}dV
+\end{equation}
+
+leading to
+
+\begin{equation}
+W = nRT \int_{V_1}^{V_2} \frac{dV}{V} = nRT \ln{\frac{V_2}{V_1}}
+\label{eq:tde1}
+\end{equation}
+
+The straight lines from AB and then BC represent a different process. Here the gass at pressure $p_1$ first expands isobarically after which at a constant volume $V_2$ the pressure drops to $p_2$. 
+
+From A to B
+\begin{equation}
+W = \int_{V_1}^{V_2} p dV = p_1 \int_{V_1}^{V_2} dV = p_1 ( V_2 - V_1)
+\end{equation}
+
+And from B to C, there is no change in volume so there is no work done. So, the new from ABC is
+\begin{equation}
+W = p_1 ( V_2 - V_1) + 0 = p_1 ( V_2 - V_1)
+\label{eq:tde2}
+\end{equation}
+
+As Equation \ref{eq:tde1} and Equation \ref{eq:tde2} are not the same, the work done by the gas in these two processes are quite different. This illustrates a very important property of thermodynamic work: It is path dependent. We cannot determine the work done by a system as it goes from one equilibrium state to another unless we know its thermodynamic path. Different values of the work are associated with different paths.
+
+\subsection{Internal Energy}
 
 \chapter{The End of Physics}
 

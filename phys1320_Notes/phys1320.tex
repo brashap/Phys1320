@@ -3144,7 +3144,7 @@ This holds generally for a current-carrying loop in a uniform magnetic field at 
 \begin{center}
 \includegraphics[scale=0.7]{fig/dcmotor.png}
 \caption{DC Motor with Brushes}
-\label{fig:magdip}
+\label{fig:dcmotor}
 \end{center}
 \end{figure}
 
@@ -4877,6 +4877,107 @@ W = p_1 ( V_2 - V_1) + 0 = p_1 ( V_2 - V_1)
 As Equation \ref{eq:tde1} and Equation \ref{eq:tde2} are not the same, the work done by the gas in these two processes are quite different. This illustrates a very important property of thermodynamic work: It is path dependent. We cannot determine the work done by a system as it goes from one equilibrium state to another unless we know its thermodynamic path. Different values of the work are associated with different paths.
 
 \subsection{Internal Energy}
+
+Assuming no potential energy between molecules, the internal energy $E_{int}$:
+
+\begin{equation}
+E_{int} = \sum_i \bar{K}_i = \sum_i \frac{1}{2} m_i \bar{v_i^2}
+\end{equation}
+
+And, we know that 
+\begin{equation}
+\frac{1}{2} m_i \bar{v_i^2} = \frac{3}{2} k_B T
+\end{equation}
+
+so
+
+\begin{equation}
+E_{int} = n N_A (\frac{3}{2} k_B T) = \frac{3}{2} nRT
+\end{equation}
+
+
+
+\section{First Law of Thermodynamics}
+
+thermodynamics. British scientist and novelist C. P. Snow (1905–1980) is credited with a joke about the four laws of thermodynamics. His humorous statement of the first law of thermodynamics is stated “you can’t win,” or in other words, you cannot get more energy out of a system than you put into it.
+
+Suppose
+\begin{itemize}
+\item $Q$ represents the heat exchanged between a system and the environment
+\item $W$ is the work done by or on the system 
+\end{itemize}
+
+The first law of thermodynamics states that the change in internal energy of a system is given by $Q-W$. 
+
+Associated with every equilibrium state of a system is its internal energy $E_{int}$.  The change in $E_{int}$  for any transition between two equilibrium states is
+
+\begin{equation}
+\Delta E_{int} = Q - W
+\end{equation}
+
+where $Q$ and $W$ represent, respectively, the heat exchanged by the system and the work done by or on the system.
+
+\begin{center}
+\begin{table}[]
+\begin{tabular}{ll}
+Process & Convention  \\ \hline
+Heat added to system & $Q>0$ \\
+Heat subtracted from system & $Q<0$ \\
+Work done by system & $W>0$ \\
+Work done to system & $W<0$ \\
+\end{tabular}
+\end{table}
+\end{center}
+
+
+\textbf{The First Law of Thermodynamics} states that energy can be converted from one form to another with the interaction of heat, work and internal energy, but it cannot be created nor destroyed, under any circumstances.
+
+
+
+\section{Second Law of Thermodynamics}
+
+Consider an ideal gas that is held in half of a thermally insulated container by a wall in the middle of the container. The other half of the container is under vacuum with no molecules inside. Now, if we remove the wall in the middle quickly, the gas expands and fills up the entire container immediately,
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.5]{fig/fig_04_02.jpg}
+\caption{Gas expanding from half of a container}
+\label{fig:04_02}
+\end{center}
+\end{figure}
+
+Because half of the container is under vacuum before the gas expands there, we do not expect any work to be done by the system, that is $W=0$, because no force from the vacuum is exerted on the gas during the expansion. If the container is thermally insulated from the rest of the environment, we do not expect any heat transfer to the system either, so  $Q=0$ . Then the first law of thermodynamics leads to the change of the internal energy of the system,
+
+\begin{equation}
+\Delta E_{int} = Q - W = 0
+\end{equation}
+
+ 
+For an ideal gas, if the internal energy doesn't change, then the temperature stays the same. Thus, the equation of state of the ideal gas gives us the final pressure of the gas,  $p=\frac{nRT}{V} = \frac{p_0}{2}$,  where  $p_0$  is the pressure of the gas before the expansion. The volume is doubled and the pressure is halved, but nothing else seems to have changed during the expansion.
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=.4]{fig/fig_04_03.jpg}
+\caption{Heat flowing from hot to cold}
+\label{fig:04_03}
+\end{center}
+\end{figure}
+
+\begin{itemize}
+\item Reversible process is a process in which the system and environment can be restored to exactly the same initial states that they were in before the process occurred, if we go backward along the path of the process.
+\item Irreversible process is a process in which the system and its environment cannot be restored to their original states at the same time.
+\end{itemize}
+
+The Second Law of Thermodynamics (Clausius\footnote{William Thomson, 1st Baron Kelvin (1824-1880)} statement): Heat never flows spontaneously from a colder object to a hotter object.
+
+
+The Second Law of Thermodynamics (Kelvin\footnote{William Thomson, 1st Baron Kelvin (1824-1907)} statement): It is impossible to convert the heat from a single source into work without any other effect. The Kelvin statement is a manifestation of a well-known engineering problem. Despite advancing technology, we are not able to build a heat engine that is  100\%  efficient. The first law does not exclude the possibility of constructing a perfect engine, but the second law forbids it.
+
+Finally, entropy, a thermodynamic quantity representing the unavailability of a system's thermal energy for conversion into mechanical work, often interpreted as the degree of disorder or randomness in the system.
+
+\textbf{The Second Law of Thermodynamics} states that the state of entropy of the entire universe, as an isolated system, will always increase over time. The second law also states that the changes in the entropy in the universe can never be negative.
+
 
 \chapter{The End of Physics}
 

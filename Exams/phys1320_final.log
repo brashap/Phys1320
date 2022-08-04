@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.18)  29 JUL 2022 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.18)  3 AUG 2022 08:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -966,11 +966,11 @@ File: final_4c.png Graphic file (type png)
 <use final_4c.png>
 Package pdftex.def Info: final_4c.png  used on input line 150.
 (pdftex.def)             Requested size: 165.99474pt x 124.59015pt.
-<final_7.png, id=81, 348.55219pt x 305.64188pt>
+<final_7.png, id=81, 190.311pt x 148.1535pt>
 File: final_7.png Graphic file (type png)
 <use final_7.png>
 Package pdftex.def Info: final_7.png  used on input line 166.
-(pdftex.def)             Requested size: 209.1329pt x 183.38652pt.
+(pdftex.def)             Requested size: 133.21677pt x 103.70674pt.
  [3 <./final_4c.png> <./final_7.png>]
 (./phys1320_final.aux)
 Package rerunfilecheck Info: File `phys1320_final.out' has not changed.
@@ -992,7 +992,7 @@ ype1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on phys1320_final.pdf (3 pages, 158911 bytes).
+Output written on phys1320_final.pdf (3 pages, 156168 bytes).
 PDF statistics:
  134 PDF objects out of 1000 (max. 8388607)
  77 compressed objects within 1 object stream
